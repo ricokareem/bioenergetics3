@@ -27,7 +27,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         component={HomeScreen}
         options={{
           title: 'Get Started',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-code-working" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="ios-code-working" />,
         }}
       />
       <BottomTab.Screen
@@ -35,7 +35,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         component={MainScreen}
         options={{
           title: 'Home',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-home" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="ios-home" />,
         }}
       />
       <BottomTab.Screen
@@ -43,7 +43,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         component={CardsScreen}
         options={{
           title: 'Card Stack',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-images" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="ios-images" />,
         }}
       />
       <BottomTab.Screen
@@ -51,7 +51,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         component={ReferenceGuideScreen}
         options={{
           title: 'Symptoms Reference',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-menu" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="ios-thermometer" />,
         }}
       />
       <BottomTab.Screen
@@ -59,7 +59,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         component={BalancingScreen}
         options={{
           title: 'Balancing',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-scale-balance" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="ios-body" />,
         }}
       />
       <BottomTab.Screen
@@ -67,7 +67,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         component={LinksScreen}
         options={{
           title: 'Resources',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-book" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="ios-book" />,
         }}
       />
     </BottomTab.Navigator>

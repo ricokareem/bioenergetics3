@@ -3,10 +3,12 @@ import {
   Platform,
   View,
   Text,
+  TouchableOpacity,
   SectionList,
   StyleSheet
 } from 'react-native';
-import { Icon } from 'expo';
+
+import { Ionicons } from '@expo/vector-icons';
 
 const RolandStar = () => (
   <Text style={styles.starLogo}>✸</Text>
@@ -39,25 +41,25 @@ export default class MainMenuList  extends React.Component {
           ]},
         ]}
         renderItem={({ item, index, section }) => (
-          <View
+          <TouchableOpacity
             style={section.title==='group1'
               ? styles.listItemRed
               : styles.listItem}
               onPress={() =>
-                this.props.navigator.push({component: Links})
+                this.props.navigator.push({component: LinksScreen})
               }
           >
             <Text style={styles.listText}>
               {item}
             </Text>
-            {/* <Icon.Ionicons
+            <Ionicons
               style={styles.listIcon}
               name={
                 Platform.OS === 'ios'
                   ? 'ios-arrow-forward'
                   : 'md-arrow-forward'}
-            /> */}
-          </View>
+            />
+          </TouchableOpacity>
         )}
       />
     );

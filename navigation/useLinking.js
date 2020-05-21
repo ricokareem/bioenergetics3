@@ -14,7 +14,6 @@ export default function(containerRef) {
           ReferenceGuide: 'referenceGuide',
           Balancing: 'balancing',
           Links: 'links',
-          Settings: 'settings',
         },
       },
     },
