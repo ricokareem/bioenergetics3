@@ -8,12 +8,10 @@ export default function(containerRef) {
       Root: {
         path: 'root',
         screens: {
-          Home: 'home',
           Main: 'main',
           Cards: 'cards',
           ReferenceGuide: 'referenceGuide',
           Balancing: 'balancing',
-          Links: 'links',
         },
       },
     },

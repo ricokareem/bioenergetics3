@@ -1,105 +1,87 @@
 import React from 'react';
 import {
-  Platform,
   View,
-  Text,
-  TouchableOpacity,
-  SectionList,
-  StyleSheet
+  ScrollView,
+  StyleSheet,
 } from 'react-native';
-
-import { Ionicons } from '@expo/vector-icons';
+import { ListItem } from 'react-native-elements'
 
 const RolandStar = () => (
   <Text style={styles.starLogo}>✸</Text>
-)
+);
 
-const onPressLearnMore = () => (null);
+const group1 = [
+  {name: 'Cards', title: 'HEALING SEQUENCES'},
+  {name: 'ReferenceGuide', title: 'SYMPTOMS AND CONDITIONS'},
+];
+const group2 = [
+  {name: 'Cards', title: 'HOW TO USE THIS APP'},
+  {name: 'Cards', title: 'BEGINNING THE HEALING SESSION'},
+  {name: 'Cards', title: 'ABOUT THE HEALING TECHNIQUES'},
+];
 
-export default class MainMenuList  extends React.Component {
-  static navigationOptions = {
+const MainMenuList = (props) => {
+  console.log({props});
+  
+  const { navigation } = props;
+  const navigationOptions = {
     headerLeft: RolandStar
   };
 
-  render() {
-    return (
-      <SectionList
-        keyExtractor={(section, index)=> `${section.title}-${index}`}
-        style={styles.container}
-        sections={[{
-          title: 'group1',
-          data: [
-            'HEALING SEQUENCES',
-            'SYMPTOMS AND CONDITIONS'
-          ]},
-          {
-          title: 'group2',
-          data: [
-            'HOW TO USE THIS APP',
-            'BEGINNING THE HEALING SESSION',
-            'ABOUT THE HEALING TECHNIQUES'
-          ]},
-        ]}
-        renderItem={({ item, index, section }) => (
-          <TouchableOpacity
-            style={section.title==='group1'
-              ? styles.listItemRed
-              : styles.listItem}
-              onPress={() =>
-                this.props.navigator.push({component: LinksScreen})
-              }
-          >
-            <Text style={styles.listText}>
-              {item}
-            </Text>
-            <Ionicons
-              style={styles.listIcon}
-              name={
-                Platform.OS === 'ios'
-                  ? 'ios-arrow-forward'
-                  : 'md-arrow-forward'}
-            />
-          </TouchableOpacity>
-        )}
-      />
-    );
-  }
+  return (
+    <View style={styles.container}>
+      <ScrollView>
+        {group1.map((item, index) => (
+          <ListItem
+            key={index}
+            title={item.title}
+            containerStyle={styles.listItemRed}
+            titleStyle={styles.listText}
+            onPress={() => navigation.navigate(item.name)}
+            bottomDivider
+            chevron
+          />
+        ))}
+        {group2.map((item, index) => (
+          <ListItem
+            key={index}
+            title={item.title}
+            containerStyle={styles.listItem}
+            titleStyle={styles.listText}
+            onPress={() => navigation.navigate(item.name)}
+            bottomDivider
+            chevron
+          />
+        ))}
+      </ScrollView>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#fc9829'
+    flex: 1,
+    backgroundColor: '#fc9829',
   },
   listItem: {
-    flex: 1,
-    flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: 20,
-    borderBottomWidth: 1,
-    borderBottomColor: '#ccc'
-  },
-  listItemRed: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: 20,
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
-    backgroundColor: '#fb8400'
+    backgroundColor: '#fc9829',
+  },
+  listItemRed: {
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: '#ccc',
+    backgroundColor: '#fb8400',
   },
   listText: {
     fontSize: 24,
     lineHeight: 24,
     fontWeight: 'bold',
     color: '#fff',
-  },
-  listIcon: {
-    color: '#fff',
-    fontSize: 24,
-    fontWeight: 'bold',
-    textAlign: 'right',
   },
   starLogo: {
     fontWeight: 'bold',
@@ -108,3 +90,5 @@ const styles = StyleSheet.create({
     paddingLeft: 20
   }
 });
+
+export default MainMenuList;

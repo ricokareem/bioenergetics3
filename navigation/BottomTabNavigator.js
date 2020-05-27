@@ -8,11 +8,8 @@ import CardsScreen from '../screens/CardScreen';
 import ReferenceGuideScreen from '../screens/ReferenceGuideScreen';
 import BalancingScreen from '../screens/BalancingScreen';
 
-import HomeScreen from '../screens/HomeScreen';
-import LinksScreen from '../screens/LinksScreen';
-
 const BottomTab = createBottomTabNavigator();
-const INITIAL_ROUTE_NAME = 'Home';
+const INITIAL_ROUTE_NAME = 'Main';
 
 export default function BottomTabNavigator({ navigation, route }) {
   // Set the header title on the parent stack navigator depending on the
@@ -23,16 +20,9 @@ export default function BottomTabNavigator({ navigation, route }) {
   return (
     <BottomTab.Navigator initialRouteName={INITIAL_ROUTE_NAME}>
       <BottomTab.Screen
-        name="Home"
-        component={HomeScreen}
-        options={{
-          title: 'Get Started',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="ios-code-working" />,
-        }}
-      />
-      <BottomTab.Screen
         name="Main"
         component={MainScreen}
+        navigation={navigation}
         options={{
           title: 'Home',
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="ios-home" />,
@@ -47,7 +37,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         }}
       />
       <BottomTab.Screen
-        name="Reference Guide"
+        name="ReferenceGuide"
         component={ReferenceGuideScreen}
         options={{
           title: 'Symptoms Reference',
@@ -62,14 +52,6 @@ export default function BottomTabNavigator({ navigation, route }) {
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="ios-body" />,
         }}
       />
-      <BottomTab.Screen
-        name="Links"
-        component={LinksScreen}
-        options={{
-          title: 'Resources',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="ios-book" />,
-        }}
-      />
     </BottomTab.Navigator>
   );
 }
@@ -78,17 +60,13 @@ function getHeaderTitle(route) {
   const routeName = route.state?.routes[route.state.index]?.name ?? INITIAL_ROUTE_NAME;
 
   switch (routeName) {
-    case 'Home':
-      return 'How to get started';
     case 'Main':
       return 'Home';
     case 'Cards':
       return 'Card Stack';
-    case 'Reference Guide':
+    case 'ReferenceGuide':
       return 'Symptoms Reference';
     case 'Balancing':
       return 'Balancing';
-    // case 'Links':
-    //   return 'Links to learn more';
   }
 }
