@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   View,
   ScrollView,
   StyleSheet,
 } from 'react-native';
-import { ListItem } from 'react-native-elements'
+import { ListItem } from 'react-native-elements';
 
 const RolandStar = () => (
   <Text style={styles.starLogo}>✸</Text>
@@ -20,9 +21,12 @@ const group2 = [
   {name: 'Cards', title: 'ABOUT THE HEALING TECHNIQUES'},
 ];
 
+const chevronProps = {
+  color: "#fff",
+  size: 28,
+}
+
 const MainMenuList = (props) => {
-  console.log({props});
-  
   const { navigation } = props;
   const navigationOptions = {
     headerLeft: RolandStar
@@ -39,7 +43,7 @@ const MainMenuList = (props) => {
             titleStyle={styles.listText}
             onPress={() => navigation.navigate(item.name)}
             bottomDivider
-            chevron
+            chevron={chevronProps}
           />
         ))}
         {group2.map((item, index) => (
@@ -50,13 +54,19 @@ const MainMenuList = (props) => {
             titleStyle={styles.listText}
             onPress={() => navigation.navigate(item.name)}
             bottomDivider
-            chevron
+            chevron={chevronProps}
           />
         ))}
       </ScrollView>
     </View>
   );
 }
+
+MainMenuList.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func,
+  }).isRequired,
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -80,7 +90,6 @@ const styles = StyleSheet.create({
   listText: {
     fontSize: 24,
     lineHeight: 24,
-    fontWeight: 'bold',
     color: '#fff',
   },
   starLogo: {

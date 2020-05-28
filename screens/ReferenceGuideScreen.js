@@ -1,68 +1,80 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   ScrollView,
   StyleSheet,
-  Text,
-  TouchableOpacity,
   View
 } from 'react-native';
+import { ListItem } from 'react-native-elements';
 
-export default class ReferenceGuideScreen extends React.Component {
+const symptoms = [
+  {name: 'Cards', title: 'MIGRAINE/HEADACHES'},
+  {name: 'Cards', title: 'NECK PAIN'},
+  {name: 'Cards', title: 'OVERALL BODY PAIN'},
+  {name: 'Cards', title: 'GASTRIC/STOMACH PAIN/SPASMS'},
+  {name: 'Cards', title: 'DIARRHEA'},
+  {name: 'Cards', title: 'CHRONIC CONSTIPATION'},
+  {name: 'Cards', title: 'FLU'},
+  {name: 'Cards', title: 'BLADDER PAIN'},
+  {name: 'Cards', title: 'PMS/CRAMPS'},
+  {name: 'Cards', title: 'DEMENTIA'},
+  {name: 'Cards', title: 'THYROID'},
+  {name: 'Cards', title: 'KNEE PAIN'},
+  {name: 'Cards', title: 'LEG PAIN/CRAMPS'},
+];
+
+const chevronProps = {
+  color: "#fff",
+  size: 28,
+}
+
+const ReferenceGuideScreen = (props) => {
   // static navigationOptions = {
   //   title: 'Links',
   // };
 
-  render() {
-    return (
-      <ScrollView style={styles.container}>
-        <View style={{ backgroundColor: '#fb8400' }}>
-          <TouchableOpacity style={styles.TouchableOpacity}>
-            <Text style={styles.ViewText}>BALANCING ENERGY DISTRIBUTION</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.TouchableOpacity}>
-            <Text style={styles.ViewText}>BALANCING ENERGY DISTRIBUTION</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.TouchableOpacity}>
-            <Text style={styles.ViewText}>BALANCING ENERGY DISTRIBUTION</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.TouchableOpacity}>
-            <Text style={styles.ViewText}>BALANCING ENERGY DISTRIBUTION</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.TouchableOpacity}>
-            <Text style={styles.ViewText}>BALANCING ENERGY DISTRIBUTION</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.TouchableOpacity}>
-            <Text style={styles.ViewText}>BALANCING ENERGY DISTRIBUTION</Text>
-          </TouchableOpacity>
-        </View>
+  return (
+    <View style={styles.container}>
+      <ScrollView>
+        {symptoms.map((item, index) => (
+          <ListItem
+            key={index}
+            title={item.title}
+            containerStyle={styles.listItem}
+            titleStyle={styles.listText}
+            onPress={() => navigation.navigate(item.name)}
+            bottomDivider
+            chevron={chevronProps}
+          />
+        ))}
       </ScrollView>
-    );
-  }
+    </View>
+  );
 }
+
+ReferenceGuideScreen.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func,
+  }).isRequired,
+};
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#fc9829'
-  },
-  TouchableOpacity: {
     flex: 1,
-    flexDirection: 'row',
+    backgroundColor: '#fc9829',
+  },
+  listItem: {
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: 20,
     borderBottomWidth: 1,
-    borderBottomColor: '#ccc'
+    borderBottomColor: '#ccc',
+    backgroundColor: '#fc9829',
   },
-  ViewText: {
+  listText: {
     fontSize: 24,
     lineHeight: 24,
-    fontWeight: 'bold',
     color: '#fff',
   },
-  ViewIcon: {
-    color: '#fff',
-    fontSize: 24,
-    fontWeight: 'bold',
-    textAlign: 'right',
-  }
 });
+
+export default ReferenceGuideScreen;
