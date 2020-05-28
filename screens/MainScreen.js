@@ -88,8 +88,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#fb8400',
   },
   listText: {
-    fontSize: 24,
-    lineHeight: 24,
+    fontSize: 14,
+    fontWeight: 'bold',
+    lineHeight: 14,
     color: '#fff',
   },
   starLogo: {
