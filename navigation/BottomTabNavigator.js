@@ -6,7 +6,7 @@ import TabBarIcon from '../components/TabBarIcon';
 import MainScreen from '../screens/MainScreen';
 import CardsScreen from '../screens/CardScreen';
 import ReferenceGuideScreen from '../screens/ReferenceGuideScreen';
-import BalancingScreen from '../screens/BalancingScreen';
+import InfoScreen from '../screens/InfoScreen';
 
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = 'Main';
@@ -25,7 +25,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         navigation={navigation}
         options={{
           title: 'Home',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="ios-home" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="home" />,
         }}
       />
       <BottomTab.Screen
@@ -33,7 +33,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         component={CardsScreen}
         options={{
           title: 'Card Stack',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="ios-images" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="layers" />,
         }}
       />
       <BottomTab.Screen
@@ -41,15 +41,15 @@ export default function BottomTabNavigator({ navigation, route }) {
         component={ReferenceGuideScreen}
         options={{
           title: 'Symptoms Reference',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="ios-thermometer" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="book-open" />,
         }}
       />
       <BottomTab.Screen
-        name="Balancing"
-        component={BalancingScreen}
+        name="Info"
+        component={InfoScreen}
         options={{
-          title: 'Balancing',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="ios-body" />,
+          title: 'Info',
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="info" />,
         }}
       />
     </BottomTab.Navigator>
@@ -66,7 +66,7 @@ function getHeaderTitle(route) {
       return 'Card Stack';
     case 'ReferenceGuide':
       return 'Symptoms Reference';
-    case 'Balancing':
-      return 'Balancing';
+    case 'Info':
+      return 'Info';
   }
 }

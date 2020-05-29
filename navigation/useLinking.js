@@ -11,7 +11,7 @@ export default function(containerRef) {
           Main: 'main',
           Cards: 'cards',
           ReferenceGuide: 'referenceGuide',
-          Balancing: 'balancing',
+          Info: 'info',
         },
       },
     },
