@@ -40,7 +40,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         name="ReferenceGuide"
         component={ReferenceGuideScreen}
         options={{
-          title: 'Symptoms Reference',
+          title: 'Symptoms',
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="book-open" />,
         }}
       />

@@ -10,6 +10,7 @@ export default function(containerRef) {
         screens: {
           Main: 'main',
           Cards: 'cards',
+          CardMedia: 'cardMedia',
           ReferenceGuide: 'referenceGuide',
           Info: 'info',
         },
