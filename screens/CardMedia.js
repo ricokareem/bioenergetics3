@@ -1,20 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { View, Text, StyleSheet } from 'react-native'
+import { ScrollView, Text, StyleSheet } from 'react-native'
 import { Card, Button, Icon } from 'react-native-elements'
 import { Video } from 'expo-av';
 
 const CardMedia = (props) => {
+  const { route } = props;
+  const { title, mediaSrc, description } = route.params;
 
   return (
-    <Card
-      title='HELLO WORLD'
-    >
-      <View>
-
+    <ScrollView style={styles.container}>
+      <Card
+        title={title}
+      >
         <Video
-          // source={{ uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4' }}
-          source={require('../media/1.mp4')}
+          source={require(`../media/${mediaSrc}`)}
           rate={1.0}
           volume={1.0}
           isMuted={false}
@@ -23,35 +23,36 @@ const CardMedia = (props) => {
           isLooping
           style={styles.backgroundVideo}
         />
-
         <Text style={{marginBottom: 10}}>
-          The idea with React Native Elements is more about component structure than actual design.
+          {description}
         </Text>
         <Button
           icon={<Icon name='code' color='#ffffff' />}
           buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-          title='VIEW NOW'
+          title='NOW'
         />
-      </View>
-    </Card>
+      </Card>
+    </ScrollView>
   );
 };
 
 CardMedia.propTypes = {
-  // navigation: PropTypes.shape({
-  //   navigate: PropTypes.func,
-  // }).isRequired,
+  route: PropTypes.shape({
+    key: PropTypes.string,
+    name: PropTypes.string,
+    params: PropTypes.object,
+  }),
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fc9829',
+  },
   backgroundVideo: {
     width: '100%',
     height: '40vh',
   },
-  // container: {
-  //   flex: 1,
-  //   backgroundColor: '#fff',
-  // },
   // listItem: {
   //   backgroundColor: '#fc9829',
   //   flex: 1,

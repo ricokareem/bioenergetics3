@@ -9,9 +9,9 @@ import {
   View
 } from 'react-native';
 import { ListItem } from 'react-native-elements';
-import { mediaData } from './mediaData';
+import MediaData from '../constants/MediaData';
 
-const symptoms = [...mediaData, { name: null, screen: null,  title: '' },];
+const symptoms = [...MediaData, { name: null, screen: null,  title: '' },];
 
 const chevronProps = {
   color: "#fff",
@@ -31,7 +31,11 @@ const CardScreen = (props) => {
         renderItem={({ item }) => (
           <TouchableOpacity
             style={styles.listItem}
-            onPress={() => navigation.navigate(item.screen)}
+            onPress={() => navigation.navigate(item.screen, {
+              title: item.title,
+              mediaSrc: item.file,
+              description: item.description
+            })}
           >
             <Text style={styles.listText}>
               {item.title}
