@@ -8,11 +8,10 @@ import {
 import { ListItem } from 'react-native-elements';
 
 const symptoms = [
-  {name: 'Cards', title: 'ABOUT ROLAND YAKOUBOV'},
-  {name: 'Cards', title: 'DISCLAIMER'},
-  {name: 'Cards', title: 'FOLLOW US'},
-  {name: 'Cards', title: 'CONTACT'},
-  {name: 'Cards', title: 'CREDITS'},
+  {name: 'AboutRoland', title: 'ABOUT ROLAND YAKOUBOV'},
+  {name: 'Disclaimer', title: 'DISCLAIMER'},
+  {name: 'Social', title: 'FOLLOW US'},
+  {name: 'Credits', title: 'CREDITS'},
 ];
 
 const chevronProps = {
@@ -21,6 +20,7 @@ const chevronProps = {
 }
 
 const InfoScreen = (props) => {
+  const { navigation } = props;
   // static navigationOptions = {
   //   title: 'Links',
   // };

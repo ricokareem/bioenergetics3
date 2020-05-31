@@ -10,6 +10,13 @@ import BottomTabNavigator from './navigation/BottomTabNavigator';
 import useLinking from './navigation/useLinking';
 
 import CardMedia from './screens/CardMedia';
+import HowToUseAppScreen from './screens/HowToUseAppScreen';
+import BeginningHealingSessionScreen from './screens/BeginningHealingSessionScreen';
+import AboutHealingTechniques from './screens/AboutHealingTechniques';
+import AboutRoland from './screens/AboutRoland';
+import Disclaimer from './screens/Disclaimer';
+import Social from './screens/Social';
+import Credits from './screens/Credits';
 
 const Stack = createStackNavigator();
 
@@ -55,6 +62,13 @@ export default function App(props) {
           <Stack.Navigator>
             <Stack.Screen name="Root" component={BottomTabNavigator} />
             <Stack.Screen name="CardMedia" component={CardMedia} />
+            <Stack.Screen name="HowToUseAppScreen" component={HowToUseAppScreen} />
+            <Stack.Screen name="BeginningHealingSessionScreen" component={BeginningHealingSessionScreen} />
+            <Stack.Screen name="AboutHealingTechniques" component={AboutHealingTechniques} />
+            <Stack.Screen name="AboutRoland" component={AboutRoland} />
+            <Stack.Screen name="Disclaimer" component={Disclaimer} />
+            <Stack.Screen name="Social" component={Social} />
+            <Stack.Screen name="Credits" component={Credits} />
           </Stack.Navigator>
         </NavigationContainer>
       </View>

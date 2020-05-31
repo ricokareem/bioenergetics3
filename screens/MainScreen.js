@@ -16,9 +16,9 @@ const group1 = [
   {name: 'ReferenceGuide', title: 'SYMPTOMS AND CONDITIONS'},
 ];
 const group2 = [
-  {name: 'Cards', title: 'HOW TO USE THIS APP'},
-  {name: 'Cards', title: 'BEGINNING THE HEALING SESSION'},
-  {name: 'Cards', title: 'ABOUT THE HEALING TECHNIQUES'},
+  {name: 'HowToUseAppScreen', title: 'HOW TO USE THIS APP'},
+  {name: 'BeginningHealingSessionScreen', title: 'BEGINNING THE HEALING SESSION'},
+  {name: 'AboutHealingTechniques', title: 'ABOUT THE HEALING TECHNIQUES'},
 ];
 
 const chevronProps = {
