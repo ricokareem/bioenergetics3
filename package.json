@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^10.2.0",
-    "@react-native-community/masked-view": "0.1.10",
+    "@react-native-community/masked-view": "0.1.6",
     "@react-navigation/bottom-tabs": "^5.0.0",
     "@react-navigation/native": "^5.0.0",
     "@react-navigation/stack": "^5.0.0",
@@ -36,11 +36,12 @@
     "react-native-elements": "^2.0.0",
     "react-native-gesture-handler": "~1.6.0",
     "react-native-safe-area-context": "0.7.3",
-    "react-native-screens": "~2.8.0",
-    "react-native-web": "~0.12.2"
+    "react-native-screens": "~2.2.0",
+    "react-native-web": "^0.11.7"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
+    "@babel/preset-typescript": "^7.10.1",
     "babel-preset-expo": "^8.1.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
