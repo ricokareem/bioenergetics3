@@ -1,9 +1,5 @@
+[![CircleCI](https://circleci.com/gh/ricokareem/bioenergetics3.svg?style=svg)](https://circleci.com/gh/ricokareem/bioenergetics3)
+
 # bioenergetics3
 
-- yarn
-- .tool-versions
-  ```
-  nodejs 12.12.0
-  ruby 2.4.2
-  ```
-- expo
+An Expo/React Native project
