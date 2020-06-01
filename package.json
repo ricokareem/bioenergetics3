@@ -9,25 +9,30 @@
     "test": "jest --watchAll"
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "jest-expo",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupTests.js"
+    ]
   },
   "dependencies": {
-    "@expo/vector-icons": "~10.0.6",
+    "@expo/vector-icons": "^10.0.0",
     "@react-native-community/masked-view": "0.1.6",
     "@react-navigation/bottom-tabs": "^5.0.0",
     "@react-navigation/native": "^5.0.0",
     "@react-navigation/stack": "^5.0.0",
     "@react-navigation/web": "~1.0.0-alpha.9",
-    "expo": "~37.0.3",
-    "expo-asset": "~8.1.3",
+    "expo": "^37.0.0",
+    "expo-asset": "~8.1.5",
     "expo-av": "~8.1.0",
     "expo-constants": "~9.0.0",
     "expo-font": "~8.1.0",
-    "expo-web-browser": "~8.1.0",
+    "expo-web-browser": "~8.2.1",
     "prop-types": "^15.7.2",
-    "react": "~16.9.0",
-    "react-dom": "~16.9.0",
-    "react-native": "^0.62.2",
+    "react": "16.9.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz",
     "react-native-elements": "^2.0.0",
     "react-native-gesture-handler": "~1.6.0",
     "react-native-safe-area-context": "0.7.3",
@@ -36,8 +41,11 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
-    "babel-preset-expo": "~8.1.0",
-    "jest-expo": "~37.0.0"
+    "babel-preset-expo": "^8.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "jest-expo": "^37.0.0",
+    "react-dom": "16.9.0"
   },
   "private": true
 }
