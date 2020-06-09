@@ -3,40 +3,41 @@ import PropTypes from "prop-types";
 import { ScrollView, Text, StyleSheet } from "react-native";
 import { Card, Button, Icon } from "react-native-elements";
 import { Video } from "expo-av";
+import { Movies } from "../constants/MediaData";
 
-const CardMedia = (props) => {
+const ReferenceGuideMedia = (props) => {
     const { route } = props;
-    const { title, mediaSrc, description } = route.params;
+    const { title, playlist } = route.params;
+
+    const movieMap = playlist.map(movieId => Movies.find(movie.id));
+    console.log("*****", movieMap);
 
     return (
         <ScrollView style={styles.container}>
             <Card
                 title={title}
             >
-                <Video
-                    source={require(`../media/${mediaSrc}`)}
-                    rate={1.0}
-                    volume={1.0}
-                    isMuted={false}
-                    resizeMode="cover"
-                    shouldPlay
-                    isLooping
-                    style={styles.backgroundVideo}
-                />
-                <Text style={{marginBottom: 10}}>
-                    {description}
-                </Text>
-                <Button
-                    icon={<Icon name='code' color='#ffffff' />}
-                    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-                    title='NOW'
-                />
+                {movieMap.map(movie => (
+                    <Video
+                        source={require(`../media/${movie.file}`)}
+                        rate={1.0}
+                        volume={1.0}
+                        isMuted={false}
+                        resizeMode="cover"
+                        shouldPlay
+                        isLooping={false}
+                        style={styles.backgroundVideo}
+                    />
+                    // <Text style={{marginBottom: 10}}>
+                    //     {movie.description}
+                    // </Text>
+                )}
             </Card>
         </ScrollView>
     );
 };
 
-CardMedia.propTypes = {
+ReferenceGuideMedia.propTypes = {
     route: PropTypes.shape({
         key: PropTypes.string,
         name: PropTypes.string,
@@ -74,4 +75,4 @@ const styles = StyleSheet.create({
     // },
 });
 
-export default CardMedia;
+export default ReferenceGuideMedia;
