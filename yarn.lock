@@ -1380,9 +1380,9 @@
   dependencies:
     nanoid "^3.1.5"
 
-"@react-navigation/stack@^5.0.0":
-  version "5.2.9"
-  resolved "https://registry.yarnpkg.com/@react-navigation/stack/-/stack-5.2.9.tgz#6bc849c9d6ece4f2659a07c1b3afd93adc9bc0c7"
+"@react-navigation/stack@^5.5.1":
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/@react-navigation/stack/-/stack-5.5.1.tgz#95efa28edbfd1323e5ad9f01f539d43ffad8decc"
   dependencies:
     color "^3.1.2"
     react-native-iphone-x-helper "^1.2.1"
