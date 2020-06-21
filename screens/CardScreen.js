@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: "column",
         margin: 1,
-        padding: "20px",
+        padding: 20,
         height: 120,
     },
     listText: {

@@ -10,6 +10,7 @@ import BottomTabNavigator from './navigation/BottomTabNavigator';
 import useLinking from './navigation/useLinking';
 
 import CardMedia from './screens/CardMedia';
+import ReferenceGuideMedia from './screens/ReferenceGuideMedia';
 import HowToUseAppScreen from './screens/HowToUseAppScreen';
 import BeginningHealingSessionScreen from './screens/BeginningHealingSessionScreen';
 import AboutHealingTechniques from './screens/AboutHealingTechniques';
@@ -62,6 +63,7 @@ export default function App(props) {
           <Stack.Navigator>
             <Stack.Screen name="Root" component={BottomTabNavigator} />
             <Stack.Screen name="CardMedia" component={CardMedia} />
+            <Stack.Screen name="ReferenceGuideMedia" component={ReferenceGuideMedia} />
             <Stack.Screen name="HowToUseAppScreen" component={HowToUseAppScreen} />
             <Stack.Screen name="BeginningHealingSessionScreen" component={BeginningHealingSessionScreen} />
             <Stack.Screen name="AboutHealingTechniques" component={AboutHealingTechniques} />
