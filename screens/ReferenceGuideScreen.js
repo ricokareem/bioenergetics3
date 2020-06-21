@@ -14,6 +14,7 @@ const chevronProps = {
 };
 
 const ReferenceGuideScreen = (props) => {
+    const { navigation } = props;
     // static navigationOptions = {
     //   title: 'Links',
     // };
