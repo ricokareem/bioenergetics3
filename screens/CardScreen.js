@@ -33,7 +33,7 @@ const CardScreen = (props) => {
                         style={styles.listItem}
                         onPress={() => navigation.navigate(item.screen, {
                             title: item.title,
-                            mediaSrc: item.file,
+                            name: item.name,
                             description: item.description,
                             playlist: item.playlist
                         })}

@@ -54,25 +54,6 @@ const styles = StyleSheet.create({
         width: "100%",
         height: "40vh",
     },
-    // listItem: {
-    //   backgroundColor: '#fc9829',
-    //   flex: 1,
-    //   flexDirection: 'column',
-    //   margin: 1,
-    //   padding: '20px',
-    //   height: 120,
-    // },
-    // listText: {
-    //   fontSize: 12,
-    //   fontWeight: 'bold',
-    //   lineHeight: 14,
-    //   color: '#fff',
-    // },
-    // listSubheadingText: {
-    //   fontSize: 10,
-    //   lineHeight: 12,
-    //   color: '#fff',
-    // },
 });
 
 export default ReferenceGuideMedia;
