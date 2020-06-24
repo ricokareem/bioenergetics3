@@ -18,20 +18,22 @@ const ReferenceGuideMedia = (props) => {
                 title={title}
             >
                 {movieMap.map(movie => (
-                    <Video
-                        source={require(`../media/${movie.file}`)}
-                        rate={1.0}
-                        volume={1.0}
-                        isMuted={false}
-                        resizeMode="cover"
-                        shouldPlay
-                        isLooping={false}
-                        style={styles.backgroundVideo}
-                    />
-                    // <Text style={{marginBottom: 10}}>
-                    //     {movie.description}
-                    // </Text>
-                )}
+                    <>
+                        <Video
+                            source={require(`../media/${movie.file}`)}
+                            rate={1.0}
+                            volume={1.0}
+                            isMuted={false}
+                            resizeMode="cover"
+                            shouldPlay
+                            isLooping={false}
+                            style={styles.backgroundVideo}
+                        />
+                        <Text style={{marginBottom: 10}}>
+                            {movie.description}
+                        </Text>
+                    </>
+                ))}
             </Card>
         </ScrollView>
     );
