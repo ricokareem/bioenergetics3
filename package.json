@@ -27,7 +27,7 @@
     "expo": "^37.0.0",
     "expo-asset": "~8.1.7",
     "expo-av": "~8.2.1",
-    "expo-constants": "~9.0.0",
+    "expo-constants": "~9.1.1",
     "expo-font": "~8.2.1",
     "expo-web-browser": "~8.2.1",
     "prop-types": "^15.7.2",
