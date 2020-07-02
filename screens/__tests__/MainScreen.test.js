@@ -1,10 +1,10 @@
 import React from "react";
 import { shallow } from "enzyme";
-import App from "../App";
+import MainScreen from "../MainScreen";
 
-describe("<App>", () => {
+describe("<MainScreen>", () => {
     it("should match to snapshot", () => {
-        const wrapper = shallow(<App />);
+        const wrapper = shallow(<MainScreen />);
         expect(wrapper).toMatchSnapshot();
     });
 });
