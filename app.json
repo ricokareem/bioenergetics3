@@ -23,7 +23,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
-    }
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ricokareem.bioenergetics3"
+    },
+    "android": {
+      "package": "com.ricokareem.bioenergetics3"
+    },
+    "entryPoint": "node_modules/expo/AppEntry.js"
   }
 }
