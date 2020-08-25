@@ -5989,9 +5989,9 @@ react-native-ratings@^7.2.0:
     lodash "^4.17.4"
     prop-types "^15.5.10"
 
-react-native-safe-area-context@3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-3.1.1.tgz#9b04d1154766e6c1132030aca8f4b0336f561ccd"
+react-native-safe-area-context@3.1.7:
+  version "3.1.7"
+  resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-3.1.7.tgz#fc9e636dfb168f992a2172d363509ce0611a8403"
 
 react-native-safe-area-context@~3.0.7:
   version "3.0.7"
