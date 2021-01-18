@@ -1096,9 +1096,9 @@
     util.promisify "^1.0.0"
     write-file-atomic "^2.3.0"
 
-"@expo/vector-icons@^12.0.0", "@expo/vector-icons@^12.0.2":
-  version "12.0.2"
-  resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-12.0.2.tgz#ffb65a547091abcc529686be21b63ebf4cad041b"
+"@expo/vector-icons@^12.0.0", "@expo/vector-icons@^12.0.3":
+  version "12.0.3"
+  resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-12.0.3.tgz#d7379a3a6bfd4189bc6aed9b9d295f3aca6a5ece"
   dependencies:
     lodash.frompairs "^4.0.1"
     lodash.isequal "^4.5.0"
