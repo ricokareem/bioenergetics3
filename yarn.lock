@@ -6169,9 +6169,9 @@ react-is@^17.0.1:
   version "17.0.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
 
-react-native-elements@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/react-native-elements/-/react-native-elements-3.1.0.tgz#ff2d6fd0ed91b1ebdd15598c4da1fcb2d5780c5f"
+react-native-elements@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-elements/-/react-native-elements-3.2.0.tgz#0880801ad5be6d1da9848b57659b0f62b8ebb9f4"
   dependencies:
     "@types/react-native-vector-icons" "^6.4.6"
     color "^3.1.2"
@@ -6181,7 +6181,6 @@ react-native-elements@^3.1.0:
     opencollective-postinstall "^2.0.3"
     prop-types "^15.7.2"
     react-native-ratings "^7.3.0"
-    react-native-safe-area-context "^3.1.9"
     react-native-size-matters "^0.3.1"
 
 react-native-gesture-handler@~1.9.0:
@@ -6205,7 +6204,7 @@ react-native-ratings@^7.3.0:
     lodash "^4.17.15"
     prop-types "^15.7.2"
 
-react-native-safe-area-context@3.1.9, react-native-safe-area-context@^3.1.9:
+react-native-safe-area-context@3.1.9:
   version "3.1.9"
   resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-3.1.9.tgz#48864ea976b0fa57142a2cc523e1fd3314e7247e"
 
