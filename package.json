@@ -26,7 +26,7 @@
     "@react-navigation/web": "~1.0.0-alpha.9",
     "expo": "^40.0.1",
     "expo-asset": "~8.2.2",
-    "expo-av": "~8.2.1",
+    "expo-av": "~8.7.0",
     "expo-constants": "~10.0.1",
     "expo-font": "~9.0.0",
     "expo-web-browser": "~9.0.0",

@@ -20,7 +20,7 @@ const ReferenceGuideMedia = (props) => {
                 {movieMap.map(movie => (
                     <>
                         <Video
-                            source={require(`../media/${movie.file}`)}
+                            // source={require(`../media/${movie.file}`)}
                             rate={1.0}
                             volume={1.0}
                             isMuted={false}
