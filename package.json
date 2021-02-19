@@ -40,7 +40,7 @@
     "react-native-web": "^0.14.13"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.16",
+    "@babel/core": "^7.12.17",
     "@babel/preset-typescript": "^7.12.16",
     "babel-preset-expo": "^8.3.0",
     "enzyme": "^3.11.0",
