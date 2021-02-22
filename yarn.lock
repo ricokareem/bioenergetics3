@@ -2069,10 +2069,10 @@
     core-js "^3.0.1"
     fast-deep-equal "^2.0.1"
 
-"@storybook/addon-ondevice-knobs@^5.3.23":
-  version "5.3.23"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-knobs/-/addon-ondevice-knobs-5.3.23.tgz#82b8888187705980fe4683c90cc6f4e23c4ae112"
-  integrity sha512-KunX4o+Dsui4pkm+/uiirJJr72dVEHKNdMiQ2xElHl66gbSlRPZo0T56ODOZohxZXgLb7AxmMx20Gok1EWeNqA==
+"@storybook/addon-ondevice-knobs@^5.3.25":
+  version "5.3.25"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-knobs/-/addon-ondevice-knobs-5.3.25.tgz#bebdc3160aafa095e4f178e422628d0493d5890c"
+  integrity sha512-jbPNcbtLv3I7iGUYN7ZCXBPCg2Qr8s06Nz8S+GEYTKr/KqySPi7in2vNeZi7DqYcKe9ZtcbjdCe5emZuIAVu5A==
   dependencies:
     "@emotion/native" "^10.0.14"
     "@storybook/addons" "5.3.21"
@@ -2333,10 +2333,10 @@
     webpack "^4.33.0"
     ws "^7.1.2"
 
-"@storybook/react-native@^5.3.23":
-  version "5.3.23"
-  resolved "https://registry.yarnpkg.com/@storybook/react-native/-/react-native-5.3.23.tgz#cd1f795d5248e7e55dfb2ad59ebef2a7b2b3cdf9"
-  integrity sha512-0PE/EbmrNb7Pl3ry0pLZKjdqyslPP6Aq4+quTv2udxD94yYGvcWIBShNrMB+xmJAirlVz5p/uEXOPobjgzDxEg==
+"@storybook/react-native@^5.3.25":
+  version "5.3.25"
+  resolved "https://registry.yarnpkg.com/@storybook/react-native/-/react-native-5.3.25.tgz#681c9cdcadba7eda88716f5d383ea47558367825"
+  integrity sha512-KPctJdk1++k4byblqTwULmxKDADsRAMat9BgMTx3Gewk4PjMbsbKCvRK7+AlJeNjz/kEsf9L6Y25y8lrw3rPXA==
   dependencies:
     "@emotion/core" "^10.0.20"
     "@emotion/native" "^10.0.14"
