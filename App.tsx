@@ -21,7 +21,7 @@ import Credits from './screens/Credits';
 
 const Stack = createStackNavigator();
 
-export default function App(props) {
+const App = (props) => {
   const [isLoadingComplete, setLoadingComplete] = React.useState(false);
   const [initialNavigationState, setInitialNavigationState] = React.useState();
   const containerRef = React.useRef();
@@ -84,3 +84,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
 });
+
+export default App;
