@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { ScrollView, Text, StyleSheet } from 'react-native';
 
 const Credits = (props) => {
@@ -22,8 +21,6 @@ const Credits = (props) => {
     </ScrollView>
   );
 };
-
-Credits.propTypes = {};
 
 const styles = StyleSheet.create({
   container: {

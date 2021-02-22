@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { ScrollView, Text, StyleSheet } from 'react-native';
 
 const HowToUseAppScreen = (props) => {
@@ -19,8 +18,6 @@ const HowToUseAppScreen = (props) => {
     </ScrollView>
   );
 };
-
-HowToUseAppScreen.propTypes = {};
 
 const styles = StyleSheet.create({
   container: {

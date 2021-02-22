@@ -1,28 +1,17 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {
   FlatList,
-  ScrollView,
   StyleSheet,
   Text,
   TouchableOpacity,
   View
 } from 'react-native';
-import { ListItem } from 'react-native-elements';
 import { Movies } from '../constants/MediaData';
 
 const symptoms = [...Movies, { name: null, screen: null,  title: '' },];
 
-const chevronProps = {
-  color: '#fff',
-  size: 28,
-};
-
 const CardScreen = (props) => {
   const { navigation } = props;
-  // static navigationOptions = {
-  //   title: 'Links',
-  // };
 
   return (
     <View style={styles.container}>
@@ -31,12 +20,14 @@ const CardScreen = (props) => {
         renderItem={({ item }) => (
           <TouchableOpacity
             style={styles.listItem}
-            onPress={() => navigation.navigate(item.screen, {
-              title: item.title,
-              name: item.name,
-              description: item.description,
-              playlist: item.playlist
-            })}
+            onPress={() => {
+              navigation.navigate(item.screen, {
+                title: item.title,
+                name: item.name,
+                description: item.description,
+                playlist: item.playlist
+              });
+            }}
           >
             <Text style={styles.listText}>
               {item.title}
@@ -51,12 +42,6 @@ const CardScreen = (props) => {
       />
     </View>
   );
-};
-
-CardScreen.propTypes = {
-  navigation: PropTypes.shape({
-    navigate: PropTypes.func,
-  }).isRequired,
 };
 
 const styles = StyleSheet.create({

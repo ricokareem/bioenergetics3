@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {
   ScrollView,
   StyleSheet,
@@ -8,16 +7,8 @@ import {
 import { ListItem } from 'react-native-elements';
 import { Playlists } from '../constants/MediaData';
 
-const chevronProps = {
-  color: '#fff',
-  size: 28,
-};
-
 const ReferenceGuideScreen = (props) => {
   const { navigation } = props;
-  // static navigationOptions = {
-  //   title: 'Links',
-  // };
 
   return (
     <View style={styles.container}>
@@ -25,26 +16,20 @@ const ReferenceGuideScreen = (props) => {
         {Playlists.map((item, index) => (
           <ListItem
             key={index}
-            title={item.title}
             containerStyle={styles.listItem}
-            titleStyle={styles.listText}
             onPress={() => navigation.navigate(item.screen, {
               title: item.title,
               playlist: item.movieIds
             })}
             bottomDivider
-            chevron={chevronProps}
-          />
+          >
+            <ListItem.Title style={styles.listText}>{item.title}</ListItem.Title>
+            <ListItem.Chevron color='#fff' size={28} />
+          </ListItem>
         ))}
       </ScrollView>
     </View>
   );
-};
-
-ReferenceGuideScreen.propTypes = {
-  navigation: PropTypes.shape({
-    navigate: PropTypes.func,
-  }).isRequired,
 };
 
 const styles = StyleSheet.create({

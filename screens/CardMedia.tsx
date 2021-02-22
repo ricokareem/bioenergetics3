@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { ScrollView, Text, StyleSheet } from 'react-native';
 import { Card, Button, Icon } from 'react-native-elements';
 import { Asset } from 'expo-asset';
@@ -73,9 +72,9 @@ const CardMedia = (props) => {
 
   return (
     <ScrollView style={styles.container}>
-      <Card
-        title={title}
-      >
+      <Card>
+        <Card.Title>{title}</Card.Title>
+        <Card.Divider />
         <Video
           source={{ uri: chosenVideoURI }}
           rate={1.0}
@@ -97,14 +96,6 @@ const CardMedia = (props) => {
       </Card>
     </ScrollView>
   );
-};
-
-CardMedia.propTypes = {
-  route: PropTypes.shape({
-    key: PropTypes.string,
-    name: PropTypes.string,
-    params: PropTypes.object,
-  }),
 };
 
 const styles = StyleSheet.create({
