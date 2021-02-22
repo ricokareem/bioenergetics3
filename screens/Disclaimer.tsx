@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { ScrollView, Text, StyleSheet } from 'react-native';
 
 const Disclaimer = (props) => {
@@ -23,8 +22,6 @@ const Disclaimer = (props) => {
     </ScrollView>
   );
 };
-
-Disclaimer.propTypes = {};
 
 const styles = StyleSheet.create({
   container: {

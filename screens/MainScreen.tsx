@@ -1,9 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { View, ScrollView, StyleSheet } from 'react-native';
+import { View, ScrollView, StyleSheet, Text } from 'react-native';
 import { ListItem } from 'react-native-elements';
-
-const RolandStar = () => <Text style={styles.starLogo}>✸</Text>;
 
 const group1 = [
   { name: 'Cards', title: 'HEALING SEQUENCES' },
@@ -18,16 +15,8 @@ const group2 = [
   { name: 'AboutHealingTechniques', title: 'ABOUT THE HEALING TECHNIQUES' },
 ];
 
-const chevronProps = {
-  color: '#fff',
-  size: 28,
-};
-
 const MainMenuList = (props) => {
   const { navigation } = props;
-  const navigationOptions = {
-    headerLeft: RolandStar,
-  };
 
   return (
     <View style={styles.container}>
@@ -35,34 +24,28 @@ const MainMenuList = (props) => {
         {group1.map((item, index) => (
           <ListItem
             key={index}
-            title={item.title}
             containerStyle={styles.listItemRed}
-            titleStyle={styles.listText}
             onPress={() => navigation.navigate(item.name)}
             bottomDivider
-            chevron={chevronProps}
-          />
+          >
+            <ListItem.Title style={styles.listText}>{item.title}</ListItem.Title>
+            <ListItem.Chevron color='#fff' size={28} />
+          </ListItem>
         ))}
         {group2.map((item, index) => (
           <ListItem
             key={index}
-            title={item.title}
             containerStyle={styles.listItem}
-            titleStyle={styles.listText}
             onPress={() => navigation.navigate(item.name)}
             bottomDivider
-            chevron={chevronProps}
-          />
+          >
+            <ListItem.Title style={styles.listText}>{item.title}</ListItem.Title>
+            <ListItem.Chevron color='#fff' size={28} />
+          </ListItem>
         ))}
       </ScrollView>
     </View>
   );
-};
-
-MainMenuList.propTypes = {
-  navigation: PropTypes.shape({
-    navigate: PropTypes.func,
-  }).isRequired,
 };
 
 const styles = StyleSheet.create({

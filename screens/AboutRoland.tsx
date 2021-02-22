@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { ScrollView, Text, StyleSheet } from 'react-native';
 
 const AboutRoland = (props) => {
@@ -25,8 +24,6 @@ const AboutRoland = (props) => {
     </ScrollView>
   );
 };
-
-AboutRoland.propTypes = {};
 
 const styles = StyleSheet.create({
   container: {

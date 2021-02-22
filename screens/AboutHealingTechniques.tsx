@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { ScrollView, Text, StyleSheet } from 'react-native';
 
 const AboutHealingTechniques = (props) => {
@@ -51,8 +50,6 @@ const AboutHealingTechniques = (props) => {
     </ScrollView>
   );
 };
-
-AboutHealingTechniques.propTypes = {};
 
 const styles = StyleSheet.create({
   container: {

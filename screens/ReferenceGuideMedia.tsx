@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { ScrollView, Text, StyleSheet } from 'react-native';
 import { Card, Button, Icon } from 'react-native-elements';
 import { Video } from 'expo-av';
@@ -9,14 +8,12 @@ const ReferenceGuideMedia = (props) => {
   const { route } = props;
   const { title, playlist } = route.params;
 
-  const movieMap = playlist.map(movieId => Movies.find(movie.id));
-  console.log('*****', movieMap);
+  const movieMap = playlist.map(movie => Movies.find(movie.id));
 
   return (
     <ScrollView style={styles.container}>
-      <Card
-        title={title}
-      >
+      <Card>
+        <Card.Title>{title}</Card.Title>
         {movieMap.map(movie => (
           <>
             <Video
@@ -37,14 +34,6 @@ const ReferenceGuideMedia = (props) => {
       </Card>
     </ScrollView>
   );
-};
-
-ReferenceGuideMedia.propTypes = {
-  route: PropTypes.shape({
-    key: PropTypes.string,
-    name: PropTypes.string,
-    params: PropTypes.object,
-  }),
 };
 
 const styles = StyleSheet.create({

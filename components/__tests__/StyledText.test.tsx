@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
-import { MonoText } from '../../components/StyledText';
+import { MonoText } from '../StyledText';
 
 describe('<MonoText>', () => {
   describe('Rendering', () => {

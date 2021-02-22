@@ -11,12 +11,14 @@ export default function LinksScreen() {
         icon="md-school"
         label="Read the Expo documentation"
         onPress={() => WebBrowser.openBrowserAsync('https://docs.expo.io')}
+        isLastOption={false}
       />
 
       <OptionButton
         icon="md-compass"
         label="Read the React Navigation documentation"
         onPress={() => WebBrowser.openBrowserAsync('https://reactnavigation.org')}
+        isLastOption={false}
       />
 
       <OptionButton
@@ -36,7 +38,7 @@ function OptionButton({ icon, label, onPress, isLastOption }) {
         <View style={styles.optionIconContainer}>
           <Ionicons name={icon} size={22} color="rgba(0,0,0,0.35)" />
         </View>
-        <View style={styles.optionTextContainer}>
+        <View>
           <Text style={styles.optionText}>{label}</Text>
         </View>
       </View>

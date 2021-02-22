@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { ScrollView, Text, StyleSheet } from 'react-native';
 
 const BeginningHealingSessionScreen = (props) => {
@@ -43,8 +42,6 @@ const BeginningHealingSessionScreen = (props) => {
     </ScrollView>
   );
 };
-
-BeginningHealingSessionScreen.propTypes = {};
 
 const styles = StyleSheet.create({
   container: {
