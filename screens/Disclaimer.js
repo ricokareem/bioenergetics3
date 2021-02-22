@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { ScrollView, Text, StyleSheet } from "react-native";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { ScrollView, Text, StyleSheet } from 'react-native';
 
 const Disclaimer = (props) => {
   return (
-  <ScrollView style={styles.container}>
-    <Text>Disclaimer</Text>
-    <Text>
+    <ScrollView style={styles.container}>
+      <Text>Disclaimer</Text>
+      <Text>
       The information presented herein is in no way intended as
       medical advice or to serve as a substitute for medical
       counseling.  The information should be used in conjunction with
@@ -19,8 +19,8 @@ const Disclaimer = (props) => {
       against rolandhealinghands.com or Roland Yakoubov Bioenergetic Healing,
       its employees or representatives, as the result of the use of
       such information.
-    </Text>
-  </ScrollView>
+      </Text>
+    </ScrollView>
   );
 };
 
@@ -28,7 +28,7 @@ Disclaimer.propTypes = {};
 
 const styles = StyleSheet.create({
   container: {
-  flex: 1,
+    flex: 1,
   // backgroundColor: '#fc9829',
   },
   // listItem: {

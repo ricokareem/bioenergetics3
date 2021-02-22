@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { ScrollView, Text, StyleSheet } from "react-native";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { ScrollView, Text, StyleSheet } from 'react-native';
 
 const Social = (props) => {
   return (
-  <ScrollView style={styles.container}>
-  <Text>Follow Us</Text>
-  <Text>
+    <ScrollView style={styles.container}>
+      <Text>Follow Us</Text>
+      <Text>
     a(href="https://m.facebook.com/RolandHealing" target="_blank" onclick="window.open('https://m.facebook.com/RolandHealing', '_blank', 'location=yes'); return false;")
         i(class='fa fa-facebook-square')
         | RolandHealing
@@ -18,8 +18,8 @@ const Social = (props) => {
     a(href="http://rolandyakoubov.tumblr.com/mobile" target="_blank" onclick="window.open('http://rolandyakoubov.tumblr.com/mobile', '_blank', 'location=yes'); return false;")
         i(class='fa fa-tumblr-square')
         | RolandYakoubov
-  </Text>
-  </ScrollView>
+      </Text>
+    </ScrollView>
   );
 };
 
@@ -27,7 +27,7 @@ Social.propTypes = {};
 
 const styles = StyleSheet.create({
   container: {
-  flex: 1,
+    flex: 1,
   // backgroundColor: '#fc9829',
   },
   // listItem: {

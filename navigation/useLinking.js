@@ -1,19 +1,19 @@
-import { useLinking } from "@react-navigation/native";
-import { Linking } from "expo";
+import { useLinking } from '@react-navigation/native';
+import { Linking } from 'expo';
 
 export default function (containerRef) {
-    return useLinking(containerRef, {
-        prefixes: [Linking.makeUrl("/")],
-        config: {
-            Root: {
-                path: "root",
-                screens: {
-                    Main: "main",
-                    Cards: "cards",
-                    ReferenceGuide: "referenceGuide",
-                    Info: "info",
-                },
-            },
+  return useLinking(containerRef, {
+    prefixes: [Linking.makeUrl('/')],
+    config: {
+      Root: {
+        path: 'root',
+        screens: {
+          Main: 'main',
+          Cards: 'cards',
+          ReferenceGuide: 'referenceGuide',
+          Info: 'info',
         },
-    });
+      },
+    },
+  });
 }

@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { ScrollView, Text, StyleSheet } from "react-native";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { ScrollView, Text, StyleSheet } from 'react-native';
 
 const Credits = (props) => {
   return (
-  <ScrollView style={styles.container}>
-  <Text>Credits</Text>
-  <Text>
+    <ScrollView style={styles.container}>
+      <Text>Credits</Text>
+      <Text>
     dl
     dt Lead Designer
       dd Sal Camacho
@@ -18,8 +18,8 @@ const Credits = (props) => {
       dd Danny Deschamps
     dt Audio Recording and Music
       dd Ricky Godinez
-  </Text>
-  </ScrollView>
+      </Text>
+    </ScrollView>
   );
 };
 
@@ -27,7 +27,7 @@ Credits.propTypes = {};
 
 const styles = StyleSheet.create({
   container: {
-  flex: 1,
+    flex: 1,
   // backgroundColor: '#fc9829',
   },
   // listItem: {

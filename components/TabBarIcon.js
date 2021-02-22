@@ -16,6 +16,6 @@ const TabBarIcon = (props) => {
       color={tabIconColor}
     />
   );
-}
+};
 
 export default TabBarIcon;

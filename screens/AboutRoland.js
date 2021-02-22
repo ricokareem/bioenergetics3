@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { ScrollView, Text, StyleSheet } from "react-native";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { ScrollView, Text, StyleSheet } from 'react-native';
 
 const AboutRoland = (props) => {
   return (
@@ -30,7 +30,7 @@ AboutRoland.propTypes = {};
 
 const styles = StyleSheet.create({
   container: {
-  flex: 1,
+    flex: 1,
   // backgroundColor: '#fc9829',
   },
   // listItem: {

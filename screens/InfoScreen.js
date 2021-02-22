@@ -15,9 +15,9 @@ const symptoms = [
 ];
 
 const chevronProps = {
-  color: "#fff",
+  color: '#fff',
   size: 28,
-}
+};
 
 const InfoScreen = (props) => {
   const { navigation } = props;
@@ -42,7 +42,7 @@ const InfoScreen = (props) => {
       </ScrollView>
     </View>
   );
-}
+};
 
 InfoScreen.propTypes = {
   navigation: PropTypes.shape({
