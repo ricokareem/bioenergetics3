@@ -8,16 +8,16 @@ const ReferenceGuideMedia = (props) => {
   const { route } = props;
   const { title, playlist } = route.params;
 
-  const movieMap = playlist.map(movie => Movies.find(movie.id));
+  const moviePlaylist = playlist.map(movieId => Movies.find(movie => movie.id === movieId));
 
   return (
     <ScrollView style={styles.container}>
       <Card>
         <Card.Title>{title}</Card.Title>
-        {movieMap.map(movie => (
+        {moviePlaylist.map(movie => (
           <>
             <Video
-              // source={require(`../media/${movie.file}`)}
+              source={require(`../media/${movie.file}`)}
               rate={1.0}
               volume={1.0}
               isMuted={false}

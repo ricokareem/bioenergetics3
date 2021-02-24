@@ -2,7 +2,6 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import * as React from 'react';
 
 import TabBarIcon from '../components/TabBarIcon';
-
 import MainScreen from '../screens/MainScreen';
 import CardsScreen from '../screens/CardScreen';
 import ReferenceGuideScreen from '../screens/ReferenceGuideScreen';
@@ -60,13 +59,13 @@ function getHeaderTitle(route) {
   const routeName = route.state?.routes[route.state.index]?.name ?? INITIAL_ROUTE_NAME;
 
   switch (routeName) {
-    case 'Main':
-      return 'Home';
-    case 'Cards':
-      return 'Card Stack';
-    case 'ReferenceGuide':
-      return 'Symptoms Reference';
-    case 'Info':
-      return 'Info';
+  case 'Main':
+    return 'Home';
+  case 'Cards':
+    return 'Card Stack';
+  case 'ReferenceGuide':
+    return 'Symptoms Reference';
+  case 'Info':
+    return 'Info';
   }
 }
