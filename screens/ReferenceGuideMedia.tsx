@@ -28,7 +28,10 @@ const ReferenceGuideMedia = (props: ReferenceGuideMediaProps) => {
   );
   const [currentMovie, setCurrentMovie] = useState(moviePlaylist[0]);
   const [nextMovieIndex, setMovieIndex] = useState(1);
-  const videoRef = useRef();
+  const videoRef = useRef<Video>();
+
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const videoSourceFile = require(`../media/${currentMovie.file}`);
 
   const onPlaybackStatusUpdate = (playbackStatus) => {
     console.log(playbackStatus);
@@ -55,7 +58,7 @@ const ReferenceGuideMedia = (props: ReferenceGuideMediaProps) => {
         <Card.Title>{title}</Card.Title>
         <Video
           ref={videoRef}
-          source={require(`../media/${currentMovie.file}`)}
+          source={videoSourceFile}
           rate={1.0}
           volume={1.0}
           isMuted={false}
