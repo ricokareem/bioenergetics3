@@ -3,10 +3,11 @@ import { ScrollView, Text, StyleSheet, Route } from "react-native";
 import { Card, Button, Icon } from "react-native-elements";
 import { Video, AVPlaybackStatus } from "expo-av";
 import { Movies } from "../constants/MediaData";
+import VideoSourceFiles from "../constants/VideoSourceFiles";
 
-interface ReferenceGuideMediaProps {
+type ReferenceGuideMediaProps = {
   route: Route;
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -15,7 +16,7 @@ const styles = StyleSheet.create({
   },
   backgroundVideo: {
     width: "100%",
-    height: "40vh",
+    height: "40%",
   },
 });
 
@@ -30,8 +31,7 @@ const ReferenceGuideMedia = (props: ReferenceGuideMediaProps) => {
   const [nextMovieIndex, setMovieIndex] = useState(1);
   const videoRef = useRef<Video>();
 
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const videoSourceFile = require(`../media/${currentMovie.file}`);
+  const videoSourceFile = VideoSourceFiles[currentMovie.file];
 
   const onPlaybackStatusUpdate = (playbackStatus) => {
     console.log(playbackStatus);
