@@ -1,0 +1,7 @@
+.circleci
+.expo
+.expo-shared
+assets
+media
+node_modules
+storybook
