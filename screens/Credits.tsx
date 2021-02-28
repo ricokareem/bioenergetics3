@@ -1,31 +1,10 @@
-import React from 'react';
-import { ScrollView, Text, StyleSheet } from 'react-native';
-
-const Credits = (props) => {
-  return (
-    <ScrollView style={styles.container}>
-      <Text>Credits</Text>
-      <Text>
-    dl
-    dt Lead Designer
-      dd Sal Camacho
-    dt Lead Software Developer
-      dd Rico Rodriquez Collins
-    dt Model
-      dd Stephanie Markel
-    dt Camera DP
-      dd Danny Deschamps
-    dt Audio Recording and Music
-      dd Ricky Godinez
-      </Text>
-    </ScrollView>
-  );
-};
+import React from "react";
+import { ScrollView, Text, StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  // backgroundColor: '#fc9829',
+    // backgroundColor: '#fc9829',
   },
   // listItem: {
   //   backgroundColor: '#fc9829',
@@ -47,5 +26,18 @@ const styles = StyleSheet.create({
   //   color: '#fff',
   // },
 });
+
+const Credits = (props) => {
+  return (
+    <ScrollView style={styles.container}>
+      <Text>Credits</Text>
+      <Text>
+        dl dt Lead Designer dd Sal Camacho dt Lead Software Developer dd Rico
+        Rodriquez Collins dt Model dd Stephanie Markel dt Camera DP dd Danny
+        Deschamps dt Audio Recording and Music dd Ricky Godinez
+      </Text>
+    </ScrollView>
+  );
+};
 
 export default Credits;
