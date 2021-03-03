@@ -4,7 +4,7 @@ import App from "../App";
 
 describe("<App>", () => {
   it("should match to snapshot", () => {
-    const wrapper = shallow(<App />);
+    const wrapper = shallow(<App skipLoadingScreen />);
     expect(wrapper).toMatchSnapshot();
   });
 });

@@ -4,7 +4,7 @@ import CardScreen from "../CardScreen";
 
 describe("<CardScreen>", () => {
   it("should match to snapshot", () => {
-    const wrapper = shallow(<CardScreen />);
+    const wrapper = shallow(<CardScreen navigation={{ id: "test" }} />);
     expect(wrapper).toMatchSnapshot();
   });
 });
