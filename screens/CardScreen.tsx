@@ -1,6 +1,7 @@
 import React from "react";
 import {
   FlatList,
+  ListRenderItemInfo,
   Route,
   StyleSheet,
   Text,
@@ -12,6 +13,12 @@ import { Movies } from "../constants/MediaData";
 type NavPropsType = {
   navigation: Route;
 };
+
+interface ItemType extends ListRenderItemInfo<any> {
+  description: string;
+  playlist: number[];
+  subheading: string;
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -48,7 +55,7 @@ const CardScreen = (props: NavPropsType) => {
     <View style={styles.container}>
       <FlatList
         data={symptoms}
-        renderItem={({ item }) => (
+        renderItem={({ item }: ItemType) => (
           <TouchableOpacity
             style={styles.listItem}
             onPress={() => {
@@ -65,7 +72,7 @@ const CardScreen = (props: NavPropsType) => {
           </TouchableOpacity>
         )}
         numColumns={2}
-        keyExtractor={(item, index) => index}
+        keyExtractor={(item, index) => `${index}_${item.name}`}
       />
     </View>
   );
