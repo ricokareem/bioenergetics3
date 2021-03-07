@@ -1,5 +1,5 @@
 import React from "react";
-import { View, ScrollView, StyleSheet, Text, Route } from "react-native";
+import { View, ScrollView, StyleSheet, Route } from "react-native";
 import { ListItem } from "react-native-elements";
 
 type NavPropsType = {
@@ -52,15 +52,15 @@ const group2 = [
   { name: "AboutHealingTechniques", title: "ABOUT THE HEALING TECHNIQUES" },
 ];
 
-const MainMenuList = (props: NavPropsType) => {
+const MainMenuList: React.FC<NavPropsType> = (props) => {
   const { navigation } = props;
 
   return (
     <View style={styles.container}>
       <ScrollView>
-        {group1.map((item, index) => (
+        {group1.map((item) => (
           <ListItem
-            key={index}
+            key={item.name}
             containerStyle={styles.listItemRed}
             onPress={() => navigation.navigate(item.name)}
             bottomDivider
@@ -71,9 +71,9 @@ const MainMenuList = (props: NavPropsType) => {
             <ListItem.Chevron color="#fff" size={28} />
           </ListItem>
         ))}
-        {group2.map((item, index) => (
+        {group2.map((item) => (
           <ListItem
-            key={index}
+            key={item.name}
             containerStyle={styles.listItem}
             onPress={() => navigation.navigate(item.name)}
             bottomDivider

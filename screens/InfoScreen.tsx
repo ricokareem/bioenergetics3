@@ -33,15 +33,15 @@ const symptoms = [
   { name: "Credits", title: "CREDITS" },
 ];
 
-const InfoScreen = (props: NavPropsType) => {
+const InfoScreen: React.FC<NavPropsType> = (props) => {
   const { navigation } = props;
 
   return (
     <View style={styles.container}>
       <ScrollView>
-        {symptoms.map((item, index) => (
+        {symptoms.map((item) => (
           <ListItem
-            key={index}
+            key={item.name}
             containerStyle={styles.listItem}
             onPress={() => navigation.navigate(item.name)}
             bottomDivider

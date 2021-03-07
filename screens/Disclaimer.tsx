@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   // },
 });
 
-const Disclaimer = (props) => {
+const Disclaimer: React.FC = () => {
   return (
     <ScrollView style={styles.container}>
       <Text>Disclaimer</Text>

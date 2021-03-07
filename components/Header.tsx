@@ -1,8 +1,5 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-
-// import { NavigationActions } from 'react-navigation';
-
 // import { Icon } from 'expo';
 
 const styles = StyleSheet.create({
@@ -23,16 +20,12 @@ const styles = StyleSheet.create({
   },
 });
 
-function Header(props) {
-  // const backAction = NavigationActions.back();
-
-  // props.navigation.dispatch(backAction);
-
+const Header: React.FC = () => {
   return (
     <View style={styles.header}>
       <Text style={styles.starLogo}>✸</Text>
     </View>
   );
-}
+};
 
 export default Header;

@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   // },
 });
 
-const HowToUseAppScreen = (props) => {
+const HowToUseAppScreen: React.FC = () => {
   return (
     <ScrollView style={styles.container}>
       <Text style={{ marginBottom: 10 }}>How to use this app</Text>

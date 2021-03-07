@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   // },
 });
 
-const Credits = (props) => {
+const Credits: React.FC = () => {
   return (
     <ScrollView style={styles.container}>
       <Text>Credits</Text>

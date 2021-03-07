@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ScrollView, Text, StyleSheet, Route } from "react-native";
-import { Card, Button, Icon } from "react-native-elements";
-import { Video, AVPlaybackStatus } from "expo-av";
+import { Card } from "react-native-elements";
+import { Video } from "expo-av";
 import { Movies } from "../constants/MediaData";
 import VideoSourceFiles from "../constants/VideoSourceFiles";
 
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const ReferenceGuideMedia = (props: ReferenceGuideMediaProps) => {
+const ReferenceGuideMedia: React.FC<ReferenceGuideMediaProps> = (props) => {
   const { route } = props;
   const { title, playlist } = route.params;
 

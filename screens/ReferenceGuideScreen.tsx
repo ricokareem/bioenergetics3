@@ -27,15 +27,15 @@ const styles = StyleSheet.create({
   },
 });
 
-const ReferenceGuideScreen = (props: NavPropsType) => {
+const ReferenceGuideScreen: React.FC<NavPropsType> = (props) => {
   const { navigation } = props;
 
   return (
     <View style={styles.container}>
       <ScrollView>
-        {Playlists.map((item, index) => (
+        {Playlists.map((item) => (
           <ListItem
-            key={index}
+            key={item.id}
             containerStyle={styles.listItem}
             onPress={() =>
               navigation.navigate(item.screen, {

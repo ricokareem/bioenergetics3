@@ -1,9 +1,11 @@
-import {
-  createBottomTabNavigator,
-} from "@react-navigation/bottom-tabs";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import * as React from "react";
-import { NavigationProp, RouteProp } from "@react-navigation/native";
-import { getFocusedRouteNameFromRoute } from "@react-navigation/native";
+import {
+  NavigationProp,
+  RouteProp,
+  getFocusedRouteNameFromRoute,
+} from "@react-navigation/native";
+
 import { Feather } from "@expo/vector-icons";
 import MainScreen from "../screens/MainScreen";
 import CardsScreen from "../screens/CardScreen";
@@ -35,9 +37,7 @@ function getHeaderTitle(route) {
 
 const BottomTab = createBottomTabNavigator();
 
-export default function BottomTabNavigator(
-  props: PropType
-) {
+const BottomTabNavigator: React.FC<PropType> = (props) => {
   const { navigation, route } = props;
   // Set the header title on the parent stack navigator depending on the
   // currently active tab. Learn more in the documentation:
@@ -114,4 +114,6 @@ export default function BottomTabNavigator(
       />
     </BottomTab.Navigator>
   );
-}
+};
+
+export default BottomTabNavigator;

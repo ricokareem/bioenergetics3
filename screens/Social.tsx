@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   // },
 });
 
-const Social = (props) => {
+const Social: React.FC = () => {
   return (
     <ScrollView style={styles.container}>
       <Text>Follow Us</Text>

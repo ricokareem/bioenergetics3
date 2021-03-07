@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   // },
 });
 
-const AboutRoland = (props) => {
+const AboutRoland: React.FC = () => {
   return (
     <ScrollView style={styles.container}>
       <Text>About Roland Yakoubov</Text>

@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const CardMedia = (props: CardMediaProps) => {
+const CardMedia: React.FC<CardMediaProps> = (props) => {
   const { route } = props;
   const { title, name, description } = route.params;
 

@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
 
 const symptoms = [...Movies, { name: null, screen: null, title: "" }];
 
-const CardScreen = (props: NavPropsType) => {
+const CardScreen: React.FC<NavPropsType> = (props) => {
   const { navigation } = props;
 
   return (

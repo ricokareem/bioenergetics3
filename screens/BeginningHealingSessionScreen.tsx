@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   // },
 });
 
-const BeginningHealingSessionScreen = (props) => {
+const BeginningHealingSessionScreen: React.FC = () => {
   return (
     <ScrollView style={styles.container}>
       <Text>Introduction</Text>
