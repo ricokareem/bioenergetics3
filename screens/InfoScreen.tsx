@@ -11,13 +11,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fc9829",
   },
-  listItem: {
-    justifyContent: "space-between",
-    alignItems: "center",
-    borderBottomWidth: 1,
-    borderBottomColor: "#ccc",
-    backgroundColor: "#fc9829",
-  },
   listText: {
     fontSize: 14,
     fontWeight: "bold",
@@ -42,7 +35,13 @@ const InfoScreen: React.FC<NavPropsType> = (props) => {
         {symptoms.map((item) => (
           <ListItem
             key={item.name}
-            containerStyle={styles.listItem}
+            containerStyle={{
+              justifyContent: "space-between",
+              alignItems: "center",
+              borderBottomWidth: 1,
+              borderBottomColor: "#ccc",
+              backgroundColor: "#fc9829",
+            }}
             onPress={() => navigation.navigate(item.name)}
             bottomDivider
           >

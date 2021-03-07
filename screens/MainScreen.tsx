@@ -11,20 +11,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fc9829",
   },
-  listItem: {
-    justifyContent: "space-between",
-    alignItems: "center",
-    borderBottomWidth: 1,
-    borderBottomColor: "#ccc",
-    backgroundColor: "#fc9829",
-  },
-  listItemRed: {
-    justifyContent: "space-between",
-    alignItems: "center",
-    borderBottomWidth: 1,
-    borderBottomColor: "#ccc",
-    backgroundColor: "#fb8400",
-  },
   listText: {
     fontSize: 14,
     fontWeight: "bold",
@@ -61,7 +47,13 @@ const MainMenuList: React.FC<NavPropsType> = (props) => {
         {group1.map((item) => (
           <ListItem
             key={item.name}
-            containerStyle={styles.listItemRed}
+            containerStyle={{
+              justifyContent: "space-between",
+              alignItems: "center",
+              borderBottomWidth: 1,
+              borderBottomColor: "#ccc",
+              backgroundColor: "#fb8400",
+            }}
             onPress={() => navigation.navigate(item.name)}
             bottomDivider
           >
@@ -74,7 +66,13 @@ const MainMenuList: React.FC<NavPropsType> = (props) => {
         {group2.map((item) => (
           <ListItem
             key={item.name}
-            containerStyle={styles.listItem}
+            containerStyle={{
+              justifyContent: "space-between",
+              alignItems: "center",
+              borderBottomWidth: 1,
+              borderBottomColor: "#ccc",
+              backgroundColor: "#fc9829",
+            }}
             onPress={() => navigation.navigate(item.name)}
             bottomDivider
           >

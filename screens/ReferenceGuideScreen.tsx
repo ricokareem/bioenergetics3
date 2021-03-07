@@ -12,13 +12,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fc9829",
   },
-  listItem: {
-    justifyContent: "space-between",
-    alignItems: "center",
-    borderBottomWidth: 1,
-    borderBottomColor: "#ccc",
-    backgroundColor: "#fc9829",
-  },
   listText: {
     fontSize: 14,
     fontWeight: "bold",
@@ -36,7 +29,13 @@ const ReferenceGuideScreen: React.FC<NavPropsType> = (props) => {
         {Playlists.map((item) => (
           <ListItem
             key={item.id}
-            containerStyle={styles.listItem}
+            containerStyle={{
+              justifyContent: "space-between",
+              alignItems: "center",
+              borderBottomWidth: 1,
+              borderBottomColor: "#ccc",
+              backgroundColor: "#fc9829",
+            }}
             onPress={() =>
               navigation.navigate(item.screen, {
                 title: item.title,
