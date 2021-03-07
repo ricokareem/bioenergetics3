@@ -10,8 +10,7 @@ import AppLoading from "expo-app-loading";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
 import BottomTabNavigator from "./navigation/BottomTabNavigator";
-import CardMedia from "./screens/CardMedia";
-import ReferenceGuideMedia from "./screens/ReferenceGuideMedia";
+import MediaScreen from "./screens/MediaScreen";
 import HowToUseAppScreen from "./screens/HowToUseAppScreen";
 import BeginningHealingSessionScreen from "./screens/BeginningHealingSessionScreen";
 import AboutHealingTechniques from "./screens/AboutHealingTechniques";
@@ -47,11 +46,7 @@ export default function App(): JSX.Element {
         <NavigationContainer>
           <Stack.Navigator>
             <Stack.Screen name="Root" component={BottomTabNavigator} />
-            <Stack.Screen name="CardMedia" component={CardMedia} />
-            <Stack.Screen
-              name="ReferenceGuideMedia"
-              component={ReferenceGuideMedia}
-            />
+            <Stack.Screen name="MediaScreen" component={MediaScreen} />
             <Stack.Screen
               name="HowToUseAppScreen"
               component={HowToUseAppScreen}

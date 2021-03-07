@@ -8,7 +8,7 @@ import {
 import { Feather } from "@expo/vector-icons";
 
 import MainScreen from "../screens/MainScreen";
-import CardsScreen from "../screens/CardScreen";
+import CardStackScreen from "../screens/CardStackScreen";
 import ReferenceGuideScreen from "../screens/ReferenceGuideScreen";
 import InfoScreen from "../screens/InfoScreen";
 import Colors from "../constants/Colors";
@@ -66,7 +66,7 @@ const BottomTabNavigator: React.FC<PropType> = (props) => {
       />
       <BottomTab.Screen
         name="Cards"
-        component={CardsScreen}
+        component={CardStackScreen}
         options={{
           tabBarLabel: "Card Stack",
           tabBarIcon: ({ focused }) => (

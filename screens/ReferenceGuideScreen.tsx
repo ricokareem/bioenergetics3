@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, ScrollView, StyleSheet, View } from "react-native";
 import { ListItem } from "react-native-elements";
-import { Playlists } from "../constants/MediaData";
+import { SymptomsPlaylists } from "../constants/MediaData";
 
 type NavPropsType = {
   navigation: Route;
@@ -26,7 +26,7 @@ const ReferenceGuideScreen: React.FC<NavPropsType> = (props) => {
   return (
     <View style={styles.container}>
       <ScrollView>
-        {Playlists.map((item) => (
+        {SymptomsPlaylists.map((item) => (
           <ListItem
             key={item.id}
             containerStyle={{

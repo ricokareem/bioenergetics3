@@ -48,15 +48,15 @@ const styles = StyleSheet.create({
   },
 });
 
-const symptoms = [...Movies, { name: null, screen: null, title: "" }];
+const cardStack = [...Movies].filter((c) => c.playlist && c.playlist.length);
 
-const CardScreen: React.FC<NavPropsType> = (props) => {
+const CardStackScreen: React.FC<NavPropsType> = (props) => {
   const { navigation } = props;
 
   return (
     <View style={styles.container}>
       <FlatList
-        data={symptoms}
+        data={cardStack}
         renderItem={({ item }: ItemType) => (
           <TouchableOpacity
             style={styles.listItem}
@@ -80,4 +80,4 @@ const CardScreen: React.FC<NavPropsType> = (props) => {
   );
 };
 
-export default CardScreen;
+export default CardStackScreen;

@@ -1,10 +1,10 @@
 import React from "react";
 import { shallow } from "enzyme";
-import CardScreen from "../CardScreen";
+import CardStackScreen from "../CardStackScreen";
 
-describe("<CardScreen>", () => {
+describe("<CardStackScreen>", () => {
   it("should match to snapshot", () => {
-    const wrapper = shallow(<CardScreen navigation={{ id: "test" }} />);
+    const wrapper = shallow(<CardStackScreen navigation={{ id: "test" }} />);
     expect(wrapper).toMatchSnapshot();
   });
 });

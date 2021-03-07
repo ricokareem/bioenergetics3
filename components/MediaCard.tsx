@@ -1,28 +1,26 @@
 import React, { useEffect, useRef, useState } from "react";
-import { ScrollView, Text, StyleSheet, Route } from "react-native";
-import { Card } from "react-native-elements";
+import { Text, StyleSheet, Dimensions } from "react-native";
+import { Button, Card, Icon } from "react-native-elements";
 import { Video } from "expo-av";
 import { Movies } from "../constants/MediaData";
 import VideoSourceFiles from "../constants/VideoSourceFiles";
 
-type ReferenceGuideMediaProps = {
-  route: Route;
+type MediaCardProps = {
+  title: any;
+  playlist: any;
 };
 
+const windowWidth = Dimensions.get("window").width;
+
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fc9829",
-  },
   backgroundVideo: {
-    width: "100%",
-    height: "40%",
+    height: windowWidth / 2,
+    marginBottom: 24,
   },
 });
 
-const ReferenceGuideMedia: React.FC<ReferenceGuideMediaProps> = (props) => {
-  const { route } = props;
-  const { title, playlist } = route.params;
+export default function MediaCard(props: MediaCardProps): JSX.Element {
+  const { title, playlist } = props;
 
   const moviePlaylist = playlist.map((playlistMovieId) =>
     Movies.find((movie) => movie.id === playlistMovieId)
@@ -53,24 +51,31 @@ const ReferenceGuideMedia: React.FC<ReferenceGuideMediaProps> = (props) => {
   }, [currentMovie]);
 
   return (
-    <ScrollView style={styles.container}>
-      <Card>
-        <Card.Title>{title}</Card.Title>
-        <Video
-          ref={videoRef}
-          source={videoSourceFile}
-          rate={1.0}
-          volume={1.0}
-          isMuted={false}
-          resizeMode="cover"
-          shouldPlay
-          isLooping={false}
-          style={styles.backgroundVideo}
-        />
-        <Text style={{ marginBottom: 10 }}>{currentMovie.description}</Text>
-      </Card>
-    </ScrollView>
+    <Card>
+      <Card.Title>{title}</Card.Title>
+      <Card.Divider />
+      <Video
+        ref={videoRef}
+        source={videoSourceFile}
+        rate={1.0}
+        volume={1.0}
+        isMuted={false}
+        resizeMode="cover"
+        shouldPlay
+        isLooping={false}
+        style={styles.backgroundVideo}
+      />
+      <Text style={{ marginBottom: 10 }}>{currentMovie.description}</Text>
+      <Button
+        icon={<Icon name="code" color="#ffffff" />}
+        buttonStyle={{
+          borderRadius: 0,
+          marginLeft: 0,
+          marginRight: 0,
+          marginBottom: 0,
+        }}
+        title="NOW"
+      />
+    </Card>
   );
-};
-
-export default ReferenceGuideMedia;
+}

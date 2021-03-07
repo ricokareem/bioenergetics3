@@ -40,14 +40,14 @@ const AboutHealingTechniques: React.FC = () => {
         Science. All of the movements must be performed in precise order.
         Approach the movements, as if the hands were gliding through water and a
         gentle resistance exists. The resistance will slowly increase as you
-        make contact with the patient's energy. The patient's body is
-        seldom actually touched. Instead, the work takes place around the
-        patient in the living energy field. These movements help to reprogram
-        the metabolism and return a healthy calmness to the body. The healer
-        begins the session by positioning a hand on either side of the patient
-        at the hip area. The fingertips are positioned slightly apart, with the
-        fingers and palms gently curved versed, and the entire sequence repeated
-        without stopping for 5 or 6 minutes.
+        make contact with the patient's energy. The patient's body is seldom
+        actually touched. Instead, the work takes place around the patient in
+        the living energy field. These movements help to reprogram the
+        metabolism and return a healthy calmness to the body. The healer begins
+        the session by positioning a hand on either side of the patient at the
+        hip area. The fingertips are positioned slightly apart, with the fingers
+        and palms gently curved versed, and the entire sequence repeated without
+        stopping for 5 or 6 minutes.
       </Text>
       <Text>Preparing the Patient for Energy Healing</Text>
       <Text>
