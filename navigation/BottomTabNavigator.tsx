@@ -5,8 +5,8 @@ import {
   RouteProp,
   getFocusedRouteNameFromRoute,
 } from "@react-navigation/native";
-
 import { Feather } from "@expo/vector-icons";
+
 import MainScreen from "../screens/MainScreen";
 import CardsScreen from "../screens/CardScreen";
 import ReferenceGuideScreen from "../screens/ReferenceGuideScreen";
