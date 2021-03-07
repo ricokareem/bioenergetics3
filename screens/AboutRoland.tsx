@@ -40,7 +40,7 @@ const AboutRoland: React.FC = () => {
         1990's Roland moved to the US to practice his techniques abroad. His
         techniques were instantly acknowledged by major celebrities and
         dignitaries, as they experienced the positive results of his healings.
-        Some of his clients have included Jennifer Lopez, Dustin Hoffman&#39;s
+        Some of his clients have included Jennifer Lopez, Dustin Hoffman's
         mother, Rosanna DeSoto, Matthew Vanleeuwen, the Khashoggi family, as
         well as Princess Diana who Roland was scheduled to meet one week prior
         to her passing.

@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView, Text, StyleSheet, Route } from "react-native";
+import { ScrollView, Text, StyleSheet, Route, Dimensions } from "react-native";
 import { Card, Button, Icon } from "react-native-elements";
 import { Asset } from "expo-asset";
 import { Video } from "expo-av";
@@ -8,14 +8,16 @@ type CardMediaProps = {
   route: Route;
 };
 
+const windowWidth = Dimensions.get("window").width;
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fc9829",
   },
   backgroundVideo: {
-    width: "100%",
-    height: "40%",
+    height: windowWidth / 2,
+    marginBottom: 24,
   },
 });
 

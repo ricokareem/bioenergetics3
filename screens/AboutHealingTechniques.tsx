@@ -40,7 +40,7 @@ const AboutHealingTechniques: React.FC = () => {
         Science. All of the movements must be performed in precise order.
         Approach the movements, as if the hands were gliding through water and a
         gentle resistance exists. The resistance will slowly increase as you
-        make contact with the patient&#39;s energy. The patient&#39;s body is
+        make contact with the patient's energy. The patient's body is
         seldom actually touched. Instead, the work takes place around the
         patient in the living energy field. These movements help to reprogram
         the metabolism and return a healthy calmness to the body. The healer
@@ -62,7 +62,7 @@ const AboutHealingTechniques: React.FC = () => {
         sit down in a comfortable chair. The patient is asked to rest both hands
         on the knees with the palms facing upward. The legs should be uncrossed
         and the feet should be flat on the floor. This is the receiving
-        position. Throughout the session the patient&#39;s hands and feet should
+        position. Throughout the session the patient's hands and feet should
         never cross, but remain still and comfortable in the receiving position.
         Now, gently ask the patient to relax and allow the healing to begin. The
         session requires two chairs, one for the patient and one for the healer.

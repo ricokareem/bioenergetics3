@@ -22,27 +22,29 @@ interface ItemType extends ListRenderItemInfo<any> {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: "#fff",
+    flex: 1,
   },
   listItem: {
     backgroundColor: "#fc9829",
     flex: 1,
     flexDirection: "column",
+    height: 120,
+    justifyContent: "center",
     margin: 1,
     padding: 20,
-    height: 120,
   },
   listText: {
+    color: "#fff",
     fontSize: 12,
     fontWeight: "bold",
     lineHeight: 14,
-    color: "#fff",
   },
   listSubheadingText: {
+    color: "#fff",
     fontSize: 10,
     lineHeight: 12,
-    color: "#fff",
+    marginTop: 5,
   },
 });
 
