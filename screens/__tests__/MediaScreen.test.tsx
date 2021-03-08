@@ -1,11 +1,13 @@
 import React from "react";
 import { shallow } from "enzyme";
-import ReferenceGuideScreen from "../ReferenceGuideScreen";
+import MediaScreen from "../MediaScreen";
 
-describe("<ReferenceGuideScreen>", () => {
+describe("<MediaScreen>", () => {
   it("should match to snapshot", () => {
     const wrapper = shallow(
-      <ReferenceGuideScreen navigation={{ id: "test" }} />
+      <MediaScreen
+        route={{ params: { title: "Media Screen", playlist: [81, 82] } }}
+      />
     );
     expect(wrapper).toMatchSnapshot();
   });
