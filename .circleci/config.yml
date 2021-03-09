@@ -10,7 +10,13 @@ jobs:
       - node/with-cache:
           steps:
             - run: yarn
-            - run: yarn test
+            - run:
+                name: "Run Jest and Collect Coverage Reports"
+                command: yarn test --collectCoverage=true
+            - store_test_results:
+                path: test-results
+            - store_artifacts:
+                path: coverage
 workflows:
     build-and-test:
       jobs:
