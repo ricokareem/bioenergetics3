@@ -37,7 +37,7 @@
     "expo-asset": "~8.2.2",
     "expo-av": "~9.0.0",
     "expo-constants": "~10.0.1",
-    "expo-font": "~9.0.0",
+    "expo-font": "~8.4.0",
     "expo-web-browser": "~9.0.0",
     "react": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
