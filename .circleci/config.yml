@@ -11,12 +11,8 @@ jobs:
           steps:
             - run: yarn
             - run:
-                name: "Run Jest and Collect Coverage Reports"
-                command: yarn test --collectCoverage=true
-            - store_test_results:
-                path: test-results
-            - store_artifacts:
-                path: coverage
+                name: "Run Jest"
+                command: yarn test
 workflows:
     build-and-test:
       jobs:
