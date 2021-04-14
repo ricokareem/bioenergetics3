@@ -35,6 +35,16 @@
       "js"
     ]
   },
+  "detox": {
+    "test-runner": "jest",
+    "configurations": {
+      "ios.sim": {
+        "binaryPath": "bin/Exponent.app",
+        "type": "ios.simulator",
+        "name": "iPhone 11"
+      }
+    }
+  },
   "dependencies": {
     "@expo/vector-icons": "^13.0.0",
     "@expo/webpack-config": "^0.17.3",
@@ -93,6 +103,7 @@
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "4.6.0",
     "expo-detox-hook": "^1.0.10",
+    "jest-circus": "^26.6.3",
     "jest-expo": "^46.0.1",
     "jest-junit": "^14.0.1",
     "prettier": "^2.8.1",
