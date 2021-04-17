@@ -6946,10 +6946,21 @@ expo-application@~2.4.1:
   resolved "https://registry.yarnpkg.com/expo-application/-/expo-application-2.4.1.tgz#f8eb4a3a05a0b8a8f38f2e981f587a815945b685"
   integrity sha512-VHDvXz55LIYdLoE1aR0AFycB1jz4ggbMToUbKAbCEjro+PdUNm/Gj8gQeFgH6wL2oAztQH4qJ+uiOwrw8SFK+Q==
 
-expo-asset@~8.2.1, expo-asset@~8.2.2:
+expo-asset@~8.2.1:
   version "8.2.2"
   resolved "https://registry.yarnpkg.com/expo-asset/-/expo-asset-8.2.2.tgz#2b24faccfb7d895097623317bb0555901bbc4e7c"
   integrity sha512-Ckiok7BFB6WjKNifa1b3mx2zGY8DnV2CttSQMTnMd6+0EOx1qOMsZDNkryJVpVOtpAetCdHWd5s9f2CdmosowA==
+  dependencies:
+    blueimp-md5 "^2.10.0"
+    invariant "^2.2.4"
+    md5-file "^3.2.3"
+    path-browserify "^1.0.0"
+    url-parse "^1.4.4"
+
+expo-asset@~8.3.1:
+  version "8.3.1"
+  resolved "https://registry.yarnpkg.com/expo-asset/-/expo-asset-8.3.1.tgz#0779c8b4ae199ec8366d1d00671af37caf6dbfc1"
+  integrity sha512-NZVOa4/jF8fmFhY5Clmfuo0Fq7NPhFSp6+J/j/16K0fjWOAJT0dVUcwXLGXDgtTB9Rv/t22r2m3DmKlPtYi48g==
   dependencies:
     blueimp-md5 "^2.10.0"
     invariant "^2.2.4"
