@@ -1,0 +1,51 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "13:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: react-native-web
+    versions:
+    - 0.14.11
+    - 0.14.12
+    - 0.15.1
+    - 0.15.7
+  - dependency-name: expo-font
+    versions:
+    - 9.0.0
+    - 9.1.0
+  - dependency-name: "@storybook/addon-actions"
+    versions:
+    - 6.1.18
+    - 6.1.19
+    - 6.2.1
+    - 6.2.3
+    - 6.2.5
+  - dependency-name: "@storybook/addon-links"
+    versions:
+    - 6.1.18
+    - 6.1.19
+    - 6.2.3
+    - 6.2.5
+  - dependency-name: typescript
+    versions:
+    - 4.2.3
+  - dependency-name: "@babel/core"
+    versions:
+    - 7.12.13
+    - 7.13.13
+  - dependency-name: eslint-plugin-react
+    versions:
+    - 7.23.0
+  - dependency-name: react-native-safe-area-context
+    versions:
+    - 3.2.0
+  - dependency-name: react-native-gesture-handler
+    versions:
+    - 1.10.0
+  - dependency-name: "@babel/preset-typescript"
+    versions:
+    - 7.12.13
