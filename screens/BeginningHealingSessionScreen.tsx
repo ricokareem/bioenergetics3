@@ -57,11 +57,12 @@ const BeginningHealingSessionScreen: React.FC = () => {
         sit down in a comfortable chair. The patient is asked to rest both hands
         on the knees with the palms facing upward. The legs should be uncrossed
         and the feet should be flat on the floor. This is the receiving
-        position. Throughout the session the patient's hands and feet should
-        never cross, but remain still and comfortable in the receiving position.
-        Now, gently ask the patient to relax and allow the healing to begin. The
-        session requires two chairs, one for the patient and one for the healer.
-        After both healer and patient are seated the work of healing begins.
+        position. Throughout the session the patient&apos;s hands and feet
+        should never cross, but remain still and comfortable in the receiving
+        position. Now, gently ask the patient to relax and allow the healing to
+        begin. The session requires two chairs, one for the patient and one for
+        the healer. After both healer and patient are seated the work of healing
+        begins.
       </Text>
     </ScrollView>
   );

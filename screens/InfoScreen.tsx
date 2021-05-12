@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { Route, ScrollView, StyleSheet, View } from "react-native";
 import { ListItem } from "react-native-elements";
 
@@ -26,9 +26,7 @@ const symptoms = [
   { name: "Credits", title: "CREDITS" },
 ];
 
-const InfoScreen: React.FC<NavPropsType> = (props) => {
-  const { navigation } = props;
-
+function InfoScreen({ navigation }: NavPropsType): ReactElement {
   return (
     <View style={styles.container}>
       <ScrollView>
@@ -54,6 +52,6 @@ const InfoScreen: React.FC<NavPropsType> = (props) => {
       </ScrollView>
     </View>
   );
-};
+}
 
 export default InfoScreen;

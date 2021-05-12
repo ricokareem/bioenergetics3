@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { View, ScrollView, StyleSheet, Route } from "react-native";
 import { ListItem } from "react-native-elements";
 
@@ -38,9 +38,7 @@ const group2 = [
   { name: "AboutHealingTechniques", title: "ABOUT THE HEALING TECHNIQUES" },
 ];
 
-const MainMenuList: React.FC<NavPropsType> = (props) => {
-  const { navigation } = props;
-
+function MainMenuList({ navigation }: NavPropsType): ReactElement {
   return (
     <View style={styles.container}>
       <ScrollView>
@@ -85,6 +83,6 @@ const MainMenuList: React.FC<NavPropsType> = (props) => {
       </ScrollView>
     </View>
   );
-};
+}
 
 export default MainMenuList;

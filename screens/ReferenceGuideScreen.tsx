@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { Route, ScrollView, StyleSheet, View } from "react-native";
 import { ListItem } from "react-native-elements";
 import { SymptomsPlaylists } from "../constants/MediaData";
@@ -20,9 +20,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const ReferenceGuideScreen: React.FC<NavPropsType> = (props) => {
-  const { navigation } = props;
-
+function ReferenceGuideScreen({ navigation }: NavPropsType): ReactElement {
   return (
     <View style={styles.container}>
       <ScrollView>
@@ -53,6 +51,6 @@ const ReferenceGuideScreen: React.FC<NavPropsType> = (props) => {
       </ScrollView>
     </View>
   );
-};
+}
 
 export default ReferenceGuideScreen;

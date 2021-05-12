@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { ScrollView, StyleSheet, Route } from "react-native";
 import MediaCard from "../components/MediaCard";
 
@@ -13,8 +13,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const MediaScreen: React.FC<MediaScreenProps> = (props) => {
-  const { route } = props;
+function MediaScreen({ route }: MediaScreenProps): ReactElement {
   const { title, playlist } = route.params;
 
   return (
@@ -22,6 +21,6 @@ const MediaScreen: React.FC<MediaScreenProps> = (props) => {
       <MediaCard title={title} playlist={playlist} />
     </ScrollView>
   );
-};
+}
 
 export default MediaScreen;

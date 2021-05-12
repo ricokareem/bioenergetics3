@@ -7,6 +7,7 @@ import {
 } from "@react-navigation/native";
 import { Feather } from "@expo/vector-icons";
 
+import { ReactElement } from "react";
 import MainScreen from "../screens/MainScreen";
 import CardStackScreen from "../screens/CardStackScreen";
 import ReferenceGuideScreen from "../screens/ReferenceGuideScreen";
@@ -37,8 +38,7 @@ function getHeaderTitle(route) {
 
 const BottomTab = createBottomTabNavigator();
 
-const BottomTabNavigator: React.FC<PropType> = (props) => {
-  const { navigation, route } = props;
+function BottomTabNavigator({ navigation, route }: PropType): ReactElement {
   // Set the header title on the parent stack navigator depending on the
   // currently active tab. Learn more in the documentation:
   // https://reactnavigation.org/docs/en/screen-options-resolution.html
@@ -114,6 +114,6 @@ const BottomTabNavigator: React.FC<PropType> = (props) => {
       />
     </BottomTab.Navigator>
   );
-};
+}
 
 export default BottomTabNavigator;

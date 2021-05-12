@@ -26,9 +26,11 @@
         "@typescript-eslint",
         "react",
         "prettier"
-    ]
-//    "rules": {
-//        "indent": [
+    ],
+    "rules": {
+        "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
+
+        //        "indent": [
 //            "error",
 //            2
 //        ],
@@ -44,5 +46,5 @@
 //            "error",
 //            "always"
 //        ]
-//    }
+    }
 }

@@ -19,9 +19,10 @@ const styles = StyleSheet.create({
   },
 });
 
-export default function MediaCard(props: MediaCardProps): JSX.Element {
-  const { title, playlist } = props;
-
+export default function MediaCard({
+  title,
+  playlist,
+}: MediaCardProps): JSX.Element {
   const moviePlaylist = playlist.map((playlistMovieId) =>
     Movies.find((movie) => movie.id === playlistMovieId)
   );
