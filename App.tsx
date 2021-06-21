@@ -2,10 +2,12 @@
 
 import React from "react";
 import { Platform, StatusBar, StyleSheet, View } from "react-native";
-import { Ionicons, Feather } from "@expo/vector-icons";
+import Ionicons from "@expo/vector-icons/Ionicons";
+import Feather from "@expo/vector-icons/Feather";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import * as Font from "expo-font";
+import { useFonts } from 'expo-font';
+
 import AppLoading from "expo-app-loading";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
@@ -29,14 +31,14 @@ const styles = StyleSheet.create({
 const Stack = createStackNavigator();
 
 export default function App(): JSX.Element {
-  const [fontsLoaded] = Font.useFonts({
+  const [fontsLoaded] = useFonts({
     ...Ionicons.font,
     ...Feather.font,
     // "SpaceMono-Regular": require("./assets/fonts/SpaceMono-Regular.ttf"),
   });
 
   if (!fontsLoaded) {
-    return <AppLoading />;
+    return null;
   }
 
   return (
