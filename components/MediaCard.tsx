@@ -9,6 +9,7 @@ import VideoSourceFiles from "../constants/VideoSourceFiles";
 type MediaCardProps = {
   title: any;
   playlist: any;
+  showTimer: boolean;
 };
 
 const windowWidth = Dimensions.get("window").width;
@@ -20,16 +21,17 @@ const styles = StyleSheet.create({
   },
 });
 
-const children = ({ remainingTime }) => {
+const timeDisplay = ({ remainingTime }) => {
   const minutes = Math.floor(remainingTime / 60);
   const seconds = remainingTime % 60;
 
-  return `${minutes}:${seconds}`;
+  return `${minutes} min : ${seconds} sec`;
 };
 
 export default function MediaCard({
   title,
   playlist,
+  showTimer,
 }: MediaCardProps): JSX.Element {
   const moviePlaylist = playlist.map((playlistMovieId) =>
     Movies.find((movie) => movie.id === playlistMovieId)
@@ -75,21 +77,23 @@ export default function MediaCard({
         style={styles.backgroundVideo}
       />
       <Text style={{ marginBottom: 10 }}>{currentMovie.description}</Text>
-      <CountdownCircleTimer
-        isPlaying
-        duration={20} // total duration in seconds
-        colors={[
-          ["#004777", 0.4],
-          ["#F7B801", 0.4],
-          ["#A30000", 0.2],
-        ]}
-      >
-        {({ remainingTime, animatedColor }) => (
-          <Animated.Text style={{ color: animatedColor }}>
-            {children({ remainingTime })}
-          </Animated.Text>
-        )}
-      </CountdownCircleTimer>
+      {!!showTimer && (
+        <CountdownCircleTimer
+          isPlaying
+          duration={180} // total duration in seconds
+          colors={[
+            ["#004777", 0.4],
+            ["#F7B801", 0.4],
+            ["#A30000", 0.2],
+          ]}
+        >
+          {({ remainingTime, animatedColor }) => (
+            <Animated.Text style={{ color: animatedColor }}>
+              {timeDisplay({ remainingTime })}
+            </Animated.Text>
+          )}
+        </CountdownCircleTimer>
+      )}
     </Card>
   );
 }

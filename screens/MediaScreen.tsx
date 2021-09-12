@@ -14,11 +14,11 @@ const styles = StyleSheet.create({
 });
 
 function MediaScreen({ route }: MediaScreenProps): ReactElement {
-  const { title, playlist } = route.params;
+  const { title, playlist, showTimer } = route.params;
 
   return (
     <ScrollView style={styles.container}>
-      <MediaCard title={title} playlist={playlist} />
+      <MediaCard title={title} playlist={playlist} showTimer={showTimer} />
     </ScrollView>
   );
 }

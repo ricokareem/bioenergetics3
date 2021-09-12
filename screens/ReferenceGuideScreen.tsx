@@ -38,6 +38,7 @@ function ReferenceGuideScreen({ navigation }: NavPropsType): ReactElement {
               navigation.navigate(item.screen, {
                 title: item.title,
                 playlist: item.movieIds,
+                showTimer: true,
               })
             }
             bottomDivider
