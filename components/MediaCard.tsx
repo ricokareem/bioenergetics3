@@ -1,7 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Text, StyleSheet, Dimensions, Animated, View } from "react-native";
+import {
+  Text,
+  StyleSheet,
+  Dimensions,
+  Animated,
+  View,
+  TouchableOpacity,
+} from "react-native";
 import { Card } from "react-native-elements";
-import { Video } from "expo-av";
+import { Feather } from "@expo/vector-icons";
+
+import { AVPlaybackStatus, Video } from "expo-av";
 import { CountdownCircleTimer } from "react-native-countdown-circle-timer";
 import { Movies } from "../constants/MediaData";
 import VideoSourceFiles from "../constants/VideoSourceFiles";
@@ -36,6 +45,8 @@ export default function MediaCard({
   const moviePlaylist = playlist.map((playlistMovieId) =>
     Movies.find((movie) => movie.id === playlistMovieId)
   );
+  const [status, setStatus] = useState<any>({});
+  const [isPlaying, setIsPlaying] = useState(true);
   const [currentMovie, setCurrentMovie] = useState(moviePlaylist[0]);
   const [nextMovieIndex, setMovieIndex] = useState(1);
   const videoRef = useRef<Video>();
@@ -43,7 +54,6 @@ export default function MediaCard({
   const videoSourceFile = VideoSourceFiles[currentMovie.file];
 
   const onPlaybackStatusUpdate = (playbackStatus) => {
-    console.log(playbackStatus);
     if (playbackStatus.error) {
       console.log(
         `Encountered a fatal error during playback: ${playbackStatus.error}`
@@ -54,6 +64,13 @@ export default function MediaCard({
       }
       // The player has just finished playing and will stop. Maybe you want to play something else?
     }
+  };
+
+  const onPress = () => {
+    setIsPlaying(!isPlaying);
+    status.isPlaying
+      ? videoRef.current.pauseAsync()
+      : videoRef.current.playAsync();
   };
 
   useEffect(() => {
@@ -73,26 +90,47 @@ export default function MediaCard({
         isMuted={false}
         resizeMode="cover"
         shouldPlay
+        useNativeControls
         isLooping={false}
         style={styles.backgroundVideo}
+        onPlaybackStatusUpdate={(status) => setStatus(status)}
       />
       <Text style={{ marginBottom: 10 }}>{currentMovie.description}</Text>
       {!!showTimer && (
-        <CountdownCircleTimer
-          isPlaying
-          duration={180} // total duration in seconds
-          colors={[
-            ["#004777", 0.4],
-            ["#F7B801", 0.4],
-            ["#A30000", 0.2],
-          ]}
-        >
-          {({ remainingTime, animatedColor }) => (
-            <Animated.Text style={{ color: animatedColor }}>
-              {timeDisplay({ remainingTime })}
-            </Animated.Text>
-          )}
-        </CountdownCircleTimer>
+        <>
+          <CountdownCircleTimer
+            isPlaying={isPlaying}
+            duration={60} // total duration in seconds
+            colors={[
+              ["#004777", 0.4],
+              ["#F7B801", 0.4],
+              ["#A30000", 0.2],
+            ]}
+          >
+            {({ remainingTime, animatedColor }) => (
+              <>
+                <Animated.Text
+                  style={{
+                    color: animatedColor,
+                    fontSize: 20,
+                    margin: 6,
+                  }}
+                >
+                  {timeDisplay({ remainingTime })}
+                </Animated.Text>
+                <View>
+                  <TouchableOpacity onPress={onPress}>
+                    <Feather
+                      name={status.isPlaying ? "pause-circle" : "play-circle"}
+                      // color={animatedColor}
+                      size={48}
+                    />
+                  </TouchableOpacity>
+                </View>
+              </>
+            )}
+          </CountdownCircleTimer>
+        </>
       )}
     </Card>
   );
