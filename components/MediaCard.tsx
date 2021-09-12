@@ -1,13 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Text, StyleSheet, Dimensions } from "react-native";
-import { Button, Card, Icon } from "react-native-elements";
+import { Text, StyleSheet, Dimensions, Animated, View } from "react-native";
+import { Card } from "react-native-elements";
 import { Video } from "expo-av";
+import { CountdownCircleTimer } from "react-native-countdown-circle-timer";
 import { Movies } from "../constants/MediaData";
 import VideoSourceFiles from "../constants/VideoSourceFiles";
 
 type MediaCardProps = {
   title: any;
   playlist: any;
+  showTimer: boolean;
 };
 
 const windowWidth = Dimensions.get("window").width;
@@ -19,9 +21,17 @@ const styles = StyleSheet.create({
   },
 });
 
+const timeDisplay = ({ remainingTime }) => {
+  const minutes = Math.floor(remainingTime / 60);
+  const seconds = remainingTime % 60;
+
+  return `${minutes} min : ${seconds} sec`;
+};
+
 export default function MediaCard({
   title,
   playlist,
+  showTimer,
 }: MediaCardProps): JSX.Element {
   const moviePlaylist = playlist.map((playlistMovieId) =>
     Movies.find((movie) => movie.id === playlistMovieId)
@@ -67,16 +77,23 @@ export default function MediaCard({
         style={styles.backgroundVideo}
       />
       <Text style={{ marginBottom: 10 }}>{currentMovie.description}</Text>
-      <Button
-        icon={<Icon name="code" color="#ffffff" />}
-        buttonStyle={{
-          borderRadius: 0,
-          marginLeft: 0,
-          marginRight: 0,
-          marginBottom: 0,
-        }}
-        title="NOW"
-      />
+      {!!showTimer && (
+        <CountdownCircleTimer
+          isPlaying
+          duration={180} // total duration in seconds
+          colors={[
+            ["#004777", 0.4],
+            ["#F7B801", 0.4],
+            ["#A30000", 0.2],
+          ]}
+        >
+          {({ remainingTime, animatedColor }) => (
+            <Animated.Text style={{ color: animatedColor }}>
+              {timeDisplay({ remainingTime })}
+            </Animated.Text>
+          )}
+        </CountdownCircleTimer>
+      )}
     </Card>
   );
 }
