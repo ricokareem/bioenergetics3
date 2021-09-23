@@ -7007,13 +7007,22 @@ expo-av@~9.1.2:
     nullthrows "^1.1.0"
     unimodules-permissions-interface "~6.1.0"
 
-expo-constants@~11.0.1, expo-constants@~11.0.2:
+expo-constants@~11.0.1:
   version "11.0.2"
   resolved "https://registry.yarnpkg.com/expo-constants/-/expo-constants-11.0.2.tgz#069930145908fef7d76bf72a1a874a1d4621af82"
   integrity sha512-CVjM+FbOMe/nFOSly5lnj0seMAYsjjc6+q3X8nIXG+gtw9iNBLwMX3Fz308rxiaPRJw+TBdd5/mcGJdNfoS+ew==
   dependencies:
     "@expo/config" "^4.0.0"
     expo-modules-core "~0.2.0"
+    uuid "^3.3.2"
+
+expo-constants@~11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/expo-constants/-/expo-constants-11.1.0.tgz#3d9b8081bb652d23ffdefe83981c73890e1051fc"
+  integrity sha512-jyZ2vStGbj11kDVYCle9qBpWRo2YIUv/y0KlREuIFH8yUW38cdRP/Tl5NKpJZoh7ECON7HfM1qOdyC5aJsQKMg==
+  dependencies:
+    "@expo/config" "^4.0.0"
+    expo-modules-core "~0.3.0"
     uuid "^3.3.2"
 
 expo-error-recovery@~2.2.0:
@@ -7058,6 +7067,14 @@ expo-modules-core@~0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/expo-modules-core/-/expo-modules-core-0.2.0.tgz#68e5b6e53d0afbf8d131578831aed657589a2d42"
   integrity sha512-inpfZ5X/BaTtbj2wG9PA9AC0MN8VyId6KSRlVuEg7+ziurHBy/kKDFxpOddUokhwiln2uhoYPSStJjR/tKypdw==
+
+expo-modules-core@~0.3.0:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/expo-modules-core/-/expo-modules-core-0.3.2.tgz#b0b92b4100c6c13b69ef80ff0a8e97f2cc4f20b6"
+  integrity sha512-7ESMwkO5AwRflGDwcF0Yki98244/0n57alUJA/87TNZdciU0wa0joHi2Eb/fT2ggLT8ta1/bnavb1i3xGftj1Q==
+  dependencies:
+    compare-versions "^3.4.0"
+    invariant "^2.2.4"
 
 expo-splash-screen@~0.11.2:
   version "0.11.2"
