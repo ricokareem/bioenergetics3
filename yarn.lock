@@ -2599,15 +2599,15 @@
     react-select "^3.0.8"
 
 "@storybook/addon-links@^6.3":
-  version "6.3.8"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-6.3.8.tgz#0a76bbb20c8f322666e0ce3a9c96e6951db5280b"
-  integrity sha512-NDP9M+IXsN6CmgJXvAqtmJ4jfANd5VLrV9miAp0i2FHhZ1weKZxaRi0usYfq4k3kdjrQnMqMp2cf7KnB51ZNAQ==
+  version "6.3.10"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-6.3.10.tgz#0c4c95def9655a299f3e29aa6e1fe6cde8326ecf"
+  integrity sha512-/gp5+4+niwK7U+28trwvFAgbZat9m4v9xFd5W8jXo8HmPlyDUK5w9Zu14xH6PrAfufFMb+No9b8eZjzOgB5aOQ==
   dependencies:
-    "@storybook/addons" "6.3.8"
-    "@storybook/client-logger" "6.3.8"
-    "@storybook/core-events" "6.3.8"
+    "@storybook/addons" "6.3.10"
+    "@storybook/client-logger" "6.3.10"
+    "@storybook/core-events" "6.3.10"
     "@storybook/csf" "0.0.1"
-    "@storybook/router" "6.3.8"
+    "@storybook/router" "6.3.10"
     "@types/qs" "^6.9.5"
     core-js "^3.8.2"
     global "^4.4.0"
