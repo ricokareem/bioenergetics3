@@ -36,7 +36,7 @@
     "expo-app-loading": "^1.1.2",
     "expo-asset": "~8.3.3",
     "expo-av": "~9.1.2",
-    "expo-constants": "~12.1.1",
+    "expo-constants": "~12.1.2",
     "expo-font": "~9.2.1",
     "expo-web-browser": "~9.2.0",
     "react": "16.13.1",
