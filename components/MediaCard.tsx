@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import {
   Text,
   StyleSheet,
@@ -16,8 +16,8 @@ import { Movies } from "../constants/MediaData";
 import VideoSourceFiles from "../constants/VideoSourceFiles";
 
 type MediaCardProps = {
-  title: any;
-  playlist: any;
+  title: string;
+  playlist: [number];
   showTimer: boolean;
 };
 
@@ -45,7 +45,9 @@ export default function MediaCard({
   const moviePlaylist = playlist.map((playlistMovieId) =>
     Movies.find((movie) => movie.id === playlistMovieId)
   );
-  const [status, setStatus] = useState<any>({});
+  const [status, setStatus] = useState<AVPlaybackStatus>({
+    isLoaded: false,
+  } as AVPlaybackStatus);
   const [isPlaying, setIsPlaying] = useState(true);
   const [currentMovie, setCurrentMovie] = useState(moviePlaylist[0]);
   const [nextMovieIndex, setMovieIndex] = useState(1);
@@ -53,21 +55,25 @@ export default function MediaCard({
 
   const videoSourceFile = VideoSourceFiles[currentMovie.file];
 
-  const onPlaybackStatusUpdate = (playbackStatus) => {
-    if (playbackStatus.error) {
-      console.log(
-        `Encountered a fatal error during playback: ${playbackStatus.error}`
-      );
-    } else if (playbackStatus.didJustFinish && !playbackStatus.isLooping) {
-      if (nextMovieIndex < moviePlaylist.length) {
-        setCurrentMovie(moviePlaylist[nextMovieIndex]);
+  const onPlaybackStatusUpdate = useCallback(
+    (playbackStatus: AVPlaybackStatus) => {
+      if (playbackStatus.error) {
+        console.log(
+          `Encountered a fatal error during playback: ${playbackStatus.error}`
+        );
+      } else if (playbackStatus.didJustFinish && !playbackStatus.isLooping) {
+        if (nextMovieIndex < moviePlaylist.length) {
+          setCurrentMovie(moviePlaylist[nextMovieIndex]);
+        }
+        // The player has just finished playing and will stop. Maybe you want to play something else?
       }
-      // The player has just finished playing and will stop. Maybe you want to play something else?
-    }
-  };
+    },
+    []
+  );
 
   const onPress = () => {
     setIsPlaying(!isPlaying);
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     status.isPlaying
       ? videoRef.current.pauseAsync()
       : videoRef.current.playAsync();
@@ -75,8 +81,8 @@ export default function MediaCard({
 
   useEffect(() => {
     videoRef.current.setOnPlaybackStatusUpdate(onPlaybackStatusUpdate);
-    setMovieIndex(nextMovieIndex + 1);
-  }, [currentMovie]);
+    setMovieIndex((i) => i + 1);
+  }, [currentMovie, onPlaybackStatusUpdate]);
 
   return (
     <Card>
@@ -93,7 +99,7 @@ export default function MediaCard({
         useNativeControls
         isLooping={false}
         style={styles.backgroundVideo}
-        onPlaybackStatusUpdate={(status) => setStatus(status)}
+        onPlaybackStatusUpdate={(newStatus) => setStatus(newStatus)}
       />
       <Text style={{ marginBottom: 10 }}>{currentMovie.description}</Text>
       {!!showTimer && (
