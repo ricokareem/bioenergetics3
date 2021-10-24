@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
 });
 
 const timeDisplay = ({ remainingTime }) => {
-  const minutes = Math.floor(remainingTime / 60);
+  const minutes = Math.floor((3 * remainingTime) / 60);
   const seconds = remainingTime % 60;
 
   return `${minutes} min : ${seconds} sec`;
@@ -96,7 +96,7 @@ export default function MediaCard({
         isMuted={false}
         resizeMode="cover"
         shouldPlay
-        useNativeControls
+        // useNativeControls
         isLooping={false}
         style={styles.backgroundVideo}
         onPlaybackStatusUpdate={(newStatus) => setStatus(newStatus)}
