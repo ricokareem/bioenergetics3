@@ -34,7 +34,7 @@
     "@react-navigation/web": "~1.0.0-alpha.9",
     "expo": "^42.0.4",
     "expo-app-loading": "^1.2.1",
-    "expo-asset": "~8.3.3",
+    "expo-asset": "~8.4.3",
     "expo-av": "~10.1.2",
     "expo-constants": "~12.1.2",
     "expo-font": "~9.2.1",
