@@ -51,7 +51,7 @@
     "react-native-web": "0.17.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9",
+    "@babel/core": "^7.16.0",
     "@babel/preset-typescript": "^7.15.0",
     "@storybook/addon-actions": "^6.3",
     "@storybook/addon-knobs": "^5.3",
