@@ -62,7 +62,7 @@
     "@storybook/react-native-server": "^5.3.23",
     "@types/jest": "^27.0.2",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
-    "@typescript-eslint/eslint-plugin-tslint": "^5.2.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^5.3.1",
     "@typescript-eslint/parser": "^4.33.0",
     "babel-loader": "^8.2.3",
     "babel-preset-expo": "8.5.1",
