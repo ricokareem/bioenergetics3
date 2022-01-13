@@ -40,7 +40,7 @@
     "jest": "^26.6.3",
     "react": "17.0.1",
     "react-native": "0.64.3",
-    "react-native-countdown-circle-timer": "^2.5.4",
+    "react-native-countdown-circle-timer": "^3.0.6",
     "react-native-elements": "^3.4.2",
     "react-native-gesture-handler": "~2.1.1",
     "react-native-reanimated": "~2.3.1",
