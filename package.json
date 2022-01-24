@@ -52,7 +52,7 @@
     "react-native-web": "0.17.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.10",
+    "@babel/core": "^7.16.12",
     "@babel/preset-typescript": "^7.16.7",
     "@types/jest": "^27.4.0",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
