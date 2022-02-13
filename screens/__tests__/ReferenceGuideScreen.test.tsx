@@ -1,5 +1,4 @@
 import React from "react";
-import { map } from "lodash";
 import { render } from "@testing-library/react-native";
 import ReferenceGuideScreen from "../ReferenceGuideScreen";
 import { SymptomsPlaylists } from "../../constants/MediaData";
@@ -10,7 +9,7 @@ describe("<ReferenceGuideScreen>", () => {
       <ReferenceGuideScreen navigation={{ id: "test" }} />
     );
     const ListItemButtons = getAllByTestId("padView");
-    const titles = map(SymptomsPlaylists, (playlist) => playlist.title);
+    const titles = SymptomsPlaylists.map((playlist) => playlist.title);
 
     expect(ListItemButtons).toHaveLength(15);
     titles.forEach((title) => {
