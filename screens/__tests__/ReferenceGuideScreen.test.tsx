@@ -1,13 +1,14 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { render } from "@testing-library/react-native";
 import ReferenceGuideScreen from "../ReferenceGuideScreen";
 
 describe("<ReferenceGuideScreen>", () => {
-  it("should match to snapshot", () => {
-    const wrapper = shallow(
+  it("should match snapshot", () => {
+    const { toJSON } = render(
       <ReferenceGuideScreen navigation={{ id: "test" }} />
     );
-    expect(wrapper).toMatchSnapshot();
+
+    expect(toJSON()).toMatchSnapshot();
   });
 });
 

@@ -1,11 +1,12 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { render } from "@testing-library/react-native";
 import CardStackScreen from "../CardStackScreen";
 
 describe("<CardStackScreen>", () => {
-  it("should match to snapshot", () => {
-    const wrapper = shallow(<CardStackScreen navigation={{ id: "test" }} />);
-    expect(wrapper).toMatchSnapshot();
+  it("should match snapshot", () => {
+    const { toJSON } = render(<CardStackScreen navigation={{ id: "test" }} />);
+
+    expect(toJSON()).toMatchSnapshot();
   });
 });
 
