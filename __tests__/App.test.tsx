@@ -1,10 +1,11 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { render } from "@testing-library/react-native";
 import App from "../App";
 
 describe("<App>", () => {
-  it("should match to snapshot", () => {
-    const wrapper = shallow(<App />);
-    expect(wrapper).toMatchSnapshot();
+  it("should match snapshot", () => {
+    const { toJSON } = render(<App />);
+
+    expect(toJSON()).toMatchSnapshot();
   });
 });
