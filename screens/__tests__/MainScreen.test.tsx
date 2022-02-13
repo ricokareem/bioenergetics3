@@ -1,10 +1,11 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { render } from "@testing-library/react-native";
 import MainScreen from "../MainScreen";
 
 describe("<MainScreen>", () => {
-  it("should match to snapshot", () => {
-    const wrapper = shallow(<MainScreen navigation={{ id: "test" }} />);
-    expect(wrapper).toMatchSnapshot();
+  it("should match snapshot", () => {
+    const { toJSON } = render(<MainScreen navigation={{ id: "test" }} />);
+
+    expect(toJSON()).toMatchSnapshot();
   });
 });
