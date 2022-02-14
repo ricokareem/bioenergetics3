@@ -17,8 +17,8 @@ import VideoSourceFiles from "../constants/VideoSourceFiles";
 
 type MediaCardProps = {
   title: string;
-  playlist: [number];
-  showTimer: boolean;
+  playlist: number[];
+  showTimer?: boolean;
 };
 
 const windowWidth = Dimensions.get("window").width;
@@ -57,15 +57,19 @@ export default function MediaCard({
 
   const onPlaybackStatusUpdate = useCallback(
     (playbackStatus: AVPlaybackStatus) => {
-      if (playbackStatus.error) {
-        console.log(
-          `Encountered a fatal error during playback: ${playbackStatus.error}`
-        );
-      } else if (playbackStatus.didJustFinish && !playbackStatus.isLooping) {
+      if (
+        playbackStatus.isLoaded &&
+        playbackStatus.didJustFinish &&
+        !playbackStatus.isLooping
+      ) {
         if (nextMovieIndex < moviePlaylist.length) {
           setCurrentMovie(moviePlaylist[nextMovieIndex]);
         }
         // The player has just finished playing and will stop. Maybe you want to play something else?
+      } else {
+        console.log(
+          `Encountered a fatal error during playback: ${playbackStatus.error}`
+        );
       }
     },
     []
