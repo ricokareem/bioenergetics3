@@ -5,7 +5,14 @@ import { SymptomsPlaylists } from "../../constants/MediaData";
 
 describe("<ReferenceGuideScreen>", () => {
   it("should match snapshot", () => {
-    const { toJSON, getAllByTestId, getByText } = render(
+    const { toJSON } = render(
+      <ReferenceGuideScreen navigation={{ id: "test" }} />
+    );
+    expect(toJSON()).toMatchSnapshot();
+  });
+
+  it("should render all ListItem buttons", () => {
+    const { getAllByTestId, getByText } = render(
       <ReferenceGuideScreen navigation={{ id: "test" }} />
     );
     const ListItemButtons = getAllByTestId("padView");
@@ -15,7 +22,6 @@ describe("<ReferenceGuideScreen>", () => {
     titles.forEach((title) => {
       expect(getByText(title));
     });
-    expect(toJSON()).toMatchSnapshot();
   });
 });
 

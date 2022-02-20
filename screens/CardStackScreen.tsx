@@ -60,6 +60,7 @@ const CardStackScreen: React.FC<NavPropsType> = (props) => {
         renderItem={({ item }: ItemType) => (
           <TouchableOpacity
             style={styles.listItem}
+            testID="cardStackItem"
             onPress={() => {
               navigation.navigate(item.screen, {
                 title: item.title,

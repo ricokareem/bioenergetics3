@@ -276,6 +276,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
                 "padding": 20,
               }
             }
+            testID="cardStackItem"
           >
             <Text
               style={
@@ -322,6 +323,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
                 "padding": 20,
               }
             }
+            testID="cardStackItem"
           >
             <Text
               style={
@@ -381,6 +383,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
                 "padding": 20,
               }
             }
+            testID="cardStackItem"
           >
             <Text
               style={
@@ -427,6 +430,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
                 "padding": 20,
               }
             }
+            testID="cardStackItem"
           >
             <Text
               style={
@@ -488,6 +492,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
                 "padding": 20,
               }
             }
+            testID="cardStackItem"
           >
             <Text
               style={
@@ -536,6 +541,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
                 "padding": 20,
               }
             }
+            testID="cardStackItem"
           >
             <Text
               style={
@@ -597,6 +603,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
                 "padding": 20,
               }
             }
+            testID="cardStackItem"
           >
             <Text
               style={
@@ -645,6 +652,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
                 "padding": 20,
               }
             }
+            testID="cardStackItem"
           >
             <Text
               style={
@@ -704,6 +712,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
                 "padding": 20,
               }
             }
+            testID="cardStackItem"
           >
             <Text
               style={
@@ -750,6 +759,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
                 "padding": 20,
               }
             }
+            testID="cardStackItem"
           >
             <Text
               style={
@@ -809,6 +819,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
                 "padding": 20,
               }
             }
+            testID="cardStackItem"
           >
             <Text
               style={
@@ -855,6 +866,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
                 "padding": 20,
               }
             }
+            testID="cardStackItem"
           >
             <Text
               style={
@@ -914,6 +926,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
                 "padding": 20,
               }
             }
+            testID="cardStackItem"
           >
             <Text
               style={
