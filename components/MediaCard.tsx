@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
 });
 
 const timeDisplay = ({ remainingTime }) => {
-  const minutes = Math.floor((3 * remainingTime) / 60);
+  const minutes = Math.floor((remainingTime) / 60);
   const seconds = remainingTime % 60;
 
   return `${minutes} min : ${seconds} sec`;
@@ -78,9 +78,11 @@ export default function MediaCard({
   const onPress = () => {
     setIsPlaying(!isPlaying);
     // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-    status.isPlaying
-      ? videoRef.current.pauseAsync()
-      : videoRef.current.playAsync();
+    if (status.isLoaded) {
+      status.isPlaying
+        ? videoRef.current.pauseAsync()
+        : videoRef.current.playAsync();
+    }
   };
 
   useEffect(() => {
@@ -111,17 +113,14 @@ export default function MediaCard({
           <CountdownCircleTimer
             isPlaying={isPlaying}
             duration={60} // total duration in seconds
-            colors={[
-              ["#004777", 0.4],
-              ["#F7B801", 0.4],
-              ["#A30000", 0.2],
-            ]}
+            colors={["#004777", "#F7B801", "#A30000"]}
+            colorsTime={[30, 15, 0]}
           >
-            {({ remainingTime, animatedColor }) => (
+            {({ remainingTime, color }) => (
               <>
                 <Animated.Text
                   style={{
-                    color: animatedColor,
+                    color: color,
                     fontSize: 20,
                     margin: 6,
                   }}
@@ -131,8 +130,8 @@ export default function MediaCard({
                 <View>
                   <TouchableOpacity onPress={onPress}>
                     <Feather
-                      name={status.isPlaying ? "pause-circle" : "play-circle"}
-                      // color={animatedColor}
+                      name={!(status.isLoaded) || status.isPlaying ? "pause-circle" : "play-circle"}
+                      color={color}
                       size={48}
                     />
                   </TouchableOpacity>
