@@ -39,7 +39,7 @@
     "nth-check": "^2.0.1",
     "react": "17.0.1",
     "react-native": "0.64.3",
-    "react-native-countdown-circle-timer": "^3.0.8",
+    "react-native-countdown-circle-timer": "^3.0.9",
     "react-native-elements": "^3.4.2",
     "react-native-gesture-handler": "~2.1.1",
     "react-native-reanimated": "~2.4.1",
@@ -68,7 +68,7 @@
     "jest-expo": "^44.0.1",
     "prettier": "^2.5.1",
     "react-dom": "17.0.1",
-    "typescript": "~4.5.5"
+    "typescript": "~4.6.2"
   },
   "private": true
 }
