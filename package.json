@@ -41,7 +41,7 @@
     "react-native": "0.64.3",
     "react-native-countdown-circle-timer": "^3.0.9",
     "react-native-elements": "^3.4.2",
-    "react-native-gesture-handler": "~2.1.1",
+    "react-native-gesture-handler": "~2.3.1",
     "react-native-reanimated": "~2.4.1",
     "react-native-safe-area-context": "3.4.1",
     "react-native-screens": "~3.13.1",
