@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
 });
 
 const timeDisplay = ({ remainingTime }) => {
-  const minutes = Math.floor((remainingTime) / 60);
+  const minutes = Math.floor(remainingTime / 60);
   const seconds = remainingTime % 60;
 
   return `${minutes} min : ${seconds} sec`;
@@ -77,11 +77,10 @@ export default function MediaCard({
 
   const onPress = () => {
     setIsPlaying(!isPlaying);
-    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-    if (status.isLoaded) {
-      status.isPlaying
-        ? videoRef.current.pauseAsync()
-        : videoRef.current.playAsync();
+    if (status.isLoaded && status.isPlaying) {
+      videoRef.current.pauseAsync();
+    } else if (status.isLoaded && !status.isPlaying) {
+      videoRef.current.playAsync();
     }
   };
 
@@ -130,7 +129,11 @@ export default function MediaCard({
                 <View>
                   <TouchableOpacity onPress={onPress}>
                     <Feather
-                      name={!(status.isLoaded) || status.isPlaying ? "pause-circle" : "play-circle"}
+                      name={
+                        !status.isLoaded || status.isPlaying
+                          ? "pause-circle"
+                          : "play-circle"
+                      }
                       color={color}
                       size={48}
                     />
