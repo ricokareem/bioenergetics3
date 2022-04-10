@@ -65,11 +65,7 @@ export default function MediaCard({
         if (nextMovieIndex < moviePlaylist.length) {
           setCurrentMovie(moviePlaylist[nextMovieIndex]);
         }
-        // The player has just finished playing and will stop. Maybe you want to play something else?
-      } else {
-        console.log(
-          `Encountered a fatal error during playback: ${playbackStatus.error}`
-        );
+        // The player has just finished playing and will stop.
       }
     },
     []
