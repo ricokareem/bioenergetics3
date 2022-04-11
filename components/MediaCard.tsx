@@ -50,11 +50,11 @@ export default function MediaCard({
   } as AVPlaybackStatus);
   const [isPlaying, setIsPlaying] = useState(true);
   const [currentMovie, setCurrentMovie] = useState(moviePlaylist[0]);
-  const [nextMovieIndex, setMovieIndex] = useState(1);
   const videoRef = useRef<Video>();
 
   const videoSourceFile = VideoSourceFiles[currentMovie.file];
 
+  let playlistIndex = 0;
   const onPlaybackStatusUpdate = useCallback(
     (playbackStatus: AVPlaybackStatus) => {
       if (
@@ -62,8 +62,9 @@ export default function MediaCard({
         playbackStatus.didJustFinish &&
         !playbackStatus.isLooping
       ) {
-        if (nextMovieIndex < moviePlaylist.length) {
-          setCurrentMovie(moviePlaylist[nextMovieIndex]);
+        playlistIndex += 1
+        if (playlistIndex < moviePlaylist.length) {
+          setCurrentMovie(moviePlaylist[playlistIndex]);
         }
         // The player has just finished playing and will stop.
       }
@@ -72,6 +73,7 @@ export default function MediaCard({
   );
 
   const onPress = () => {
+    debugger;
     setIsPlaying(!isPlaying);
     if (status.isLoaded && status.isPlaying) {
       videoRef.current.pauseAsync();
@@ -82,7 +84,6 @@ export default function MediaCard({
 
   useEffect(() => {
     videoRef.current.setOnPlaybackStatusUpdate(onPlaybackStatusUpdate);
-    setMovieIndex((i) => i + 1);
   }, [currentMovie, onPlaybackStatusUpdate]);
 
   return (
@@ -107,7 +108,7 @@ export default function MediaCard({
         <>
           <CountdownCircleTimer
             isPlaying={isPlaying}
-            duration={60} // total duration in seconds
+            duration={300} // total duration in seconds
             colors={["#004777", "#F7B801", "#A30000"]}
             colorsTime={[30, 15, 0]}
           >
