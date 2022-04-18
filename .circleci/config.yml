@@ -1,18 +1,27 @@
 version: 2.1
 orbs:
-  node: circleci/node@1.1.6
+  node: circleci/node@5.0.2
 jobs:
   build-and-test:
     executor:
       name: node/default
     steps:
       - checkout
-      - node/with-cache:
-          steps:
-            - run: yarn
-            - run:
-                name: "Run Jest"
-                command: yarn test
+      - node/install:
+          install-yarn: true
+          node-version: '16.7.0'
+      - run: yarn
+      - run:
+          name: Install JUnit coverage reporter
+          command: yarn add --dev jest-junit
+      - run:
+          name: "Run Jest"
+          command: yarn test --ci --runInBand --reporters=default --reporters=jest-junit
+          environment:
+            JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
+      - store_test_results:
+          path: ./reports/junit/
+    parallelism: 4
 workflows:
     build-and-test:
       jobs:
