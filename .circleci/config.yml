@@ -13,6 +13,7 @@ jobs:
             - run:
                 name: "Run Jest"
                 command: yarn test
+    parallelism: 4
 workflows:
     build-and-test:
       jobs:
