@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MediaScreen> should match snapshot 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "backgroundColor": "#fc9829",
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "backgroundColor": "#ffffff",
+          "borderColor": "#e1e8ee",
+          "borderWidth": 1,
+          "elevation": 1,
+          "margin": 15,
+          "marginBottom": 0,
+          "padding": 15,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "transparent",
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#43484d",
+              "fontFamily": "sans-serif",
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "marginBottom": 15,
+              "textAlign": "center",
+            }
+          }
+          testID="cardTitle"
+        >
+          Media Screen
+        </Text>
+        <View
+          style={
+            Object {
+              "borderBottomColor": "#bcbbc1",
+              "borderBottomWidth": 0.5,
+              "marginBottom": 15,
+            }
+          }
+        />
+        <View
+          pointerEvents="box-none"
+          style={
+            Object {
+              "height": 375,
+              "marginBottom": 24,
+              "overflow": "hidden",
+            }
+          }
+        >
+          <ViewManagerAdapter_ExpoVideoView
+            proxiedProperties={
+              Object {
+                "onError": [Function],
+                "onFullscreenUpdate": [Function],
+                "onLoad": [Function],
+                "onLoadStart": [Function],
+                "onReadyForDisplay": [Function],
+                "onStatusUpdate": [Function],
+                "resizeMode": "mock",
+                "source": Object {
+                  "headers": undefined,
+                  "overridingExtension": null,
+                  "uri": "uri",
+                },
+                "status": Object {
+                  "isLooping": false,
+                  "isMuted": false,
+                  "rate": 1,
+                  "shouldPlay": true,
+                  "volume": 1,
+                },
+              }
+            }
+            style={
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              }
+            }
+          />
+        </View>
+        <Text
+          style={
+            Object {
+              "marginBottom": 10,
+            }
+          }
+        >
+          This sequence will relieve constipation when performed clockwise, or it will improve the symptoms of diarrhea when you perform counter-clockwise. Start the sequence around the patient's umbilicus. Right hand positioned as described above, make 7 full circles around the bellybutton. The duration of each circle is about 60 seconds, moving clock wise or counter clock wise according to the ailment. When finished, slightly bring your hand to the right and perform the Pinch of Salt Move to remove the irregular signals. This sequence is particularly beneficial for people with colon polyps and will significantly balance the intestinal circulation.
+        
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

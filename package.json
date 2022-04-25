@@ -12,7 +12,20 @@
     "stop": "pkill -f expo-cli"
   },
   "jest": {
-    "preset": "jest-expo",
+    "projects": [
+      {
+        "preset": "jest-expo/android",
+        "testPathIgnorePatterns": [
+          "<rootDir>/cypress/integration/"
+        ]
+      },
+      {
+        "preset": "jest-expo/ios",
+        "testPathIgnorePatterns": [
+          "<rootDir>/cypress/integration/"
+        ]
+      }
+    ],
     "transform": {
       "^.+\\.js$": "babel-jest"
     },
@@ -20,9 +33,6 @@
       "ts",
       "tsx",
       "js"
-    ],
-    "testPathIgnorePatterns": [
-      "<rootDir>/cypress/"
     ]
   },
   "dependencies": {
