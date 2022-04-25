@@ -22,7 +22,6 @@ describe("<CardStackScreen>", () => {
       expect(getByText(title));
     });
   });
-
 });
 
 // TEST BUTTON URLS & TITLES

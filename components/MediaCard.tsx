@@ -123,7 +123,10 @@ export default function MediaCard({
                   {timeDisplay({ remainingTime })}
                 </Animated.Text>
                 <View>
-                  <TouchableOpacity onPress={onPress}>
+                  <TouchableOpacity
+                    onPress={onPress}
+                    testID="pause-play-button"
+                  >
                     <Feather
                       name={
                         !status.isLoaded || status.isPlaying
