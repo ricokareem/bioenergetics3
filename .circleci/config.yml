@@ -33,5 +33,7 @@ jobs:
           path: ./reports/junit/
       - run: yarn cypress:ci
       - store_artifacts:
-          path: /root/app/cypress/
+          path: /root/app/cypress/videos
+      - store_artifacts:
+          path: /root/app/cypress/screenshots
     parallelism: 4
