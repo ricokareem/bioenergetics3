@@ -31,7 +31,9 @@ jobs:
             JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
       - store_test_results:
           path: ./reports/junit/
-      - run: yarn cypress:ci
+      - run:
+          name: "Run Cypress"
+          command: yarn cypress:ci
       - store_artifacts:
           path: /root/app/cypress/videos
       - store_artifacts:
