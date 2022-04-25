@@ -32,4 +32,6 @@ jobs:
       - store_test_results:
           path: ./reports/junit/
       - run: yarn cypress:ci
+      - store_artifacts:
+          path: /root/app/cypress/
     parallelism: 4
