@@ -220,16 +220,12 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
         },
       ]
     }
-    disableVirtualization={false}
     getItem={[Function]}
     getItemCount={[Function]}
-    horizontal={false}
-    initialNumToRender={10}
     keyExtractor={[Function]}
-    maxToRenderPerBatch={10}
     onContentSizeChange={[Function]}
-    onEndReachedThreshold={2}
     onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
     onMomentumScrollEnd={[Function]}
     onScroll={[Function]}
     onScrollBeginDrag={[Function]}
@@ -238,9 +234,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
     renderItem={[Function]}
     scrollEventThrottle={50}
     stickyHeaderIndices={Array []}
-    updateCellsBatchingPeriod={50}
     viewabilityConfigCallbackPairs={Array []}
-    windowSize={21}
   >
     <View>
       <View
@@ -256,6 +250,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
         >
           <View
             accessible={true}
+            collapsable={false}
             focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
@@ -303,6 +298,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
           </View>
           <View
             accessible={true}
+            collapsable={false}
             focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
@@ -363,6 +359,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
         >
           <View
             accessible={true}
+            collapsable={false}
             focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
@@ -410,6 +407,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
           </View>
           <View
             accessible={true}
+            collapsable={false}
             focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
@@ -472,6 +470,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
         >
           <View
             accessible={true}
+            collapsable={false}
             focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
@@ -521,6 +520,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
           </View>
           <View
             accessible={true}
+            collapsable={false}
             focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
@@ -583,6 +583,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
         >
           <View
             accessible={true}
+            collapsable={false}
             focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
@@ -632,6 +633,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
           </View>
           <View
             accessible={true}
+            collapsable={false}
             focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
@@ -692,6 +694,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
         >
           <View
             accessible={true}
+            collapsable={false}
             focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
@@ -739,6 +742,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
           </View>
           <View
             accessible={true}
+            collapsable={false}
             focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
@@ -799,6 +803,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
         >
           <View
             accessible={true}
+            collapsable={false}
             focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
@@ -846,6 +851,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
           </View>
           <View
             accessible={true}
+            collapsable={false}
             focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
@@ -906,6 +912,7 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
         >
           <View
             accessible={true}
+            collapsable={false}
             focusable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
