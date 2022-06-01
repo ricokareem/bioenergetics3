@@ -50,7 +50,7 @@
     "expo-constants": "~13.1.1",
     "expo-font": "~10.1.0",
     "expo-web-browser": "~10.2.1",
-    "jest": "^27.5.1",
+    "jest": "^28.1.0",
     "node-fetch": "^3.2.4",
     "nth-check": "^2.1.1",
     "react": "17.0.2",
