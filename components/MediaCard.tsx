@@ -11,7 +11,7 @@ import { Card } from "react-native-elements";
 import { Feather } from "@expo/vector-icons";
 
 import { AVPlaybackStatus, Video } from "expo-av";
-import {ResizeMode} from "expo-av/src/Video.types";
+import { ResizeMode } from "expo-av/src/Video.types";
 import { CountdownCircleTimer } from "react-native-countdown-circle-timer";
 import { Movies } from "../constants/MediaData";
 import VideoSourceFiles from "../constants/VideoSourceFiles";
@@ -23,6 +23,7 @@ type MediaCardProps = {
 };
 
 const windowWidth = Dimensions.get("window").width;
+const { COVER } = ResizeMode;
 
 const styles = StyleSheet.create({
   backgroundVideo: {
@@ -96,7 +97,7 @@ export default function MediaCard({
         rate={1.0}
         volume={1.0}
         isMuted={false}
-        resizeMode={ResizeMode.COVER}
+        resizeMode={COVER}
         shouldPlay
         // useNativeControls
         isLooping={false}
