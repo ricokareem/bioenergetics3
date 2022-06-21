@@ -71,7 +71,7 @@
     "@testing-library/react-native": "^9.2.0",
     "@types/jest": "^27.5.0",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
-    "@typescript-eslint/eslint-plugin-tslint": "^5.28.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^5.29.0",
     "@typescript-eslint/parser": "^4.33.0",
     "babel-preset-expo": "~9.1.0",
     "cypress": "^10.1.0",
