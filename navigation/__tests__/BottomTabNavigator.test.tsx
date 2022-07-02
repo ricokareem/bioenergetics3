@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  NavigationContainer,
-  NavigationProp,
-  RouteProp,
-} from "@react-navigation/native";
+import { NavigationContainer, NavigationProp } from "@react-navigation/native";
 import { render, screen, fireEvent, act } from "@testing-library/react-native";
 import BottomTabNavigator from "../BottomTabNavigator";
 
@@ -23,16 +19,13 @@ jest.mock("react-native-reanimated", () => {
 jest.mock("react-native/Libraries/Animated/NativeAnimatedHelper");
 
 describe("<BottomTabNavigator>", () => {
-  const setOptionsMock = () => ({
-    key: "Info-KX6PLDEvRrFwuz-Hep-ev",
-    name: "Info",
-  });
+  const setOptionsMock = () => jest.fn;
 
   test("screen contains bottom nav buttons", async () => {
     const component = (
       <NavigationContainer>
         <BottomTabNavigator
-          route={{ key: "Home-KX6PLDEvRrFwuz-Hep-ev", name: "Home" }}
+          route={{ key: "Root-KX6PLDEvRrFwuz-Hep-ev", name: "Root" }}
           navigation={{ setOptions: setOptionsMock } as NavigationProp}
         />
       </NavigationContainer>
@@ -50,31 +43,36 @@ describe("<BottomTabNavigator>", () => {
     expect(infoButton);
   });
 
-  // test("clicking on a button takes you to the screen", async () => {
-  //   const component = (
-  //     <NavigationContainer>
-  //       <BottomTabNavigator
-  //         route={{ key: "Home-KX6PLDEvRrFwuz-Hep-ev", name: "Home" }}
-  //         navigation={
-  //           {
-  //             setOptions: setOptionsMock,
-  //             routes: ["Home", "Info"],
-  //           } as NavigationProp
-  //         }
-  //       />
-  //     </NavigationContainer>
-  //   );
+  test("clicking on a button takes you to the screen", async () => {
+    const component = (
+      <NavigationContainer>
+        <BottomTabNavigator
+          route={{ key: "Root-KX6PLDEvRrFwuz-Hep-ev", name: "Root" }}
+          navigation={
+            {
+              setOptions: setOptionsMock,
+              routes: ["Home", "ReferenceGuide"],
+            } as NavigationProp
+          }
+        />
+      </NavigationContainer>
+    );
 
-  //   render(component);
-  //   const oldScreen = screen.queryByText("Home");
-  //   const button = await screen.findByText("Info");
+    render(component);
+    const oldScreen = screen.queryByText("Home");
+    const button = await screen.getByText("Symptoms");
 
-  //   expect(oldScreen);
+    expect(oldScreen);
 
-  //   await act(async () => {
-  //     fireEvent(button, "press");
-  //     const newScreen = await screen.findByText("Disclaimer");
-  //     expect(newScreen);
-  //   });
-  // });
+    await act(async () => {
+      fireEvent(button, "press");
+      const ReferenceGuideLink1 = await screen.findByText("Neck Pain");
+      const ReferenceGuideLink2 = await screen.findByText("Thyroid");
+      const ReferenceGuideLink3 = await screen.findByText("Dementia");
+
+      expect(ReferenceGuideLink1);
+      expect(ReferenceGuideLink2);
+      expect(ReferenceGuideLink3);
+    });
+  });
 });
