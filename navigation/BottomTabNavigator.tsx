@@ -37,7 +37,7 @@ function getHeaderTitle(route) {
   }
 }
 
-const BottomTab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator();
 
 function BottomTabNavigator({ navigation, route }: PropType): ReactElement {
   // Set the header title on the parent stack navigator depending on the
@@ -48,8 +48,8 @@ function BottomTabNavigator({ navigation, route }: PropType): ReactElement {
   }, [navigation, route]);
 
   return (
-    <BottomTab.Navigator>
-      <BottomTab.Screen
+    <Tab.Navigator>
+      <Tab.Screen
         name="Main"
         component={MainScreen}
         options={{
@@ -65,7 +65,7 @@ function BottomTabNavigator({ navigation, route }: PropType): ReactElement {
           ),
         }}
       />
-      <BottomTab.Screen
+      <Tab.Screen
         name="Cards"
         component={CardStackScreen}
         options={{
@@ -81,7 +81,7 @@ function BottomTabNavigator({ navigation, route }: PropType): ReactElement {
           ),
         }}
       />
-      <BottomTab.Screen
+      <Tab.Screen
         name="ReferenceGuide"
         component={ReferenceGuideScreen}
         options={{
@@ -97,7 +97,7 @@ function BottomTabNavigator({ navigation, route }: PropType): ReactElement {
           ),
         }}
       />
-      <BottomTab.Screen
+      <Tab.Screen
         name="Info"
         component={InfoScreen}
         options={{
@@ -113,7 +113,7 @@ function BottomTabNavigator({ navigation, route }: PropType): ReactElement {
           ),
         }}
       />
-    </BottomTab.Navigator>
+    </Tab.Navigator>
   );
 }
 
