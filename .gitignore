@@ -10,6 +10,9 @@ npm-debug.*
 web-build/
 web-report/
 coverage/
+cypress/downloads/
+cypress/screenshots/
+cypress/videos/
 
 # macOS
 .DS_Store

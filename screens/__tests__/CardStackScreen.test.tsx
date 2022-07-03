@@ -24,4 +24,4 @@ describe("<CardStackScreen>", () => {
   });
 });
 
-// TEST BUTTON URLS & TITLES
+// LINKS COVERED IN CYPRESS TEST
