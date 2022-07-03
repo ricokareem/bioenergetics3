@@ -1,12 +1,14 @@
 import "react-native-gesture-handler";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import * as React from "react";
+import { Platform } from "react-native";
 import {
   NavigationProp,
   RouteProp,
   getFocusedRouteNameFromRoute,
 } from "@react-navigation/native";
-import { Feather } from "@expo/vector-icons";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
+import { Feather, MaterialCommunityIcons } from "@expo/vector-icons";
 
 import { ReactElement } from "react";
 import MainScreen from "../screens/MainScreen";
@@ -15,10 +17,19 @@ import ReferenceGuideScreen from "../screens/ReferenceGuideScreen";
 import InfoScreen from "../screens/InfoScreen";
 import Colors from "../constants/Colors";
 
-type PropType = {
+type TabNavigatorPropType = {
   navigation: NavigationProp<any, string>;
   route: RouteProp<any, any>;
 };
+
+type TabBarIconPropType = {
+  focused: boolean;
+  iconName:
+    | keyof typeof Feather.glyphMap
+    | keyof typeof MaterialCommunityIcons.glyphMap;
+};
+
+const isAndroid = Platform.OS === "android";
 
 function getHeaderTitle(route) {
   const routeName = getFocusedRouteNameFromRoute(route) ?? "Main";
@@ -37,9 +48,34 @@ function getHeaderTitle(route) {
   }
 }
 
-const Tab = createBottomTabNavigator();
+const Tab = isAndroid
+  ? createMaterialBottomTabNavigator()
+  : createBottomTabNavigator();
 
-function BottomTabNavigator({ navigation, route }: PropType): ReactElement {
+function TabBarIcon({ focused, iconName }: TabBarIconPropType): ReactElement {
+  return isAndroid ? (
+    <MaterialCommunityIcons
+      name={iconName}
+      size={20}
+      strokeWidth={1}
+      style={{ marginBottom: -3 }}
+      color={focused ? Colors.tabIconSelected : Colors.tabIconDefault}
+    />
+  ) : (
+    <Feather
+      name={iconName}
+      size={30}
+      strokeWidth={1}
+      style={{ marginBottom: -3 }}
+      color={focused ? Colors.tabIconSelected : Colors.tabIconDefault}
+    />
+  );
+}
+
+function TabNavigator({
+  navigation,
+  route,
+}: TabNavigatorPropType): ReactElement {
   // Set the header title on the parent stack navigator depending on the
   // currently active tab. Learn more in the documentation:
   // https://reactnavigation.org/docs/en/screen-options-resolution.html
@@ -55,13 +91,7 @@ function BottomTabNavigator({ navigation, route }: PropType): ReactElement {
         options={{
           tabBarLabel: "Home",
           tabBarIcon: ({ focused }) => (
-            <Feather
-              name="home"
-              size={30}
-              strokeWidth={1}
-              style={{ marginBottom: -3 }}
-              color={focused ? Colors.tabIconSelected : Colors.tabIconDefault}
-            />
+            <TabBarIcon iconName="home" focused={focused} />
           ),
         }}
       />
@@ -71,13 +101,7 @@ function BottomTabNavigator({ navigation, route }: PropType): ReactElement {
         options={{
           tabBarLabel: "Card Stack",
           tabBarIcon: ({ focused }) => (
-            <Feather
-              name="layers"
-              size={30}
-              strokeWidth={1}
-              style={{ marginBottom: -3 }}
-              color={focused ? Colors.tabIconSelected : Colors.tabIconDefault}
-            />
+            <TabBarIcon iconName="layers" focused={focused} />
           ),
         }}
       />
@@ -87,13 +111,7 @@ function BottomTabNavigator({ navigation, route }: PropType): ReactElement {
         options={{
           tabBarLabel: "Symptoms",
           tabBarIcon: ({ focused }) => (
-            <Feather
-              name="book-open"
-              size={30}
-              strokeWidth={1}
-              style={{ marginBottom: -3 }}
-              color={focused ? Colors.tabIconSelected : Colors.tabIconDefault}
-            />
+            <TabBarIcon iconName="book-open" focused={focused} />
           ),
         }}
       />
@@ -103,12 +121,9 @@ function BottomTabNavigator({ navigation, route }: PropType): ReactElement {
         options={{
           tabBarLabel: "Info",
           tabBarIcon: ({ focused }) => (
-            <Feather
-              name="info"
-              size={30}
-              strokeWidth={1}
-              style={{ marginBottom: -3 }}
-              color={focused ? Colors.tabIconSelected : Colors.tabIconDefault}
+            <TabBarIcon
+              iconName={isAndroid ? "information" : "info"}
+              focused={focused}
             />
           ),
         }}
@@ -117,4 +132,4 @@ function BottomTabNavigator({ navigation, route }: PropType): ReactElement {
   );
 }
 
-export default BottomTabNavigator;
+export default TabNavigator;

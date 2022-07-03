@@ -40,6 +40,7 @@
     "@expo/vector-icons": "^13.0.0",
     "@react-native-community/masked-view": "0.1.11",
     "@react-navigation/bottom-tabs": "^5.11.15",
+    "@react-navigation/material-bottom-tabs": "^6.2.1",
     "@react-navigation/native": "^5.9.8",
     "@react-navigation/stack": "^5.14.9",
     "@react-navigation/web": "~1.0.0-alpha.9",
@@ -57,11 +58,13 @@
     "react-native": "0.68.2",
     "react-native-countdown-circle-timer": "^3.0.9",
     "react-native-elements": "^3.4.2",
-    "react-native-gesture-handler": "~2.5.0",
+    "react-native-gesture-handler": "~2.2.1",
+    "react-native-paper": "^4.12.2",
     "react-native-reanimated": "~2.9.1",
     "react-native-safe-area-context": "4.3.1",
     "react-native-screens": "~3.14.0",
     "react-native-svg": "12.3.0",
+    "react-native-vector-icons": "^9.2.0",
     "react-native-web": "0.17.7"
   },
   "devDependencies": {

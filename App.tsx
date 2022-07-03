@@ -1,5 +1,6 @@
 /* eslint-disable global-require */
 
+import "react-native-gesture-handler";
 import React from "react";
 import { Platform, StatusBar, StyleSheet, View } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
@@ -11,7 +12,7 @@ import { useFonts } from "expo-font";
 import AppLoading from "expo-app-loading";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
-import BottomTabNavigator from "./navigation/BottomTabNavigator";
+import TabNavigator from "./navigation/TabNavigator";
 import MediaScreen from "./screens/MediaScreen";
 import HowToUseAppScreen from "./screens/HowToUseAppScreen";
 import BeginningHealingSessionScreen from "./screens/BeginningHealingSessionScreen";
@@ -47,7 +48,7 @@ export default function App(): JSX.Element {
         {Platform.OS === "ios" && <StatusBar barStyle="default" />}
         <NavigationContainer>
           <Stack.Navigator>
-            <Stack.Screen name="Root" component={BottomTabNavigator} />
+            <Stack.Screen name="Root" component={TabNavigator} />
             <Stack.Screen name="MediaScreen" component={MediaScreen} />
             <Stack.Screen
               name="HowToUseAppScreen"
