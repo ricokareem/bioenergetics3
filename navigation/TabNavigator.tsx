@@ -7,7 +7,7 @@ import {
   getFocusedRouteNameFromRoute,
 } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
+import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import { Feather, MaterialCommunityIcons } from "@expo/vector-icons";
 
 import { ReactElement } from "react";
@@ -49,14 +49,14 @@ function getHeaderTitle(route) {
 }
 
 const Tab = isAndroid
-  ? createMaterialBottomTabNavigator()
+  ? createMaterialTopTabNavigator()
   : createBottomTabNavigator();
 
 function TabBarIcon({ focused, iconName }: TabBarIconPropType): ReactElement {
   return isAndroid ? (
     <MaterialCommunityIcons
       name={iconName}
-      size={20}
+      size={30}
       strokeWidth={1}
       style={{ marginBottom: -3 }}
       color={focused ? Colors.tabIconSelected : Colors.tabIconDefault}
