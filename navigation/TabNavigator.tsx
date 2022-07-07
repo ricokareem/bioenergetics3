@@ -8,7 +8,7 @@ import {
 } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
-import { Feather, MaterialCommunityIcons } from "@expo/vector-icons";
+import { MaterialIcons } from "@expo/vector-icons";
 
 import { ReactElement } from "react";
 import MainScreen from "../screens/MainScreen";
@@ -20,13 +20,6 @@ import Colors from "../constants/Colors";
 type TabNavigatorPropType = {
   navigation: NavigationProp<any, string>;
   route: RouteProp<any, any>;
-};
-
-type TabBarIconPropType = {
-  focused: boolean;
-  iconName:
-    | keyof typeof Feather.glyphMap
-    | keyof typeof MaterialCommunityIcons.glyphMap;
 };
 
 const isAndroid = Platform.OS === "android";
@@ -52,26 +45,6 @@ const Tab = isAndroid
   ? createMaterialBottomTabNavigator()
   : createBottomTabNavigator();
 
-function TabBarIcon({ focused, iconName }: TabBarIconPropType): ReactElement {
-  return isAndroid ? (
-    <MaterialCommunityIcons
-      name={iconName}
-      size={20}
-      strokeWidth={1}
-      style={{ marginBottom: -3 }}
-      color={focused ? Colors.tabIconSelected : Colors.tabIconDefault}
-    />
-  ) : (
-    <Feather
-      name={iconName}
-      size={30}
-      strokeWidth={1}
-      style={{ marginBottom: -3 }}
-      color={focused ? Colors.tabIconSelected : Colors.tabIconDefault}
-    />
-  );
-}
-
 function TabNavigator({
   navigation,
   route,
@@ -91,7 +64,13 @@ function TabNavigator({
         options={{
           tabBarLabel: "Home",
           tabBarIcon: ({ focused }) => (
-            <TabBarIcon iconName="home" focused={focused} />
+            <MaterialIcons
+              name="home"
+              size={20}
+              strokeWidth={1}
+              style={{ marginBottom: -3 }}
+              color={focused ? Colors.tabIconSelected : Colors.tabIconDefault}
+            />
           ),
         }}
       />
@@ -101,7 +80,13 @@ function TabNavigator({
         options={{
           tabBarLabel: "Card Stack",
           tabBarIcon: ({ focused }) => (
-            <TabBarIcon iconName="layers" focused={focused} />
+            <MaterialIcons
+              name="grid-view"
+              size={20}
+              strokeWidth={1}
+              style={{ marginBottom: -3 }}
+              color={focused ? Colors.tabIconSelected : Colors.tabIconDefault}
+            />
           ),
         }}
       />
@@ -111,7 +96,13 @@ function TabNavigator({
         options={{
           tabBarLabel: "Symptoms",
           tabBarIcon: ({ focused }) => (
-            <TabBarIcon iconName="book-open" focused={focused} />
+            <MaterialIcons
+              name="menu-book"
+              size={20}
+              strokeWidth={1}
+              style={{ marginBottom: -3 }}
+              color={focused ? Colors.tabIconSelected : Colors.tabIconDefault}
+            />
           ),
         }}
       />
@@ -121,9 +112,12 @@ function TabNavigator({
         options={{
           tabBarLabel: "Info",
           tabBarIcon: ({ focused }) => (
-            <TabBarIcon
-              iconName={isAndroid ? "information" : "info"}
-              focused={focused}
+            <MaterialIcons
+              name="accessibility"
+              size={20}
+              strokeWidth={1}
+              style={{ marginBottom: -3 }}
+              color={focused ? Colors.tabIconSelected : Colors.tabIconDefault}
             />
           ),
         }}
