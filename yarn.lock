@@ -8964,7 +8964,7 @@ jest-environment-node@^27.5.1:
     jest-mock "^27.5.1"
     jest-util "^27.5.1"
 
-jest-expo@^46.0.0:
+jest-expo@^46.0.1:
   version "46.0.1"
   resolved "https://registry.yarnpkg.com/jest-expo/-/jest-expo-46.0.1.tgz#7864556bcf6db237f25bd2efb477ffa4c970cdee"
   integrity sha512-wKC/WfA4xAOWqXQwS3WyIWqNeVdKA5RjUqvYaWCM/M8lNbuYoMuixlbxEG+ielKV3LaLaxA/aCvfgouPBISxYA==
