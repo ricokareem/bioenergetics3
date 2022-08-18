@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const cardStack = [...Movies].filter((c) => c.playlist && c.playlist.length);
+const cardStack = [...Movies].filter((c) => c.playlist?.length);
 
 const CardStackScreen: React.FC<NavPropsType> = (props) => {
   const { navigation } = props;
