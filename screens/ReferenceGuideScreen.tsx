@@ -31,7 +31,7 @@ function ReferenceGuideScreen({ navigation }: NavPropsType): ReactElement {
             }
             bottomDivider
           >
-            <ListItem.Title >
+            <ListItem.Title>
               <ListText>{item.title}</ListText>
             </ListItem.Title>
             <ListItem.Chevron color="#fff" size={28} />

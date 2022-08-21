@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import { Route } from "react-native";
 import { ListItem } from "react-native-elements";
-import {ListText, OrangeContainer} from "../components";
+import { ListText, OrangeContainer } from "../components";
 
 type NavPropsType = {
   navigation: Route;
@@ -16,27 +16,27 @@ const symptoms = [
 
 function InfoScreen({ navigation }: NavPropsType): ReactElement {
   return (
-      <OrangeContainer>
-        {symptoms.map((item) => (
-          <ListItem
-            key={item.name}
-            containerStyle={{
-              justifyContent: "space-between",
-              alignItems: "center",
-              borderBottomWidth: 1,
-              borderBottomColor: "#ccc",
-              backgroundColor: "#fc9829",
-            }}
-            onPress={() => navigation.navigate(item.name)}
-            bottomDivider
-          >
-            <ListItem.Title>
-              <ListText>{item.title}</ListText>
-            </ListItem.Title>
-            <ListItem.Chevron color="#fff" size={28} />
-          </ListItem>
-        ))}
-      </OrangeContainer>
+    <OrangeContainer>
+      {symptoms.map((item) => (
+        <ListItem
+          key={item.name}
+          containerStyle={{
+            justifyContent: "space-between",
+            alignItems: "center",
+            borderBottomWidth: 1,
+            borderBottomColor: "#ccc",
+            backgroundColor: "#fc9829",
+          }}
+          onPress={() => navigation.navigate(item.name)}
+          bottomDivider
+        >
+          <ListItem.Title>
+            <ListText>{item.title}</ListText>
+          </ListItem.Title>
+          <ListItem.Chevron color="#fff" size={28} />
+        </ListItem>
+      ))}
+    </OrangeContainer>
   );
 }
 

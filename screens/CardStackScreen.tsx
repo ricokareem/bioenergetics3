@@ -1,10 +1,11 @@
 import React from "react";
+import { FlatList, ListRenderItemInfo, Route } from "react-native";
 import {
-  FlatList,
-  ListRenderItemInfo,
-  Route,
-} from "react-native";
-import { WhiteContainer, ListText, ListSubheadingText, ListButton } from "../components";
+  WhiteContainer,
+  ListText,
+  ListSubheadingText,
+  ListButton,
+} from "../components";
 import { Movies } from "../constants/MediaData";
 
 type NavPropsType = {

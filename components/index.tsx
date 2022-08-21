@@ -1,5 +1,5 @@
 import React from "react";
-import styled from 'styled-components/native';
+import styled from "styled-components/native";
 
 export const WhiteContainer = styled.View`
   flex: 1;
@@ -19,7 +19,7 @@ export const ListButton = styled.TouchableOpacity`
   justify-content: center;
   margin: 1px;
   padding: 20px;
-  `;
+`;
 
 export const ListText = styled.Text`
   color: #fff;

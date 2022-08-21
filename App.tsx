@@ -1,4 +1,4 @@
-/* eslint-disable global-require */
+// eslint-disable global-require
 
 import "react-native-gesture-handler";
 import React from "react";
