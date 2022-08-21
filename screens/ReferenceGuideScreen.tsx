@@ -1,28 +1,16 @@
 import React, { ReactElement } from "react";
-import { Route, ScrollView, StyleSheet, View } from "react-native";
+import { Route, ScrollView } from "react-native";
 import { ListItem } from "react-native-elements";
 import { SymptomsPlaylists } from "../constants/MediaData";
+import { WhiteContainer, ListText } from "../components";
 
 type NavPropsType = {
   navigation: Route;
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fc9829",
-  },
-  listText: {
-    fontSize: 14,
-    fontWeight: "bold",
-    lineHeight: 14,
-    color: "#fff",
-  },
-});
-
 function ReferenceGuideScreen({ navigation }: NavPropsType): ReactElement {
   return (
-    <View style={styles.container}>
+    <WhiteContainer>
       <ScrollView>
         {SymptomsPlaylists.map((item) => (
           <ListItem
@@ -43,14 +31,14 @@ function ReferenceGuideScreen({ navigation }: NavPropsType): ReactElement {
             }
             bottomDivider
           >
-            <ListItem.Title style={styles.listText}>
-              {item.title}
+            <ListItem.Title>
+              <ListText>{item.title}</ListText>
             </ListItem.Title>
             <ListItem.Chevron color="#fff" size={28} />
           </ListItem>
         ))}
       </ScrollView>
-    </View>
+    </WhiteContainer>
   );
 }
 

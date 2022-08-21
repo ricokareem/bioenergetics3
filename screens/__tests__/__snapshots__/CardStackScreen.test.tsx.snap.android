@@ -3,10 +3,14 @@
 exports[`<CardStackScreen> should match snapshot 1`] = `
 <View
   style={
-    Object {
-      "backgroundColor": "#fff",
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "backgroundColor": "#fff",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+    ]
   }
 >
   <RCTScrollView
@@ -262,37 +266,49 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
             style={
               Object {
                 "backgroundColor": "#fc9829",
-                "flex": 1,
+                "flexBasis": 0,
                 "flexDirection": "column",
+                "flexGrow": 1,
+                "flexShrink": 1,
                 "height": 120,
                 "justifyContent": "center",
-                "margin": 1,
+                "marginBottom": 1,
+                "marginLeft": 1,
+                "marginRight": 1,
+                "marginTop": 1,
                 "opacity": 1,
-                "padding": 20,
+                "paddingBottom": 20,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
               }
             }
             testID="cardStackItem"
           >
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 12,
-                  "fontWeight": "bold",
-                  "lineHeight": 14,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
               }
             >
               Balancing Energy Distribution
             </Text>
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 10,
-                  "lineHeight": 12,
-                  "marginTop": 5,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 10,
+                    "lineHeight": 12,
+                    "marginTop": 5,
+                  },
+                ]
               }
             />
           </View>
@@ -310,37 +326,49 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
             style={
               Object {
                 "backgroundColor": "#fc9829",
-                "flex": 1,
+                "flexBasis": 0,
                 "flexDirection": "column",
+                "flexGrow": 1,
+                "flexShrink": 1,
                 "height": 120,
                 "justifyContent": "center",
-                "margin": 1,
+                "marginBottom": 1,
+                "marginLeft": 1,
+                "marginRight": 1,
+                "marginTop": 1,
                 "opacity": 1,
-                "padding": 20,
+                "paddingBottom": 20,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
               }
             }
             testID="cardStackItem"
           >
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 12,
-                  "fontWeight": "bold",
-                  "lineHeight": 14,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
               }
             >
               Opening and Repairing the Energy field: Knitting Movement
             </Text>
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 10,
-                  "lineHeight": 12,
-                  "marginTop": 5,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 10,
+                    "lineHeight": 12,
+                    "marginTop": 5,
+                  },
+                ]
               }
             />
           </View>
@@ -371,37 +399,49 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
             style={
               Object {
                 "backgroundColor": "#fc9829",
-                "flex": 1,
+                "flexBasis": 0,
                 "flexDirection": "column",
+                "flexGrow": 1,
+                "flexShrink": 1,
                 "height": 120,
                 "justifyContent": "center",
-                "margin": 1,
+                "marginBottom": 1,
+                "marginLeft": 1,
+                "marginRight": 1,
+                "marginTop": 1,
                 "opacity": 1,
-                "padding": 20,
+                "paddingBottom": 20,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
               }
             }
             testID="cardStackItem"
           >
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 12,
-                  "fontWeight": "bold",
-                  "lineHeight": 14,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
               }
             >
               Energizing Sequence: Mobilization of Chi Energy
             </Text>
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 10,
-                  "lineHeight": 12,
-                  "marginTop": 5,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 10,
+                    "lineHeight": 12,
+                    "marginTop": 5,
+                  },
+                ]
               }
             />
           </View>
@@ -419,37 +459,49 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
             style={
               Object {
                 "backgroundColor": "#fc9829",
-                "flex": 1,
+                "flexBasis": 0,
                 "flexDirection": "column",
+                "flexGrow": 1,
+                "flexShrink": 1,
                 "height": 120,
                 "justifyContent": "center",
-                "margin": 1,
+                "marginBottom": 1,
+                "marginLeft": 1,
+                "marginRight": 1,
+                "marginTop": 1,
                 "opacity": 1,
-                "padding": 20,
+                "paddingBottom": 20,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
               }
             }
             testID="cardStackItem"
           >
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 12,
-                  "fontWeight": "bold",
-                  "lineHeight": 14,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
               }
             >
               Scissors Movement
             </Text>
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 10,
-                  "lineHeight": 12,
-                  "marginTop": 5,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 10,
+                    "lineHeight": 12,
+                    "marginTop": 5,
+                  },
+                ]
               }
             >
               Applied only to the specific area of concern
@@ -482,37 +534,49 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
             style={
               Object {
                 "backgroundColor": "#fc9829",
-                "flex": 1,
+                "flexBasis": 0,
                 "flexDirection": "column",
+                "flexGrow": 1,
+                "flexShrink": 1,
                 "height": 120,
                 "justifyContent": "center",
-                "margin": 1,
+                "marginBottom": 1,
+                "marginLeft": 1,
+                "marginRight": 1,
+                "marginTop": 1,
                 "opacity": 1,
-                "padding": 20,
+                "paddingBottom": 20,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
               }
             }
             testID="cardStackItem"
           >
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 12,
-                  "fontWeight": "bold",
-                  "lineHeight": 14,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
               }
             >
               Pinch of Salt
             </Text>
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 10,
-                  "lineHeight": 12,
-                  "marginTop": 5,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 10,
+                    "lineHeight": 12,
+                    "marginTop": 5,
+                  },
+                ]
               }
             >
               Applied only to the specific area of concern
@@ -532,37 +596,49 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
             style={
               Object {
                 "backgroundColor": "#fc9829",
-                "flex": 1,
+                "flexBasis": 0,
                 "flexDirection": "column",
+                "flexGrow": 1,
+                "flexShrink": 1,
                 "height": 120,
                 "justifyContent": "center",
-                "margin": 1,
+                "marginBottom": 1,
+                "marginLeft": 1,
+                "marginRight": 1,
+                "marginTop": 1,
                 "opacity": 1,
-                "padding": 20,
+                "paddingBottom": 20,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
               }
             }
             testID="cardStackItem"
           >
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 12,
-                  "fontWeight": "bold",
-                  "lineHeight": 14,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
               }
             >
               Pressing Sequence
             </Text>
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 10,
-                  "lineHeight": 12,
-                  "marginTop": 5,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 10,
+                    "lineHeight": 12,
+                    "marginTop": 5,
+                  },
+                ]
               }
             >
               Applied only to the specific area of concern
@@ -595,37 +671,49 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
             style={
               Object {
                 "backgroundColor": "#fc9829",
-                "flex": 1,
+                "flexBasis": 0,
                 "flexDirection": "column",
+                "flexGrow": 1,
+                "flexShrink": 1,
                 "height": 120,
                 "justifyContent": "center",
-                "margin": 1,
+                "marginBottom": 1,
+                "marginLeft": 1,
+                "marginRight": 1,
+                "marginTop": 1,
                 "opacity": 1,
-                "padding": 20,
+                "paddingBottom": 20,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
               }
             }
             testID="cardStackItem"
           >
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 12,
-                  "fontWeight": "bold",
-                  "lineHeight": 14,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
               }
             >
               Spiral Pulling
             </Text>
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 10,
-                  "lineHeight": 12,
-                  "marginTop": 5,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 10,
+                    "lineHeight": 12,
+                    "marginTop": 5,
+                  },
+                ]
               }
             >
               Applied only to the specific area of concern
@@ -645,37 +733,49 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
             style={
               Object {
                 "backgroundColor": "#fc9829",
-                "flex": 1,
+                "flexBasis": 0,
                 "flexDirection": "column",
+                "flexGrow": 1,
+                "flexShrink": 1,
                 "height": 120,
                 "justifyContent": "center",
-                "margin": 1,
+                "marginBottom": 1,
+                "marginLeft": 1,
+                "marginRight": 1,
+                "marginTop": 1,
                 "opacity": 1,
-                "padding": 20,
+                "paddingBottom": 20,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
               }
             }
             testID="cardStackItem"
           >
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 12,
-                  "fontWeight": "bold",
-                  "lineHeight": 14,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
               }
             >
               Clockwise & Counterclockwise Circular Motion: To Reset the Chi
             </Text>
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 10,
-                  "lineHeight": 12,
-                  "marginTop": 5,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 10,
+                    "lineHeight": 12,
+                    "marginTop": 5,
+                  },
+                ]
               }
             />
           </View>
@@ -706,37 +806,49 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
             style={
               Object {
                 "backgroundColor": "#fc9829",
-                "flex": 1,
+                "flexBasis": 0,
                 "flexDirection": "column",
+                "flexGrow": 1,
+                "flexShrink": 1,
                 "height": 120,
                 "justifyContent": "center",
-                "margin": 1,
+                "marginBottom": 1,
+                "marginLeft": 1,
+                "marginRight": 1,
+                "marginTop": 1,
                 "opacity": 1,
-                "padding": 20,
+                "paddingBottom": 20,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
               }
             }
             testID="cardStackItem"
           >
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 12,
-                  "fontWeight": "bold",
-                  "lineHeight": 14,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
               }
             >
               Directing Energy Flow
             </Text>
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 10,
-                  "lineHeight": 12,
-                  "marginTop": 5,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 10,
+                    "lineHeight": 12,
+                    "marginTop": 5,
+                  },
+                ]
               }
             />
           </View>
@@ -754,37 +866,49 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
             style={
               Object {
                 "backgroundColor": "#fc9829",
-                "flex": 1,
+                "flexBasis": 0,
                 "flexDirection": "column",
+                "flexGrow": 1,
+                "flexShrink": 1,
                 "height": 120,
                 "justifyContent": "center",
-                "margin": 1,
+                "marginBottom": 1,
+                "marginLeft": 1,
+                "marginRight": 1,
+                "marginTop": 1,
                 "opacity": 1,
-                "padding": 20,
+                "paddingBottom": 20,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
               }
             }
             testID="cardStackItem"
           >
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 12,
-                  "fontWeight": "bold",
-                  "lineHeight": 14,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
               }
             >
               Energy "Flossing": Unblocking Energy Pathways
             </Text>
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 10,
-                  "lineHeight": 12,
-                  "marginTop": 5,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 10,
+                    "lineHeight": 12,
+                    "marginTop": 5,
+                  },
+                ]
               }
             />
           </View>
@@ -815,37 +939,49 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
             style={
               Object {
                 "backgroundColor": "#fc9829",
-                "flex": 1,
+                "flexBasis": 0,
                 "flexDirection": "column",
+                "flexGrow": 1,
+                "flexShrink": 1,
                 "height": 120,
                 "justifyContent": "center",
-                "margin": 1,
+                "marginBottom": 1,
+                "marginLeft": 1,
+                "marginRight": 1,
+                "marginTop": 1,
                 "opacity": 1,
-                "padding": 20,
+                "paddingBottom": 20,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
               }
             }
             testID="cardStackItem"
           >
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 12,
-                  "fontWeight": "bold",
-                  "lineHeight": 14,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
               }
             >
               Energy Cocooning: Energy Firming or Shielding
             </Text>
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 10,
-                  "lineHeight": 12,
-                  "marginTop": 5,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 10,
+                    "lineHeight": 12,
+                    "marginTop": 5,
+                  },
+                ]
               }
             />
           </View>
@@ -863,37 +999,49 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
             style={
               Object {
                 "backgroundColor": "#fc9829",
-                "flex": 1,
+                "flexBasis": 0,
                 "flexDirection": "column",
+                "flexGrow": 1,
+                "flexShrink": 1,
                 "height": 120,
                 "justifyContent": "center",
-                "margin": 1,
+                "marginBottom": 1,
+                "marginLeft": 1,
+                "marginRight": 1,
+                "marginTop": 1,
                 "opacity": 1,
-                "padding": 20,
+                "paddingBottom": 20,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
               }
             }
             testID="cardStackItem"
           >
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 12,
-                  "fontWeight": "bold",
-                  "lineHeight": 14,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
               }
             >
               Contact Healing
             </Text>
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 10,
-                  "lineHeight": 12,
-                  "marginTop": 5,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 10,
+                    "lineHeight": 12,
+                    "marginTop": 5,
+                  },
+                ]
               }
             />
           </View>
@@ -924,37 +1072,49 @@ Now ask the patient to stand. With both hands gently grab the patient's ankles a
             style={
               Object {
                 "backgroundColor": "#fc9829",
-                "flex": 1,
+                "flexBasis": 0,
                 "flexDirection": "column",
+                "flexGrow": 1,
+                "flexShrink": 1,
                 "height": 120,
                 "justifyContent": "center",
-                "margin": 1,
+                "marginBottom": 1,
+                "marginLeft": 1,
+                "marginRight": 1,
+                "marginTop": 1,
                 "opacity": 1,
-                "padding": 20,
+                "paddingBottom": 20,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
               }
             }
             testID="cardStackItem"
           >
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 12,
-                  "fontWeight": "bold",
-                  "lineHeight": 14,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
               }
             >
               Ending the Healing Session
             </Text>
             <Text
               style={
-                Object {
-                  "color": "#fff",
-                  "fontSize": 10,
-                  "lineHeight": 12,
-                  "marginTop": 5,
-                }
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 10,
+                    "lineHeight": 12,
+                    "marginTop": 5,
+                  },
+                ]
               }
             />
           </View>
