@@ -1,23 +1,11 @@
 import React, { ReactElement } from "react";
-import { Route, ScrollView, StyleSheet, View } from "react-native";
+import { Route } from "react-native";
 import { ListItem } from "react-native-elements";
+import {ListText, OrangeContainer} from "../components";
 
 type NavPropsType = {
   navigation: Route;
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fc9829",
-  },
-  listText: {
-    fontSize: 14,
-    fontWeight: "bold",
-    lineHeight: 14,
-    color: "#fff",
-  },
-});
 
 const symptoms = [
   { name: "AboutRoland", title: "ABOUT ROLAND YAKOUBOV" },
@@ -28,8 +16,7 @@ const symptoms = [
 
 function InfoScreen({ navigation }: NavPropsType): ReactElement {
   return (
-    <View style={styles.container}>
-      <ScrollView>
+      <OrangeContainer>
         {symptoms.map((item) => (
           <ListItem
             key={item.name}
@@ -43,14 +30,13 @@ function InfoScreen({ navigation }: NavPropsType): ReactElement {
             onPress={() => navigation.navigate(item.name)}
             bottomDivider
           >
-            <ListItem.Title style={styles.listText}>
-              {item.title}
+            <ListItem.Title>
+              <ListText>{item.title}</ListText>
             </ListItem.Title>
             <ListItem.Chevron color="#fff" size={28} />
           </ListItem>
         ))}
-      </ScrollView>
-    </View>
+      </OrangeContainer>
   );
 }
 

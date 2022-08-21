@@ -1,30 +1,29 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import styled from "styled-components";
 // import { Icon } from 'expo';
 
-const styles = StyleSheet.create({
-  header: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "flex-start",
-    alignItems: "flex-start",
-    paddingLeft: 15,
-    paddingTop: 60,
-    paddingBottom: 15,
-    backgroundColor: "#fff",
-  },
-  starLogo: {
-    fontWeight: "bold",
-    fontSize: 24,
-    color: "#fb8400",
-  },
-});
+const StyledHeader = styled.View`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 15px;
+  padding-top: 60px;
+  padding-bottom: 15px;
+  background-color: #fff;
+`;
+
+const StarLogo = styled.Text`
+  font-weight: bold;
+  font-size: 24px;
+  color: #fb8400;
+`;
 
 const Header: React.FC = () => {
   return (
-    <View style={styles.header}>
-      <Text style={styles.starLogo}>✸</Text>
-    </View>
+    <StyledHeader>
+      <StarLogo>✸</StarLogo>
+    </StyledHeader>
   );
 };
 

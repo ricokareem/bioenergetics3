@@ -3,10 +3,14 @@
 exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
 <View
   style={
-    Object {
-      "backgroundColor": "#fc9829",
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "backgroundColor": "#fff",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+    ]
   }
 >
   <RCTScrollView>
@@ -41,15 +45,26 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             style={
               Object {
                 "backgroundColor": "transparent",
-                "color": "#fff",
-                "fontSize": 14,
-                "fontWeight": "bold",
-                "lineHeight": 14,
+                "color": "#242424",
+                "fontSize": 17,
               }
             }
             testID="listItemTitle"
           >
-            Migraine/Headaches
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
+              }
+            >
+              Migraine/Headaches
+            </Text>
           </Text>
           <View
             style={
@@ -112,15 +127,26 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             style={
               Object {
                 "backgroundColor": "transparent",
-                "color": "#fff",
-                "fontSize": 14,
-                "fontWeight": "bold",
-                "lineHeight": 14,
+                "color": "#242424",
+                "fontSize": 17,
               }
             }
             testID="listItemTitle"
           >
-            Neck Pain
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
+              }
+            >
+              Neck Pain
+            </Text>
           </Text>
           <View
             style={
@@ -183,15 +209,26 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             style={
               Object {
                 "backgroundColor": "transparent",
-                "color": "#fff",
-                "fontSize": 14,
-                "fontWeight": "bold",
-                "lineHeight": 14,
+                "color": "#242424",
+                "fontSize": 17,
               }
             }
             testID="listItemTitle"
           >
-            Overall Body Pain
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
+              }
+            >
+              Overall Body Pain
+            </Text>
           </Text>
           <View
             style={
@@ -254,15 +291,26 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             style={
               Object {
                 "backgroundColor": "transparent",
-                "color": "#fff",
-                "fontSize": 14,
-                "fontWeight": "bold",
-                "lineHeight": 14,
+                "color": "#242424",
+                "fontSize": 17,
               }
             }
             testID="listItemTitle"
           >
-            Gastric Stomach Pain Spasms
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
+              }
+            >
+              Gastric Stomach Pain Spasms
+            </Text>
           </Text>
           <View
             style={
@@ -325,15 +373,26 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             style={
               Object {
                 "backgroundColor": "transparent",
-                "color": "#fff",
-                "fontSize": 14,
-                "fontWeight": "bold",
-                "lineHeight": 14,
+                "color": "#242424",
+                "fontSize": 17,
               }
             }
             testID="listItemTitle"
           >
-            Diarrhea
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
+              }
+            >
+              Diarrhea
+            </Text>
           </Text>
           <View
             style={
@@ -396,15 +455,26 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             style={
               Object {
                 "backgroundColor": "transparent",
-                "color": "#fff",
-                "fontSize": 14,
-                "fontWeight": "bold",
-                "lineHeight": 14,
+                "color": "#242424",
+                "fontSize": 17,
               }
             }
             testID="listItemTitle"
           >
-            Chronic Constipation
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
+              }
+            >
+              Chronic Constipation
+            </Text>
           </Text>
           <View
             style={
@@ -467,15 +537,26 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             style={
               Object {
                 "backgroundColor": "transparent",
-                "color": "#fff",
-                "fontSize": 14,
-                "fontWeight": "bold",
-                "lineHeight": 14,
+                "color": "#242424",
+                "fontSize": 17,
               }
             }
             testID="listItemTitle"
           >
-            Flu
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
+              }
+            >
+              Flu
+            </Text>
           </Text>
           <View
             style={
@@ -538,15 +619,26 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             style={
               Object {
                 "backgroundColor": "transparent",
-                "color": "#fff",
-                "fontSize": 14,
-                "fontWeight": "bold",
-                "lineHeight": 14,
+                "color": "#242424",
+                "fontSize": 17,
               }
             }
             testID="listItemTitle"
           >
-            Bladder Pain
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
+              }
+            >
+              Bladder Pain
+            </Text>
           </Text>
           <View
             style={
@@ -609,15 +701,26 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             style={
               Object {
                 "backgroundColor": "transparent",
-                "color": "#fff",
-                "fontSize": 14,
-                "fontWeight": "bold",
-                "lineHeight": 14,
+                "color": "#242424",
+                "fontSize": 17,
               }
             }
             testID="listItemTitle"
           >
-            PMS/Cramps
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
+              }
+            >
+              PMS/Cramps
+            </Text>
           </Text>
           <View
             style={
@@ -680,15 +783,26 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             style={
               Object {
                 "backgroundColor": "transparent",
-                "color": "#fff",
-                "fontSize": 14,
-                "fontWeight": "bold",
-                "lineHeight": 14,
+                "color": "#242424",
+                "fontSize": 17,
               }
             }
             testID="listItemTitle"
           >
-            Shoulder Pain
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
+              }
+            >
+              Shoulder Pain
+            </Text>
           </Text>
           <View
             style={
@@ -751,15 +865,26 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             style={
               Object {
                 "backgroundColor": "transparent",
-                "color": "#fff",
-                "fontSize": 14,
-                "fontWeight": "bold",
-                "lineHeight": 14,
+                "color": "#242424",
+                "fontSize": 17,
               }
             }
             testID="listItemTitle"
           >
-            Back Pain
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
+              }
+            >
+              Back Pain
+            </Text>
           </Text>
           <View
             style={
@@ -822,15 +947,26 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             style={
               Object {
                 "backgroundColor": "transparent",
-                "color": "#fff",
-                "fontSize": 14,
-                "fontWeight": "bold",
-                "lineHeight": 14,
+                "color": "#242424",
+                "fontSize": 17,
               }
             }
             testID="listItemTitle"
           >
-            Dementia
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
+              }
+            >
+              Dementia
+            </Text>
           </Text>
           <View
             style={
@@ -893,15 +1029,26 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             style={
               Object {
                 "backgroundColor": "transparent",
-                "color": "#fff",
-                "fontSize": 14,
-                "fontWeight": "bold",
-                "lineHeight": 14,
+                "color": "#242424",
+                "fontSize": 17,
               }
             }
             testID="listItemTitle"
           >
-            Thyroid
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
+              }
+            >
+              Thyroid
+            </Text>
           </Text>
           <View
             style={
@@ -964,15 +1111,26 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             style={
               Object {
                 "backgroundColor": "transparent",
-                "color": "#fff",
-                "fontSize": 14,
-                "fontWeight": "bold",
-                "lineHeight": 14,
+                "color": "#242424",
+                "fontSize": 17,
               }
             }
             testID="listItemTitle"
           >
-            Knee Pain
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
+              }
+            >
+              Knee Pain
+            </Text>
           </Text>
           <View
             style={
@@ -1035,15 +1193,26 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             style={
               Object {
                 "backgroundColor": "transparent",
-                "color": "#fff",
-                "fontSize": 14,
-                "fontWeight": "bold",
-                "lineHeight": 14,
+                "color": "#242424",
+                "fontSize": 17,
               }
             }
             testID="listItemTitle"
           >
-            Leg Pain/Cramps
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#fff",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "lineHeight": 14,
+                  },
+                ]
+              }
+            >
+              Leg Pain/Cramps
+            </Text>
           </Text>
           <View
             style={

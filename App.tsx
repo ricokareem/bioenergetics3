@@ -2,16 +2,16 @@
 
 import "react-native-gesture-handler";
 import React from "react";
-import { Platform, StatusBar, StyleSheet, View } from "react-native";
+import { Platform, StatusBar } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import Feather from "@expo/vector-icons/Feather";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { useFonts } from "expo-font";
 
-import AppLoading from "expo-app-loading";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
+import { WhiteContainer } from "./components";
 import TabNavigator from "./navigation/TabNavigator";
 import MediaScreen from "./screens/MediaScreen";
 import HowToUseAppScreen from "./screens/HowToUseAppScreen";
@@ -21,13 +21,6 @@ import AboutRoland from "./screens/AboutRoland";
 import Disclaimer from "./screens/Disclaimer";
 import Social from "./screens/Social";
 import Credits from "./screens/Credits";
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-  },
-});
 
 const Stack = createStackNavigator();
 
@@ -44,7 +37,7 @@ export default function App(): JSX.Element {
 
   return (
     <SafeAreaProvider>
-      <View style={styles.container}>
+      <WhiteContainer>
         {Platform.OS === "ios" && <StatusBar barStyle="default" />}
         <NavigationContainer>
           <Stack.Navigator>
@@ -68,7 +61,7 @@ export default function App(): JSX.Element {
             <Stack.Screen name="Credits" component={Credits} />
           </Stack.Navigator>
         </NavigationContainer>
-      </View>
+      </WhiteContainer>
     </SafeAreaProvider>
   );
 }
