@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 import { Route } from "react-native";
-import { OrangeContainer } from "../components";
+import { ClearScrollingContainer } from "../components";
 import MediaCard from "../components/MediaCard";
 
 type MediaScreenProps = {
@@ -11,9 +11,9 @@ function MediaScreen({ route }: MediaScreenProps): ReactElement {
   const { title, playlist, showTimer } = route.params;
 
   return (
-    <OrangeContainer>
+    <ClearScrollingContainer>
       <MediaCard title={title} playlist={playlist} showTimer={showTimer} />
-    </OrangeContainer>
+    </ClearScrollingContainer>
   );
 }
 

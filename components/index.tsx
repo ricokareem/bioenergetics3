@@ -6,7 +6,11 @@ export const WhiteContainer = styled.View`
   background-color: #fff;
 `;
 
-export const OrangeContainer = styled.ScrollView`
+export const ClearScrollingContainer = styled.ScrollView`
+  flex: 1;
+`;
+
+export const OrangeScrollingContainer = styled.ScrollView`
   flex: 1;
   background-color: #fc9829;
 `;

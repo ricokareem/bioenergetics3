@@ -13,6 +13,7 @@ it("Symptoms Workflow", () => {
   cy.contains("Migraine").should("be.visible").click();
   cy.get("video").should("be.visible");
   cy.get('[data-testid="pause-play-button"]')
+    .scrollIntoView()
     .should("be.visible")
     .should("not.be.disabled")
     .click();

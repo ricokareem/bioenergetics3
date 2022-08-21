@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import { Route } from "react-native";
 import { ListItem } from "react-native-elements";
-import { ListText, OrangeContainer } from "../components";
+import { ListText, OrangeScrollingContainer } from "../components";
 
 type NavPropsType = {
   navigation: Route;
@@ -16,7 +16,7 @@ const symptoms = [
 
 function InfoScreen({ navigation }: NavPropsType): ReactElement {
   return (
-    <OrangeContainer>
+    <OrangeScrollingContainer>
       {symptoms.map((item) => (
         <ListItem
           key={item.name}
@@ -36,7 +36,7 @@ function InfoScreen({ navigation }: NavPropsType): ReactElement {
           <ListItem.Chevron color="#fff" size={28} />
         </ListItem>
       ))}
-    </OrangeContainer>
+    </OrangeScrollingContainer>
   );
 }
 

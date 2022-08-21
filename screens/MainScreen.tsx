@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import { Route } from "react-native";
 import { ListItem } from "react-native-elements";
-import { OrangeContainer, ListText } from "../components";
+import { OrangeScrollingContainer, ListText } from "../components";
 
 type NavPropsType = {
   navigation: Route;
@@ -22,7 +22,7 @@ const group2 = [
 
 function MainMenuList({ navigation }: NavPropsType): ReactElement {
   return (
-    <OrangeContainer>
+    <OrangeScrollingContainer>
       {group1.map((item) => (
         <ListItem
           key={item.name}
@@ -61,7 +61,7 @@ function MainMenuList({ navigation }: NavPropsType): ReactElement {
           <ListItem.Chevron color="#fff" size={28} />
         </ListItem>
       ))}
-    </OrangeContainer>
+    </OrangeScrollingContainer>
   );
 }
 
