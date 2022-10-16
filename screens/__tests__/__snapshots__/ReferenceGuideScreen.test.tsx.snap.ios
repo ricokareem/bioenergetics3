@@ -3,8 +3,8 @@
 exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "backgroundColor": "#fff",
         "flexBasis": 0,
         "flexGrow": 1,
@@ -28,7 +28,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
       >
         <View
           style={
-            Object {
+            {
               "alignItems": "center",
               "backgroundColor": "#fc9829",
               "borderBottomColor": "#ccc",
@@ -43,7 +43,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Object {
+              {
                 "backgroundColor": "transparent",
                 "color": "#242424",
                 "fontSize": 17,
@@ -53,8 +53,8 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           >
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#fff",
                     "fontSize": 14,
                     "fontWeight": "bold",
@@ -68,14 +68,14 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           </Text>
           <View
             style={
-              Object {
+              {
                 "paddingLeft": 16,
               }
             }
           />
           <View
             style={
-              Object {
+              {
                 "alignSelf": "center",
                 "overflow": "hidden",
               }
@@ -84,7 +84,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             <View>
               <View
                 style={
-                  Object {
+                  {
                     "alignItems": "center",
                     "backgroundColor": "transparent",
                     "justifyContent": "center",
@@ -110,7 +110,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
       >
         <View
           style={
-            Object {
+            {
               "alignItems": "center",
               "backgroundColor": "#fc9829",
               "borderBottomColor": "#ccc",
@@ -125,7 +125,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Object {
+              {
                 "backgroundColor": "transparent",
                 "color": "#242424",
                 "fontSize": 17,
@@ -135,8 +135,8 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           >
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#fff",
                     "fontSize": 14,
                     "fontWeight": "bold",
@@ -150,14 +150,14 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           </Text>
           <View
             style={
-              Object {
+              {
                 "paddingLeft": 16,
               }
             }
           />
           <View
             style={
-              Object {
+              {
                 "alignSelf": "center",
                 "overflow": "hidden",
               }
@@ -166,7 +166,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             <View>
               <View
                 style={
-                  Object {
+                  {
                     "alignItems": "center",
                     "backgroundColor": "transparent",
                     "justifyContent": "center",
@@ -192,7 +192,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
       >
         <View
           style={
-            Object {
+            {
               "alignItems": "center",
               "backgroundColor": "#fc9829",
               "borderBottomColor": "#ccc",
@@ -207,7 +207,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Object {
+              {
                 "backgroundColor": "transparent",
                 "color": "#242424",
                 "fontSize": 17,
@@ -217,8 +217,8 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           >
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#fff",
                     "fontSize": 14,
                     "fontWeight": "bold",
@@ -232,14 +232,14 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           </Text>
           <View
             style={
-              Object {
+              {
                 "paddingLeft": 16,
               }
             }
           />
           <View
             style={
-              Object {
+              {
                 "alignSelf": "center",
                 "overflow": "hidden",
               }
@@ -248,7 +248,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             <View>
               <View
                 style={
-                  Object {
+                  {
                     "alignItems": "center",
                     "backgroundColor": "transparent",
                     "justifyContent": "center",
@@ -274,7 +274,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
       >
         <View
           style={
-            Object {
+            {
               "alignItems": "center",
               "backgroundColor": "#fc9829",
               "borderBottomColor": "#ccc",
@@ -289,7 +289,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Object {
+              {
                 "backgroundColor": "transparent",
                 "color": "#242424",
                 "fontSize": 17,
@@ -299,8 +299,8 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           >
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#fff",
                     "fontSize": 14,
                     "fontWeight": "bold",
@@ -314,14 +314,14 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           </Text>
           <View
             style={
-              Object {
+              {
                 "paddingLeft": 16,
               }
             }
           />
           <View
             style={
-              Object {
+              {
                 "alignSelf": "center",
                 "overflow": "hidden",
               }
@@ -330,7 +330,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             <View>
               <View
                 style={
-                  Object {
+                  {
                     "alignItems": "center",
                     "backgroundColor": "transparent",
                     "justifyContent": "center",
@@ -356,7 +356,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
       >
         <View
           style={
-            Object {
+            {
               "alignItems": "center",
               "backgroundColor": "#fc9829",
               "borderBottomColor": "#ccc",
@@ -371,7 +371,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Object {
+              {
                 "backgroundColor": "transparent",
                 "color": "#242424",
                 "fontSize": 17,
@@ -381,8 +381,8 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           >
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#fff",
                     "fontSize": 14,
                     "fontWeight": "bold",
@@ -396,14 +396,14 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           </Text>
           <View
             style={
-              Object {
+              {
                 "paddingLeft": 16,
               }
             }
           />
           <View
             style={
-              Object {
+              {
                 "alignSelf": "center",
                 "overflow": "hidden",
               }
@@ -412,7 +412,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             <View>
               <View
                 style={
-                  Object {
+                  {
                     "alignItems": "center",
                     "backgroundColor": "transparent",
                     "justifyContent": "center",
@@ -438,7 +438,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
       >
         <View
           style={
-            Object {
+            {
               "alignItems": "center",
               "backgroundColor": "#fc9829",
               "borderBottomColor": "#ccc",
@@ -453,7 +453,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Object {
+              {
                 "backgroundColor": "transparent",
                 "color": "#242424",
                 "fontSize": 17,
@@ -463,8 +463,8 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           >
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#fff",
                     "fontSize": 14,
                     "fontWeight": "bold",
@@ -478,14 +478,14 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           </Text>
           <View
             style={
-              Object {
+              {
                 "paddingLeft": 16,
               }
             }
           />
           <View
             style={
-              Object {
+              {
                 "alignSelf": "center",
                 "overflow": "hidden",
               }
@@ -494,7 +494,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             <View>
               <View
                 style={
-                  Object {
+                  {
                     "alignItems": "center",
                     "backgroundColor": "transparent",
                     "justifyContent": "center",
@@ -520,7 +520,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
       >
         <View
           style={
-            Object {
+            {
               "alignItems": "center",
               "backgroundColor": "#fc9829",
               "borderBottomColor": "#ccc",
@@ -535,7 +535,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Object {
+              {
                 "backgroundColor": "transparent",
                 "color": "#242424",
                 "fontSize": 17,
@@ -545,8 +545,8 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           >
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#fff",
                     "fontSize": 14,
                     "fontWeight": "bold",
@@ -560,14 +560,14 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           </Text>
           <View
             style={
-              Object {
+              {
                 "paddingLeft": 16,
               }
             }
           />
           <View
             style={
-              Object {
+              {
                 "alignSelf": "center",
                 "overflow": "hidden",
               }
@@ -576,7 +576,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             <View>
               <View
                 style={
-                  Object {
+                  {
                     "alignItems": "center",
                     "backgroundColor": "transparent",
                     "justifyContent": "center",
@@ -602,7 +602,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
       >
         <View
           style={
-            Object {
+            {
               "alignItems": "center",
               "backgroundColor": "#fc9829",
               "borderBottomColor": "#ccc",
@@ -617,7 +617,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Object {
+              {
                 "backgroundColor": "transparent",
                 "color": "#242424",
                 "fontSize": 17,
@@ -627,8 +627,8 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           >
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#fff",
                     "fontSize": 14,
                     "fontWeight": "bold",
@@ -642,14 +642,14 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           </Text>
           <View
             style={
-              Object {
+              {
                 "paddingLeft": 16,
               }
             }
           />
           <View
             style={
-              Object {
+              {
                 "alignSelf": "center",
                 "overflow": "hidden",
               }
@@ -658,7 +658,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             <View>
               <View
                 style={
-                  Object {
+                  {
                     "alignItems": "center",
                     "backgroundColor": "transparent",
                     "justifyContent": "center",
@@ -684,7 +684,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
       >
         <View
           style={
-            Object {
+            {
               "alignItems": "center",
               "backgroundColor": "#fc9829",
               "borderBottomColor": "#ccc",
@@ -699,7 +699,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Object {
+              {
                 "backgroundColor": "transparent",
                 "color": "#242424",
                 "fontSize": 17,
@@ -709,8 +709,8 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           >
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#fff",
                     "fontSize": 14,
                     "fontWeight": "bold",
@@ -724,14 +724,14 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           </Text>
           <View
             style={
-              Object {
+              {
                 "paddingLeft": 16,
               }
             }
           />
           <View
             style={
-              Object {
+              {
                 "alignSelf": "center",
                 "overflow": "hidden",
               }
@@ -740,7 +740,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             <View>
               <View
                 style={
-                  Object {
+                  {
                     "alignItems": "center",
                     "backgroundColor": "transparent",
                     "justifyContent": "center",
@@ -766,7 +766,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
       >
         <View
           style={
-            Object {
+            {
               "alignItems": "center",
               "backgroundColor": "#fc9829",
               "borderBottomColor": "#ccc",
@@ -781,7 +781,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Object {
+              {
                 "backgroundColor": "transparent",
                 "color": "#242424",
                 "fontSize": 17,
@@ -791,8 +791,8 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           >
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#fff",
                     "fontSize": 14,
                     "fontWeight": "bold",
@@ -806,14 +806,14 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           </Text>
           <View
             style={
-              Object {
+              {
                 "paddingLeft": 16,
               }
             }
           />
           <View
             style={
-              Object {
+              {
                 "alignSelf": "center",
                 "overflow": "hidden",
               }
@@ -822,7 +822,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             <View>
               <View
                 style={
-                  Object {
+                  {
                     "alignItems": "center",
                     "backgroundColor": "transparent",
                     "justifyContent": "center",
@@ -848,7 +848,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
       >
         <View
           style={
-            Object {
+            {
               "alignItems": "center",
               "backgroundColor": "#fc9829",
               "borderBottomColor": "#ccc",
@@ -863,7 +863,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Object {
+              {
                 "backgroundColor": "transparent",
                 "color": "#242424",
                 "fontSize": 17,
@@ -873,8 +873,8 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           >
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#fff",
                     "fontSize": 14,
                     "fontWeight": "bold",
@@ -888,14 +888,14 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           </Text>
           <View
             style={
-              Object {
+              {
                 "paddingLeft": 16,
               }
             }
           />
           <View
             style={
-              Object {
+              {
                 "alignSelf": "center",
                 "overflow": "hidden",
               }
@@ -904,7 +904,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             <View>
               <View
                 style={
-                  Object {
+                  {
                     "alignItems": "center",
                     "backgroundColor": "transparent",
                     "justifyContent": "center",
@@ -930,7 +930,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
       >
         <View
           style={
-            Object {
+            {
               "alignItems": "center",
               "backgroundColor": "#fc9829",
               "borderBottomColor": "#ccc",
@@ -945,7 +945,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Object {
+              {
                 "backgroundColor": "transparent",
                 "color": "#242424",
                 "fontSize": 17,
@@ -955,8 +955,8 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           >
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#fff",
                     "fontSize": 14,
                     "fontWeight": "bold",
@@ -970,14 +970,14 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           </Text>
           <View
             style={
-              Object {
+              {
                 "paddingLeft": 16,
               }
             }
           />
           <View
             style={
-              Object {
+              {
                 "alignSelf": "center",
                 "overflow": "hidden",
               }
@@ -986,7 +986,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             <View>
               <View
                 style={
-                  Object {
+                  {
                     "alignItems": "center",
                     "backgroundColor": "transparent",
                     "justifyContent": "center",
@@ -1012,7 +1012,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
       >
         <View
           style={
-            Object {
+            {
               "alignItems": "center",
               "backgroundColor": "#fc9829",
               "borderBottomColor": "#ccc",
@@ -1027,7 +1027,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Object {
+              {
                 "backgroundColor": "transparent",
                 "color": "#242424",
                 "fontSize": 17,
@@ -1037,8 +1037,8 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           >
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#fff",
                     "fontSize": 14,
                     "fontWeight": "bold",
@@ -1052,14 +1052,14 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           </Text>
           <View
             style={
-              Object {
+              {
                 "paddingLeft": 16,
               }
             }
           />
           <View
             style={
-              Object {
+              {
                 "alignSelf": "center",
                 "overflow": "hidden",
               }
@@ -1068,7 +1068,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             <View>
               <View
                 style={
-                  Object {
+                  {
                     "alignItems": "center",
                     "backgroundColor": "transparent",
                     "justifyContent": "center",
@@ -1094,7 +1094,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
       >
         <View
           style={
-            Object {
+            {
               "alignItems": "center",
               "backgroundColor": "#fc9829",
               "borderBottomColor": "#ccc",
@@ -1109,7 +1109,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Object {
+              {
                 "backgroundColor": "transparent",
                 "color": "#242424",
                 "fontSize": 17,
@@ -1119,8 +1119,8 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           >
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#fff",
                     "fontSize": 14,
                     "fontWeight": "bold",
@@ -1134,14 +1134,14 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           </Text>
           <View
             style={
-              Object {
+              {
                 "paddingLeft": 16,
               }
             }
           />
           <View
             style={
-              Object {
+              {
                 "alignSelf": "center",
                 "overflow": "hidden",
               }
@@ -1150,7 +1150,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             <View>
               <View
                 style={
-                  Object {
+                  {
                     "alignItems": "center",
                     "backgroundColor": "transparent",
                     "justifyContent": "center",
@@ -1176,7 +1176,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
       >
         <View
           style={
-            Object {
+            {
               "alignItems": "center",
               "backgroundColor": "#fc9829",
               "borderBottomColor": "#ccc",
@@ -1191,7 +1191,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Object {
+              {
                 "backgroundColor": "transparent",
                 "color": "#242424",
                 "fontSize": 17,
@@ -1201,8 +1201,8 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           >
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#fff",
                     "fontSize": 14,
                     "fontWeight": "bold",
@@ -1216,14 +1216,14 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
           </Text>
           <View
             style={
-              Object {
+              {
                 "paddingLeft": 16,
               }
             }
           />
           <View
             style={
-              Object {
+              {
                 "alignSelf": "center",
                 "overflow": "hidden",
               }
@@ -1232,7 +1232,7 @@ exports[`<ReferenceGuideScreen> should match snapshot 1`] = `
             <View>
               <View
                 style={
-                  Object {
+                  {
                     "alignItems": "center",
                     "backgroundColor": "transparent",
                     "justifyContent": "center",
