@@ -3,8 +3,8 @@
 exports[`<InfoScreen> should match snapshot 1`] = `
 <RCTScrollView
   style={
-    Array [
-      Object {
+    [
+      {
         "backgroundColor": "#fc9829",
         "flexBasis": 0,
         "flexGrow": 1,
@@ -27,7 +27,7 @@ exports[`<InfoScreen> should match snapshot 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "alignItems": "center",
             "backgroundColor": "#fc9829",
             "borderBottomColor": "#ccc",
@@ -42,7 +42,7 @@ exports[`<InfoScreen> should match snapshot 1`] = `
       >
         <Text
           style={
-            Object {
+            {
               "backgroundColor": "transparent",
               "color": "#242424",
               "fontSize": 17,
@@ -52,8 +52,8 @@ exports[`<InfoScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": "#fff",
                   "fontSize": 14,
                   "fontWeight": "bold",
@@ -67,14 +67,14 @@ exports[`<InfoScreen> should match snapshot 1`] = `
         </Text>
         <View
           style={
-            Object {
+            {
               "paddingLeft": 16,
             }
           }
         />
         <View
           style={
-            Object {
+            {
               "alignSelf": "center",
               "overflow": "hidden",
             }
@@ -83,7 +83,7 @@ exports[`<InfoScreen> should match snapshot 1`] = `
           <View>
             <View
               style={
-                Object {
+                {
                   "alignItems": "center",
                   "backgroundColor": "transparent",
                   "justifyContent": "center",
@@ -109,7 +109,7 @@ exports[`<InfoScreen> should match snapshot 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "alignItems": "center",
             "backgroundColor": "#fc9829",
             "borderBottomColor": "#ccc",
@@ -124,7 +124,7 @@ exports[`<InfoScreen> should match snapshot 1`] = `
       >
         <Text
           style={
-            Object {
+            {
               "backgroundColor": "transparent",
               "color": "#242424",
               "fontSize": 17,
@@ -134,8 +134,8 @@ exports[`<InfoScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": "#fff",
                   "fontSize": 14,
                   "fontWeight": "bold",
@@ -149,14 +149,14 @@ exports[`<InfoScreen> should match snapshot 1`] = `
         </Text>
         <View
           style={
-            Object {
+            {
               "paddingLeft": 16,
             }
           }
         />
         <View
           style={
-            Object {
+            {
               "alignSelf": "center",
               "overflow": "hidden",
             }
@@ -165,7 +165,7 @@ exports[`<InfoScreen> should match snapshot 1`] = `
           <View>
             <View
               style={
-                Object {
+                {
                   "alignItems": "center",
                   "backgroundColor": "transparent",
                   "justifyContent": "center",
@@ -191,7 +191,7 @@ exports[`<InfoScreen> should match snapshot 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "alignItems": "center",
             "backgroundColor": "#fc9829",
             "borderBottomColor": "#ccc",
@@ -206,7 +206,7 @@ exports[`<InfoScreen> should match snapshot 1`] = `
       >
         <Text
           style={
-            Object {
+            {
               "backgroundColor": "transparent",
               "color": "#242424",
               "fontSize": 17,
@@ -216,8 +216,8 @@ exports[`<InfoScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": "#fff",
                   "fontSize": 14,
                   "fontWeight": "bold",
@@ -231,14 +231,14 @@ exports[`<InfoScreen> should match snapshot 1`] = `
         </Text>
         <View
           style={
-            Object {
+            {
               "paddingLeft": 16,
             }
           }
         />
         <View
           style={
-            Object {
+            {
               "alignSelf": "center",
               "overflow": "hidden",
             }
@@ -247,7 +247,7 @@ exports[`<InfoScreen> should match snapshot 1`] = `
           <View>
             <View
               style={
-                Object {
+                {
                   "alignItems": "center",
                   "backgroundColor": "transparent",
                   "justifyContent": "center",
@@ -273,7 +273,7 @@ exports[`<InfoScreen> should match snapshot 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "alignItems": "center",
             "backgroundColor": "#fc9829",
             "borderBottomColor": "#ccc",
@@ -288,7 +288,7 @@ exports[`<InfoScreen> should match snapshot 1`] = `
       >
         <Text
           style={
-            Object {
+            {
               "backgroundColor": "transparent",
               "color": "#242424",
               "fontSize": 17,
@@ -298,8 +298,8 @@ exports[`<InfoScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": "#fff",
                   "fontSize": 14,
                   "fontWeight": "bold",
@@ -313,14 +313,14 @@ exports[`<InfoScreen> should match snapshot 1`] = `
         </Text>
         <View
           style={
-            Object {
+            {
               "paddingLeft": 16,
             }
           }
         />
         <View
           style={
-            Object {
+            {
               "alignSelf": "center",
               "overflow": "hidden",
             }
@@ -329,7 +329,7 @@ exports[`<InfoScreen> should match snapshot 1`] = `
           <View>
             <View
               style={
-                Object {
+                {
                   "alignItems": "center",
                   "backgroundColor": "transparent",
                   "justifyContent": "center",

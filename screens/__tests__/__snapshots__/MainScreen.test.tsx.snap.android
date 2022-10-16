@@ -3,8 +3,8 @@
 exports[`<MainScreen> should match snapshot 1`] = `
 <RCTScrollView
   style={
-    Array [
-      Object {
+    [
+      {
         "backgroundColor": "#fc9829",
         "flexBasis": 0,
         "flexGrow": 1,
@@ -27,7 +27,7 @@ exports[`<MainScreen> should match snapshot 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "alignItems": "center",
             "backgroundColor": "#fb8400",
             "borderBottomColor": "#ccc",
@@ -42,7 +42,7 @@ exports[`<MainScreen> should match snapshot 1`] = `
       >
         <Text
           style={
-            Object {
+            {
               "backgroundColor": "transparent",
               "color": "#242424",
               "fontFamily": "sans-serif",
@@ -54,8 +54,8 @@ exports[`<MainScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": "#fff",
                   "fontSize": 14,
                   "fontWeight": "bold",
@@ -69,14 +69,14 @@ exports[`<MainScreen> should match snapshot 1`] = `
         </Text>
         <View
           style={
-            Object {
+            {
               "paddingLeft": 16,
             }
           }
         />
         <View
           style={
-            Object {
+            {
               "alignSelf": "center",
               "overflow": "hidden",
             }
@@ -85,7 +85,7 @@ exports[`<MainScreen> should match snapshot 1`] = `
           <View>
             <View
               style={
-                Object {
+                {
                   "alignItems": "center",
                   "backgroundColor": "transparent",
                   "justifyContent": "center",
@@ -111,7 +111,7 @@ exports[`<MainScreen> should match snapshot 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "alignItems": "center",
             "backgroundColor": "#fb8400",
             "borderBottomColor": "#ccc",
@@ -126,7 +126,7 @@ exports[`<MainScreen> should match snapshot 1`] = `
       >
         <Text
           style={
-            Object {
+            {
               "backgroundColor": "transparent",
               "color": "#242424",
               "fontFamily": "sans-serif",
@@ -138,8 +138,8 @@ exports[`<MainScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": "#fff",
                   "fontSize": 14,
                   "fontWeight": "bold",
@@ -153,14 +153,14 @@ exports[`<MainScreen> should match snapshot 1`] = `
         </Text>
         <View
           style={
-            Object {
+            {
               "paddingLeft": 16,
             }
           }
         />
         <View
           style={
-            Object {
+            {
               "alignSelf": "center",
               "overflow": "hidden",
             }
@@ -169,7 +169,7 @@ exports[`<MainScreen> should match snapshot 1`] = `
           <View>
             <View
               style={
-                Object {
+                {
                   "alignItems": "center",
                   "backgroundColor": "transparent",
                   "justifyContent": "center",
@@ -195,7 +195,7 @@ exports[`<MainScreen> should match snapshot 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "alignItems": "center",
             "backgroundColor": "#fc9829",
             "borderBottomColor": "#ccc",
@@ -210,7 +210,7 @@ exports[`<MainScreen> should match snapshot 1`] = `
       >
         <Text
           style={
-            Object {
+            {
               "backgroundColor": "transparent",
               "color": "#242424",
               "fontFamily": "sans-serif",
@@ -222,8 +222,8 @@ exports[`<MainScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": "#fff",
                   "fontSize": 14,
                   "fontWeight": "bold",
@@ -237,14 +237,14 @@ exports[`<MainScreen> should match snapshot 1`] = `
         </Text>
         <View
           style={
-            Object {
+            {
               "paddingLeft": 16,
             }
           }
         />
         <View
           style={
-            Object {
+            {
               "alignSelf": "center",
               "overflow": "hidden",
             }
@@ -253,7 +253,7 @@ exports[`<MainScreen> should match snapshot 1`] = `
           <View>
             <View
               style={
-                Object {
+                {
                   "alignItems": "center",
                   "backgroundColor": "transparent",
                   "justifyContent": "center",
@@ -279,7 +279,7 @@ exports[`<MainScreen> should match snapshot 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "alignItems": "center",
             "backgroundColor": "#fc9829",
             "borderBottomColor": "#ccc",
@@ -294,7 +294,7 @@ exports[`<MainScreen> should match snapshot 1`] = `
       >
         <Text
           style={
-            Object {
+            {
               "backgroundColor": "transparent",
               "color": "#242424",
               "fontFamily": "sans-serif",
@@ -306,8 +306,8 @@ exports[`<MainScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": "#fff",
                   "fontSize": 14,
                   "fontWeight": "bold",
@@ -321,14 +321,14 @@ exports[`<MainScreen> should match snapshot 1`] = `
         </Text>
         <View
           style={
-            Object {
+            {
               "paddingLeft": 16,
             }
           }
         />
         <View
           style={
-            Object {
+            {
               "alignSelf": "center",
               "overflow": "hidden",
             }
@@ -337,7 +337,7 @@ exports[`<MainScreen> should match snapshot 1`] = `
           <View>
             <View
               style={
-                Object {
+                {
                   "alignItems": "center",
                   "backgroundColor": "transparent",
                   "justifyContent": "center",
@@ -363,7 +363,7 @@ exports[`<MainScreen> should match snapshot 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "alignItems": "center",
             "backgroundColor": "#fc9829",
             "borderBottomColor": "#ccc",
@@ -378,7 +378,7 @@ exports[`<MainScreen> should match snapshot 1`] = `
       >
         <Text
           style={
-            Object {
+            {
               "backgroundColor": "transparent",
               "color": "#242424",
               "fontFamily": "sans-serif",
@@ -390,8 +390,8 @@ exports[`<MainScreen> should match snapshot 1`] = `
         >
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": "#fff",
                   "fontSize": 14,
                   "fontWeight": "bold",
@@ -405,14 +405,14 @@ exports[`<MainScreen> should match snapshot 1`] = `
         </Text>
         <View
           style={
-            Object {
+            {
               "paddingLeft": 16,
             }
           }
         />
         <View
           style={
-            Object {
+            {
               "alignSelf": "center",
               "overflow": "hidden",
             }
@@ -421,7 +421,7 @@ exports[`<MainScreen> should match snapshot 1`] = `
           <View>
             <View
               style={
-                Object {
+                {
                   "alignItems": "center",
                   "backgroundColor": "transparent",
                   "justifyContent": "center",

@@ -3,8 +3,8 @@
 exports[`<MediaScreen> should match snapshot 1`] = `
 <RCTScrollView
   style={
-    Array [
-      Object {
+    [
+      {
         "flexBasis": 0,
         "flexGrow": 1,
         "flexShrink": 1,
@@ -15,7 +15,7 @@ exports[`<MediaScreen> should match snapshot 1`] = `
   <View>
     <View
       style={
-        Object {
+        {
           "backgroundColor": "#ffffff",
           "borderColor": "#e1e8ee",
           "borderWidth": 1,
@@ -23,7 +23,7 @@ exports[`<MediaScreen> should match snapshot 1`] = `
           "marginBottom": 0,
           "padding": 15,
           "shadowColor": "rgba(0,0,0, .2)",
-          "shadowOffset": Object {
+          "shadowOffset": {
             "height": 0,
             "width": 0,
           },
@@ -34,14 +34,14 @@ exports[`<MediaScreen> should match snapshot 1`] = `
     >
       <View
         style={
-          Object {
+          {
             "backgroundColor": "transparent",
           }
         }
       >
         <Text
           style={
-            Object {
+            {
               "color": "#43484d",
               "fontSize": 18,
               "fontWeight": "bold",
@@ -55,7 +55,7 @@ exports[`<MediaScreen> should match snapshot 1`] = `
         </Text>
         <View
           style={
-            Object {
+            {
               "borderBottomColor": "#bcbbc1",
               "borderBottomWidth": 0.5,
               "marginBottom": 15,
@@ -65,7 +65,7 @@ exports[`<MediaScreen> should match snapshot 1`] = `
         <View
           pointerEvents="box-none"
           style={
-            Object {
+            {
               "height": 375,
               "marginBottom": 24,
               "overflow": "hidden",
@@ -80,14 +80,14 @@ exports[`<MediaScreen> should match snapshot 1`] = `
             onReadyForDisplay={[Function]}
             onStatusUpdate={[Function]}
             proxiedProperties={
-              Object {
+              {
                 "resizeMode": "mock",
-                "source": Object {
+                "source": {
                   "headers": undefined,
                   "overridingExtension": null,
                   "uri": "uri",
                 },
-                "status": Object {
+                "status": {
                   "isLooping": false,
                   "isMuted": false,
                   "rate": 1,
@@ -97,7 +97,7 @@ exports[`<MediaScreen> should match snapshot 1`] = `
               }
             }
             style={
-              Object {
+              {
                 "bottom": 0,
                 "left": 0,
                 "position": "absolute",
@@ -109,7 +109,7 @@ exports[`<MediaScreen> should match snapshot 1`] = `
         </View>
         <Text
           style={
-            Object {
+            {
               "marginBottom": 10,
             }
           }
