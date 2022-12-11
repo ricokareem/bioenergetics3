@@ -7,6 +7,9 @@
       "android",
       "web"
     ],
+    "plugins": [
+      "@config-plugins/detox"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -28,6 +31,11 @@
     },
     "android": {
       "package": "com.ricokareem.bioenergetics3"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0b530a30-c4e0-11e8-a6b0-fdbd974bb46a"
+      }
     }
   }
 }
