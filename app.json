@@ -25,6 +25,9 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.ricokareem.bioenergetics3"
+    },
+    "android": {
+      "package": "com.ricokareem.bioenergetics3"
     }
   }
 }
