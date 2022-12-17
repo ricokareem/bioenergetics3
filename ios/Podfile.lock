@@ -3,10 +3,9 @@ PODS:
   - DoubleConversion (1.1.6)
   - EXApplication (5.0.1):
     - ExpoModulesCore
-  - EXAV (12.0.4):
+  - EXAV (13.0.2):
     - ExpoModulesCore
-    - React-runtimeexecutor
-    - ReactCommon
+    - ReactCommon/turbomodule/core
   - EXConstants (14.0.2):
     - ExpoModulesCore
   - EXErrorRecovery (4.0.1):
@@ -307,25 +306,6 @@ PODS:
     - ReactCommon/turbomodule/core (= 0.69.7)
   - React-runtimeexecutor (0.69.7):
     - React-jsi (= 0.69.7)
-  - ReactCommon (0.69.7):
-    - React-logger (= 0.69.7)
-    - ReactCommon/react_debug_core (= 0.69.7)
-    - ReactCommon/turbomodule (= 0.69.7)
-  - ReactCommon/react_debug_core (0.69.7):
-    - React-logger (= 0.69.7)
-  - ReactCommon/turbomodule (0.69.7):
-    - DoubleConversion
-    - glog
-    - RCT-Folly (= 2021.06.28.00-v2)
-    - React-bridging (= 0.69.7)
-    - React-callinvoker (= 0.69.7)
-    - React-Core (= 0.69.7)
-    - React-cxxreact (= 0.69.7)
-    - React-jsi (= 0.69.7)
-    - React-logger (= 0.69.7)
-    - React-perflogger (= 0.69.7)
-    - ReactCommon/turbomodule/core (= 0.69.7)
-    - ReactCommon/turbomodule/samples (= 0.69.7)
   - ReactCommon/turbomodule/core (0.69.7):
     - DoubleConversion
     - glog
@@ -337,18 +317,6 @@ PODS:
     - React-jsi (= 0.69.7)
     - React-logger (= 0.69.7)
     - React-perflogger (= 0.69.7)
-  - ReactCommon/turbomodule/samples (0.69.7):
-    - DoubleConversion
-    - glog
-    - RCT-Folly (= 2021.06.28.00-v2)
-    - React-bridging (= 0.69.7)
-    - React-callinvoker (= 0.69.7)
-    - React-Core (= 0.69.7)
-    - React-cxxreact (= 0.69.7)
-    - React-jsi (= 0.69.7)
-    - React-logger (= 0.69.7)
-    - React-perflogger (= 0.69.7)
-    - ReactCommon/turbomodule/core (= 0.69.7)
   - RNCMaskedView (0.1.11):
     - React
   - RNGestureHandler (2.8.0):
@@ -552,7 +520,7 @@ SPEC CHECKSUMS:
   boost: a7c83b31436843459a1961bfd74b96033dc77234
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
   EXApplication: 034b1c40a8e9fe1bff76a1e511ee90dff64ad834
-  EXAV: 596506c9bee54ad52f2f3b625cdaeb9d9f2dd6b7
+  EXAV: 9a45d37772c5329294c054a041dcc39931fc5032
   EXConstants: 3c86653c422dd77e40d10cbbabb3025003977415
   EXErrorRecovery: ae43433feb0608a64dc5b1c8363b3e7769a9ea24
   EXFileSystem: 60602b6eefa6873f97172c684b7537c9760b50d6
