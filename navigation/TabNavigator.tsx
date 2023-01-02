@@ -55,7 +55,7 @@ const Tab = isAndroid
 function TabBarIcon({ focused, iconName }: TabBarIconPropType): ReactElement {
   return isAndroid ? (
     <MaterialCommunityIcons
-      name={iconName}
+      name={iconName as keyof typeof MaterialCommunityIcons.glyphMap}
       size={20}
       strokeWidth={1}
       style={{ marginBottom: -3 }}
@@ -63,7 +63,7 @@ function TabBarIcon({ focused, iconName }: TabBarIconPropType): ReactElement {
     />
   ) : (
     <Feather
-      name={iconName}
+      name={iconName as keyof typeof Feather.glyphMap}
       size={30}
       strokeWidth={1}
       style={{ marginBottom: -3 }}
