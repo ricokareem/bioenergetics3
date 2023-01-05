@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^13.0.0",
-    "@expo/webpack-config": "^0.17.3",
+    "@expo/webpack-config": "^0.17.4",
     "@react-native-community/masked-view": "0.1.11",
     "@react-navigation/bottom-tabs": "^5.11.15",
     "@react-navigation/material-bottom-tabs": "^6.2.10",
