@@ -13,5 +13,8 @@
     "esModuleInterop": true,
     "moduleResolution": "node"
   },
-  "extends": "expo/tsconfig.base"
+  "extends": "expo/tsconfig.base",
+  "exclude": [
+    "**/*.test.tsx"
+  ]
 }

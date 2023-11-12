@@ -25,6 +25,9 @@ jobs:
           paths:
             - ~/.cache ## cache both yarn and Cypress!
       - run:
+          name: "Typecheck"
+          command: yarn typecheck
+      - run:
           name: "Run Jest"
           command: yarn test --ci --runInBand --reporters=default --reporters=jest-junit
           environment:

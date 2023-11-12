@@ -6,6 +6,7 @@
     "ios": "expo run:ios",
     "web": "expo start --web",
     "test": "jest",
+    "typecheck": "tsc && tsc -p cypress",
     "lint": "eslint -c .eslintrc.json . --fix --ext .js,.jsx,.ts,.tsx",
     "cypress:ci": "expo start --web & wait-on http-get://localhost:19006 && cypress run",
     "eject": "expo eject"
