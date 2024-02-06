@@ -17,7 +17,7 @@ install! 'cocoapods',
          deterministic_uuids: false
 
 target 'bioenergetics3' do
-  use_expo_modules!
+  # use_expo_modules!
   config = use_native_modules!
 
   use_frameworks! linkage: podfile_properties['ios.useFrameworks'].to_sym if podfile_properties['ios.useFrameworks']

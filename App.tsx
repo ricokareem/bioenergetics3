@@ -24,7 +24,7 @@ import Credits from "./screens/Credits";
 
 const Stack = createStackNavigator();
 
-export default function App(): JSX.Element {
+export default function App(): JSX.Element | null {
   const [fontsLoaded] = useFonts({
     ...Ionicons.font,
     ...Feather.font,

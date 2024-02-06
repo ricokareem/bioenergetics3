@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const timeDisplay = ({ remainingTime }) => {
+const timeDisplay = ({ remainingTime }: { remainingTime: number }) => {
   const minutes = Math.floor(remainingTime / 60);
   const seconds = remainingTime % 60;
 
@@ -53,9 +53,10 @@ export default function MediaCard({
   const [isPlaying, setIsPlaying] = useState(true);
   const [currentMovie, setCurrentMovie] = useState(moviePlaylist[0]);
   const [nextMovieIndex, setMovieIndex] = useState(1);
-  const videoRef = useRef<Video>();
+  const videoRef = useRef() as React.MutableRefObject<Video>;
 
-  const videoSourceFile = VideoSourceFiles[currentMovie.file];
+  const videoSourceFile =
+    VideoSourceFiles[currentMovie?.file as keyof typeof VideoSourceFiles];
 
   const onPlaybackStatusUpdate = useCallback(
     (playbackStatus: AVPlaybackStatus) => {
@@ -76,14 +77,14 @@ export default function MediaCard({
   const onPress = () => {
     setIsPlaying(!isPlaying);
     if (status.isLoaded && status.isPlaying) {
-      videoRef.current.pauseAsync();
+      videoRef.current?.pauseAsync();
     } else if (status.isLoaded && !status.isPlaying) {
-      videoRef.current.playAsync();
+      videoRef.current?.playAsync();
     }
   };
 
   useEffect(() => {
-    videoRef.current.setOnPlaybackStatusUpdate(onPlaybackStatusUpdate);
+    videoRef.current?.setOnPlaybackStatusUpdate(onPlaybackStatusUpdate);
     setMovieIndex((i) => i + 1);
   }, [currentMovie, onPlaybackStatusUpdate]);
 
@@ -104,7 +105,7 @@ export default function MediaCard({
         style={styles.backgroundVideo}
         onPlaybackStatusUpdate={(newStatus) => setStatus(newStatus)}
       />
-      <Text style={{ marginBottom: 10 }}>{currentMovie.description}</Text>
+      <Text style={{ marginBottom: 10 }}>{currentMovie?.description}</Text>
       {!!showTimer && (
         <>
           <CountdownCircleTimer

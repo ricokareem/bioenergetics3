@@ -1,4 +1,4 @@
-import React from "react";
+// @ts-ignore
 import styled from "styled-components/native";
 
 export const WhiteContainer = styled.View`

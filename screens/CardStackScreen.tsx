@@ -1,5 +1,10 @@
 import React from "react";
-import { FlatList, ListRenderItemInfo, Route } from "react-native";
+import {
+  FlatList,
+  ListRenderItem,
+  ListRenderItemInfo,
+  Route,
+} from "react-native";
 import {
   WhiteContainer,
   ListText,
@@ -12,38 +17,46 @@ type NavPropsType = {
   navigation: Route;
 };
 
-interface ItemType extends ListRenderItemInfo<any> {
+interface ItemType extends ListRenderItemInfo<unknown> {
+  id: string;
+  name: string;
+  title: string;
+  screen: string;
   description: string;
   playlist: number[];
   subheading: string;
 }
 
-const cardStack = [...Movies].filter((c) => c.playlist?.length);
+const cardStack = [...Movies].filter(
+  (c) => c.playlist?.length
+) as unknown as ItemType[];
 
 const CardStackScreen: React.FC<NavPropsType> = (props) => {
   const { navigation } = props;
+
+  const renderItem: ListRenderItem<ItemType> = ({ item }) => (
+    <ListButton
+      testID="cardStackItem"
+      key={item.id}
+      onPress={() => {
+        navigation.navigate(item.screen, {
+          title: item.title,
+          name: item.name,
+          description: item.description,
+          playlist: item.playlist,
+        });
+      }}
+    >
+      <ListText>{item.title}</ListText>
+      <ListSubheadingText>{item.subheading}</ListSubheadingText>
+    </ListButton>
+  );
 
   return (
     <WhiteContainer>
       <FlatList
         data={cardStack}
-        renderItem={({ item }: ItemType) => (
-          <ListButton
-            testID="cardStackItem"
-            key={item.id}
-            onPress={() => {
-              navigation.navigate(item.screen, {
-                title: item.title,
-                name: item.name,
-                description: item.description,
-                playlist: item.playlist,
-              });
-            }}
-          >
-            <ListText>{item.title}</ListText>
-            <ListSubheadingText>{item.subheading}</ListSubheadingText>
-          </ListButton>
-        )}
+        renderItem={renderItem}
         numColumns={2}
         keyExtractor={(item, index) => `${index}_${item.name}`}
       />

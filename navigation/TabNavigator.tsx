@@ -3,6 +3,7 @@ import * as React from "react";
 import { Platform } from "react-native";
 import {
   NavigationProp,
+  Route,
   RouteProp,
   getFocusedRouteNameFromRoute,
 } from "@react-navigation/native";
@@ -31,7 +32,7 @@ type TabBarIconPropType = {
 
 const isAndroid = Platform.OS === "android";
 
-function getHeaderTitle(route) {
+function getHeaderTitle(route: Route<string>) {
   const routeName = getFocusedRouteNameFromRoute(route) ?? "Main";
 
   switch (routeName) {
@@ -90,7 +91,7 @@ function TabNavigator({
         component={MainScreen}
         options={{
           tabBarLabel: "Home",
-          tabBarIcon: ({ focused }) => (
+          tabBarIcon: ({ focused }: { focused: boolean }) => (
             <TabBarIcon iconName="home" focused={focused} />
           ),
         }}
@@ -100,7 +101,7 @@ function TabNavigator({
         component={CardStackScreen}
         options={{
           tabBarLabel: "Card Stack",
-          tabBarIcon: ({ focused }) => (
+          tabBarIcon: ({ focused }: { focused: boolean }) => (
             <TabBarIcon iconName="layers" focused={focused} />
           ),
         }}
@@ -110,7 +111,7 @@ function TabNavigator({
         component={ReferenceGuideScreen}
         options={{
           tabBarLabel: "Symptoms",
-          tabBarIcon: ({ focused }) => (
+          tabBarIcon: ({ focused }: { focused: boolean }) => (
             <TabBarIcon iconName="book-open" focused={focused} />
           ),
         }}
@@ -120,7 +121,7 @@ function TabNavigator({
         component={InfoScreen}
         options={{
           tabBarLabel: "Info",
-          tabBarIcon: ({ focused }) => (
+          tabBarIcon: ({ focused }: { focused: boolean }) => (
             <TabBarIcon
               iconName={isAndroid ? "information" : "info"}
               focused={focused}

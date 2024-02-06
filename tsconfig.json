@@ -1,5 +1,21 @@
 {
   "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "components/*": [
+        "/components/*"
+      ],
+      "screens/*": [
+        "/screens/*"
+      ],
+      "navigation/*": [
+        "/navigation/*"
+      ],
+      "media/*": [
+        "/media/*"
+      ],
+    },
     "jsx": "react-native",
     "target": "esnext",
     "lib": [
