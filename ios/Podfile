@@ -12,7 +12,7 @@ rescue StandardError
   {}
 end
 
-# platform :ios, podfile_properties['ios.deploymentTarget'] || '12.4'
+platform :ios, podfile_properties['ios.deploymentTarget'] || '17.0'
 install! 'cocoapods',
          deterministic_uuids: false
 
@@ -27,7 +27,8 @@ target 'bioenergetics3' do
 
   use_react_native!(
     path: config[:reactNativePath],
-    hermes_enabled: flags[:hermes_enabled] || podfile_properties['expo.jsEngine'] == 'hermes',
+    hermes_enabled: false,
+    # hermes_enabled: flags[:hermes_enabled] || podfile_properties['expo.jsEngine'] == 'hermes',
     fabric_enabled: flags[:fabric_enabled],
     # An absolute path to your application root.
     app_path: "#{Dir.pwd}/.."
