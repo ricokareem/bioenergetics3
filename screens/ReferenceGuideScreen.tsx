@@ -1,11 +1,12 @@
 import React, { ReactElement } from "react";
-import { Route, ScrollView } from "react-native";
+import { ScrollView } from "react-native";
+import { NavigationProp } from "@react-navigation/native";
 import { ListItem } from "react-native-elements";
 import { SymptomsPlaylists } from "../constants/MediaData";
 import { WhiteContainer, ListText } from "../components";
 
 type NavPropsType = {
-  navigation: Route;
+  navigation: NavigationProp<any>;
 };
 
 function ReferenceGuideScreen({ navigation }: NavPropsType): ReactElement {

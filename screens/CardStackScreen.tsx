@@ -1,10 +1,6 @@
 import React from "react";
-import {
-  FlatList,
-  ListRenderItem,
-  ListRenderItemInfo,
-  Route,
-} from "react-native";
+import { FlatList, ListRenderItem, ListRenderItemInfo } from "react-native";
+import { NavigationProp } from "@react-navigation/native";
 import {
   WhiteContainer,
   ListText,
@@ -14,7 +10,7 @@ import {
 import { Movies } from "../constants/MediaData";
 
 type NavPropsType = {
-  navigation: Route;
+  navigation: NavigationProp<any>;
 };
 
 interface ItemType extends ListRenderItemInfo<unknown> {

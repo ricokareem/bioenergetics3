@@ -1,14 +1,16 @@
 import React, { ReactElement } from "react";
-import { Route } from "react-native";
+import { NavigatorScreenParams } from "@react-navigation/native";
 import { ClearScrollingContainer } from "../components";
 import MediaCard from "../components/MediaCard";
 
 type MediaScreenProps = {
-  route: Route;
+  route: NavigatorScreenParams<any>;
 };
 
 function MediaScreen({ route }: MediaScreenProps): ReactElement {
   const { title, playlist, showTimer } = route.params;
+
+  console.log("MediaScreen: title", title, playlist, showTimer);
 
   return (
     <ClearScrollingContainer>
